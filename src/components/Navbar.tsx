@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
@@ -54,7 +53,7 @@ const Navbar = () => {
           }}
           aria-label="MovinWare"
         >
-          <div className="text-2xl font-bold text-pulse-500">MovinWare</div>
+          <div className="text-2xl font-bold" style={{ color: '#4942E4' }}>MovinWare</div>
         </a>
 
         {/* Desktop Navigation */}

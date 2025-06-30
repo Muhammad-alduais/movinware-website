@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,19 +62,19 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Pulse Robot
+				// Updated brand colors to use #4942E4
 				pulse: {
-					"50": "#fff7ed",
-					"100": "#ffedd5",
-					"200": "#fed7aa",
-					"300": "#fdba74",
-					"400": "#fb923c",
-					"500": "#f97316", // Primary orange
-					"600": "#ea580c",
-					"700": "#c2410c",
-					"800": "#9a3412",
-					"900": "#7c2d12",
-					"950": "#431407",
+					"50": "#f0efff",
+					"100": "#e4e2ff",
+					"200": "#ccc9ff",
+					"300": "#aaa5ff",
+					"400": "#8479ff",
+					"500": "#4942E4", // Your brand color
+					"600": "#4338ca",
+					"700": "#3730a3",
+					"800": "#312e81",
+					"900": "#1e1b4b",
+					"950": "#0f0d2a",
 				},
 				dark: {
 					"900": "#121212", // Almost black
@@ -137,9 +136,9 @@ export default {
 				'float': 'float 6s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'hero-gradient': 'linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%)',
-				'hero-gradient-2': 'linear-gradient(90deg, hsla(39, 100%, 77%, 1) 0%, hsla(22, 90%, 57%, 1) 100%)',
-				'pulse-gradient': 'linear-gradient(180deg, rgba(249,115,22,0.8) 0%, rgba(249,115,22,0) 100%)',
+				'hero-gradient': 'linear-gradient(90deg, hsla(244, 86%, 58%, 1) 0%, hsla(258, 90%, 68%, 1) 100%)',
+				'hero-gradient-2': 'linear-gradient(90deg, hsla(244, 86%, 58%, 1) 0%, hsla(252, 90%, 57%, 1) 100%)',
+				'pulse-gradient': 'linear-gradient(180deg, rgba(73,66,228,0.8) 0%, rgba(73,66,228,0) 100%)',
 			},
 			fontFamily: {
 				'sans': ['Inter', 'sans-serif'],
