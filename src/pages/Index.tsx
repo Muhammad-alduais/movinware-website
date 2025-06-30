@@ -13,6 +13,7 @@ import ERPSolutions from "@/components/ERPSolutions";
 import ImplementationProcess from "@/components/ImplementationProcess";
 import Packages from "@/components/Packages";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   // Initialize intersection observer to detect when elements enter viewport
