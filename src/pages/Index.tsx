@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -9,7 +8,11 @@ import AboutMovinWare from "@/components/AboutMovinWare";
 import DetailsSection from "@/components/DetailsSection";
 import Testimonials from "@/components/Testimonials";
 import Newsletter from "@/components/Newsletter";
-import Footer from "@/components/Footer";
+import Services from "@/components/Services";
+import ERPSolutions from "@/components/ERPSolutions";
+import ImplementationProcess from "@/components/ImplementationProcess";
+import Packages from "@/components/Packages";
+import Contact from "@/components/Contact";
 
 const Index = () => {
   // Initialize intersection observer to detect when elements enter viewport
@@ -66,8 +69,12 @@ const Index = () => {
         <PlatformCapabilities />
         <Industries />
         <AboutMovinWare />
-        <DetailsSection />
+        <Services />
+        <ERPSolutions />
+        <ImplementationProcess />
+        <Packages />
         <Testimonials />
+        <Contact />
         <Newsletter />
       </main>
       <Footer />

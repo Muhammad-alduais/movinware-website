@@ -71,6 +71,8 @@ const Navbar = () => {
           </a>
           <a href="#value" className="nav-link">Solutions</a>
           <a href="#industries" className="nav-link">Industries</a>
+          <a href="#services" className="nav-link">Services</a>
+          <a href="#packages" className="nav-link">Packages</a>
           <a href="#about" className="nav-link">About</a>
           <a href="#contact" className="nav-link">Contact</a>
         </nav>
@@ -122,6 +124,26 @@ const Navbar = () => {
             }}
           >
             Industries
+          </a>
+          <a 
+            href="#services" 
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            onClick={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            Services
+          </a>
+          <a 
+            href="#packages" 
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            onClick={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            Packages
           </a>
           <a 
             href="#about" 
