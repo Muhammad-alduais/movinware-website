@@ -113,6 +113,33 @@
     letter-spacing: 0.02em;
   }
 
+  /* Enhanced Arabic card styling */
+  .arabic-card-shadow {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .arabic-gradient-border {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .arabic-gradient-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #6366f1, #8b5cf6);
+  }
+
+  /* Improved Arabic text rendering */
+  .font-arabic * {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   /* RTL support for Arabic */
   [dir="rtl"] {
     text-align: right;

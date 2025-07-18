@@ -109,40 +109,46 @@ const ImplementationProcess = () => {
               <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-500">
                 <div className="p-8 lg:p-12">
                   {language === 'ar' ? (
-                    /* Arabic Layout - RTL Design */
+                    /* Arabic Layout - Enhanced RTL Design */
                     <div className="flex flex-col lg:flex-row gap-8">
-                      {/* Main Content - Right Side in Arabic */}
+                      {/* Main Content Section - Right Side in Arabic */}
                       <div className="flex-1 font-arabic">
-                        <div className="flex items-center mb-6 flex-row-reverse">
-                          <div className={`w-14 h-14 rounded-2xl flex items-center justify-center ml-4 ${phase.color}`}>
-                            <phase.icon className="w-7 h-7" />
+                        {/* Header with Icon and Title */}
+                        <div className="flex items-start mb-6 flex-row-reverse">
+                          <div className={`w-16 h-16 rounded-3xl flex items-center justify-center ml-5 shadow-lg ${phase.color}`}>
+                            <phase.icon className="w-8 h-8 text-white" />
                           </div>
-                          <div className="text-right">
-                            <h3 className="text-2xl font-semibold text-gray-900 font-arabic leading-tight mb-2">
+                          <div className="text-right flex-1">
+                            <h3 className="text-2xl font-bold text-gray-900 font-arabic leading-tight mb-3">
                               {phase.title}
                             </h3>
-                            <div className="inline-flex items-center px-3 py-1 rounded-full bg-pulse-100 text-pulse-600 text-sm font-medium">
+                            <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-pulse-500 to-purple-600 text-white text-sm font-semibold shadow-md">
+                              <Clock className="w-4 h-4 ml-2" />
                               {phase.duration}
                             </div>
                           </div>
                         </div>
-                        <p className="text-gray-600 leading-relaxed text-right font-arabic text-lg mb-6">
-                          {phase.description}
-                        </p>
+
+                        {/* Description */}
+                        <div className="bg-gradient-to-l from-gray-50 to-white rounded-2xl p-6 arabic-gradient-border">
+                          <p className="text-gray-700 leading-relaxed text-right font-arabic text-lg">
+                            {phase.description}
+                          </p>
+                        </div>
                       </div>
 
-                      {/* Deliverables - Left Side in Arabic */}
+                      {/* Deliverables Section - Left Side in Arabic */}
                       <div className="lg:w-80">
-                        <div className="bg-gray-50 rounded-2xl p-6">
-                          <h4 className="text-sm font-semibold text-gray-900 mb-4 flex items-center flex-row-reverse text-right font-arabic">
-                            <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
+                        <div className="bg-gradient-to-br from-pulse-50 to-purple-50 rounded-2xl p-6 border border-pulse-200 arabic-card-shadow">
+                          <h4 className="text-base font-bold text-gray-900 mb-5 flex items-center flex-row-reverse text-right font-arabic">
+                            <CheckCircle className="w-5 h-5 text-green-500 ml-2" />
                             {t('implementation.key_deliverables')}
                           </h4>
-                          <div className="space-y-3">
+                          <div className="space-y-4">
                             {phase.deliverables.map((deliverable, deliverableIndex) => (
-                              <div key={deliverableIndex} className="flex items-center text-sm text-gray-600 flex-row-reverse text-right">
-                                <div className="w-2 h-2 bg-pulse-500 rounded-full ml-3 flex-shrink-0"></div>
-                                <span className="font-arabic">{deliverable}</span>
+                              <div key={deliverableIndex} className="flex items-center text-sm text-gray-700 flex-row-reverse text-right bg-white rounded-xl p-3 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+                                <div className="w-3 h-3 bg-gradient-to-r from-pulse-500 to-purple-600 rounded-full ml-3 flex-shrink-0 shadow-sm"></div>
+                                <span className="font-arabic font-medium">{deliverable}</span>
                               </div>
                             ))}
                           </div>
