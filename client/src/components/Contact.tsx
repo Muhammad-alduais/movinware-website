@@ -27,34 +27,34 @@ const Contact = () => {
   const isEmailJSConfigured = EMAILJS_SERVICE_ID && EMAILJS_TEMPLATE_ID && EMAILJS_PUBLIC_KEY && EMAILJS_PUBLIC_KEY !== "your_public_key" && EMAILJS_PUBLIC_KEY.length > 0;
   const contactInfo = [{
     icon: Mail,
-    title: "Email",
+    title: t('contact.info.email'),
     value: "info@movinware.com",
     link: "mailto:info@movinware.com"
   }, {
     icon: Phone,
-    title: "Phone",
+    title: t('contact.info.phone'),
     value: "+966 561820949",
     link: "tel:+966561820949"
   }, {
     icon: MapPin,
-    title: "Location",
-    value: "Online",
+    title: t('contact.info.location'),
+    value: t('contact.info.location_value'),
     link: "#"
   }];
   const quickActions = [{
     icon: Users,
-    title: "Talk to Expert",
-    description: "Schedule a call with our experts",
+    title: t('contact.actions.expert'),
+    description: t('contact.actions.expert_desc'),
     action: () => window.open("https://calendly.com/movinware", "_blank")
   }, {
     icon: Calendar,
-    title: "Schedule Consultation",
-    description: "Book a free consultation",
+    title: t('contact.actions.consultation'),
+    description: t('contact.actions.consultation_desc'),
     action: () => window.open("https://calendly.com/movinware/consultation", "_blank")
   }, {
     icon: MessageCircle,
-    title: "WhatsApp Support",
-    description: "Get instant support via WhatsApp",
+    title: t('contact.actions.whatsapp'),
+    description: t('contact.actions.whatsapp_desc'),
     action: () => window.open("https://wa.me/971412345678", "_blank")
   }];
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {

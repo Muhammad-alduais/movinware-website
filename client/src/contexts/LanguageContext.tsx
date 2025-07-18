@@ -239,6 +239,16 @@ const translations = {
     'contact.inquiry.support': 'Support',
     'contact.inquiry.partnership': 'Partnership',
     'contact.inquiry.demo': 'Demo Request',
+    'contact.info.email': 'Email',
+    'contact.info.phone': 'Phone',
+    'contact.info.location': 'Location',
+    'contact.info.location_value': 'Online',
+    'contact.actions.expert': 'Talk to Expert',
+    'contact.actions.expert_desc': 'Schedule a call with our experts',
+    'contact.actions.consultation': 'Schedule Consultation',
+    'contact.actions.consultation_desc': 'Book a free consultation',
+    'contact.actions.whatsapp': 'WhatsApp Support',
+    'contact.actions.whatsapp_desc': 'Get instant support via WhatsApp',
     
     // Services Section
     'services.section': 'Professional Services',
@@ -340,6 +350,15 @@ const translations = {
     // Testimonials Section
     'testimonials.section': 'Testimonials',
     'testimonials.title': 'What others say',
+    'testimonials.testimonial1.content': 'MovinWare transformed our production operations, streamlining workflows while our team focuses on strategic growth. 40% increase in efficiency within two months.',
+    'testimonials.testimonial1.author': 'Sarah Chen',
+    'testimonials.testimonial1.role': 'VP of Operations, Axion Manufacturing',
+    'testimonials.testimonial2.content': 'Implementing MovinWare in our logistics centers reduced operational costs by 35% while improving accuracy. The AI-powered insights are game-changing.',
+    'testimonials.testimonial2.author': 'Michael Rodriguez',
+    'testimonials.testimonial2.role': 'Director of Logistics, GlobalShip',
+    'testimonials.testimonial3.content': 'As a mid-size business, we never thought advanced ERP would be accessible to us. MovinWare changed that with its intuitive design and affordable pricing.',
+    'testimonials.testimonial3.author': 'Jason Lee',
+    'testimonials.testimonial3.role': 'CEO, Innovative Solutions Inc.',
     
     // Implementation Process
     'implementation.section': 'Implementation Process',
@@ -348,6 +367,59 @@ const translations = {
     'implementation.timeline': 'Implementation Timeline',
     'implementation.why_works': 'Why our process works',
     'implementation.why_works.subtitle': 'Proven results from our implementation methodology',
+    
+    // Implementation Phases
+    'implementation.phases.discovery.title': 'Discovery & Assessment',
+    'implementation.phases.discovery.duration': 'Week 1-2',
+    'implementation.phases.discovery.description': 'We analyze your current processes, identify pain points, and create a detailed implementation roadmap.',
+    'implementation.phases.discovery.deliverables': ['Process Analysis', 'Requirements Document', 'Implementation Plan'],
+    
+    'implementation.phases.design.title': 'Design & Configuration',
+    'implementation.phases.design.duration': 'Week 3-5',
+    'implementation.phases.design.description': 'Custom workflows, system configuration, and user interface design tailored to your business needs.',
+    'implementation.phases.design.deliverables': ['System Design', 'Workflow Configuration', 'UI Mockups'],
+    
+    'implementation.phases.development.title': 'Development & Integration',
+    'implementation.phases.development.duration': 'Week 6-9',
+    'implementation.phases.development.description': 'System development, data migration, third-party integrations, and comprehensive testing.',
+    'implementation.phases.development.deliverables': ['Developed System', 'Data Migration', 'Integration Testing'],
+    
+    'implementation.phases.deployment.title': 'Deployment & Training',
+    'implementation.phases.deployment.duration': 'Week 10-11',
+    'implementation.phases.deployment.description': 'Go-live support with comprehensive user training, system monitoring, and immediate support.',
+    'implementation.phases.deployment.deliverables': ['Live System', 'Trained Users', 'Support Documentation'],
+    
+    'implementation.phases.optimization.title': 'Optimization & Support',
+    'implementation.phases.optimization.duration': 'Ongoing',
+    'implementation.phases.optimization.description': 'Continuous optimization, performance monitoring, feature enhancements, and dedicated support.',
+    'implementation.phases.optimization.deliverables': ['Performance Reports', 'Feature Updates', '24/7 Support'],
+    
+    // Timeline
+    'implementation.timeline.weeks.1-2': '1-2',
+    'implementation.timeline.weeks.3-5': '3-5',
+    'implementation.timeline.weeks.6-9': '6-9',
+    'implementation.timeline.weeks.10-11': '10-11',
+    'implementation.timeline.weeks.12+': '12+',
+    'implementation.timeline.phases.discovery': 'Discovery',
+    'implementation.timeline.phases.design': 'Design',
+    'implementation.timeline.phases.development': 'Development',
+    'implementation.timeline.phases.deployment': 'Deployment',
+    'implementation.timeline.phases.support': 'Support',
+    
+    // Implementation Stats
+    'implementation.key_deliverables': 'Key Deliverables',
+    'implementation.stats.faster.metric': '85%',
+    'implementation.stats.faster.label': 'Faster Implementation',
+    'implementation.stats.faster.desc': 'Compared to traditional methods',
+    'implementation.stats.downtime.metric': 'Zero',
+    'implementation.stats.downtime.label': 'Downtime',
+    'implementation.stats.downtime.desc': 'Seamless transition process',
+    'implementation.stats.adoption.metric': '98%',
+    'implementation.stats.adoption.label': 'User Adoption',
+    'implementation.stats.adoption.desc': 'Within first month',
+    'implementation.stats.support.metric': '24/7',
+    'implementation.stats.support.label': 'Support',
+    'implementation.stats.support.desc': 'Dedicated implementation team',
     
     // Features Section
     'features.core_modules': 'Core Modules',
@@ -609,6 +681,16 @@ const translations = {
     'contact.inquiry.support': 'دعم',
     'contact.inquiry.partnership': 'شراكة',
     'contact.inquiry.demo': 'طلب عرض توضيحي',
+    'contact.info.email': 'البريد الإلكتروني',
+    'contact.info.phone': 'الهاتف',
+    'contact.info.location': 'الموقع',
+    'contact.info.location_value': 'أونلاين',
+    'contact.actions.expert': 'تحدث مع خبير',
+    'contact.actions.expert_desc': 'اجدولة مكالمة مع خبرائنا',
+    'contact.actions.consultation': 'جدولة استشارة',
+    'contact.actions.consultation_desc': 'احجز استشارة مجانية',
+    'contact.actions.whatsapp': 'دعم واتساب',
+    'contact.actions.whatsapp_desc': 'احصل على دعم فوري عبر واتساب',
     
     // Services Section
     'services.section': 'الخدمات المهنية',
@@ -620,6 +702,15 @@ const translations = {
     // Testimonials Section
     'testimonials.section': 'الشهادات',
     'testimonials.title': 'ما يقوله الآخرون',
+    'testimonials.testimonial1.content': 'حولت MovinWare عمليات الإنتاج لدينا، وسهلت سير العمل بينما يركز فريقنا على النمو الاستراتيجي. زيادة 40% في الكفاءة خلال شهرين.',
+    'testimonials.testimonial1.author': 'سارة تشين',
+    'testimonials.testimonial1.role': 'نائب الرئيس للعمليات، شركة أكسيون للتصنيع',
+    'testimonials.testimonial2.content': 'تطبيق MovinWare في مراكز اللوجستيات لدينا قلل التكاليف التشغيلية بنسبة 35% مع تحسين الدقة. الرؤى المدعومة بالذكاء الاصطناعي تُغير قواعد اللعبة.',
+    'testimonials.testimonial2.author': 'مايكل رودريغيز',
+    'testimonials.testimonial2.role': 'مدير اللوجستيات، GlobalShip',
+    'testimonials.testimonial3.content': 'كشركة متوسطة الحجم، لم نفكر أبداً أن نظام تخطيط الموارد المتقدم سيكون في متناولنا. MovinWare غيرت ذلك بتصميمها البديهي والتسعير المعقول.',
+    'testimonials.testimonial3.author': 'جيسون لي',
+    'testimonials.testimonial3.role': 'الرئيس التنفيذي، شركة الحلول المبتكرة',
     
     // Implementation Process
     'implementation.section': 'عملية التنفيذ',
@@ -628,6 +719,59 @@ const translations = {
     'implementation.timeline': 'الجدول الزمني للتنفيذ',
     'implementation.why_works': 'لماذا تعمل عمليتنا',
     'implementation.why_works.subtitle': 'نتائج مثبتة من منهجية التنفيذ الخاصة بنا',
+    
+    // Implementation Phases
+    'implementation.phases.discovery.title': 'الاستكشاف والتقييم',
+    'implementation.phases.discovery.duration': 'الأسبوع 1-2',
+    'implementation.phases.discovery.description': 'نحلل عملياتك الحالية، ونحدد نقاط الألم، وننشئ خارطة طريق تنفيذ مفصلة.',
+    'implementation.phases.discovery.deliverables': ['تحليل العمليات', 'وثيقة المتطلبات', 'خطة التنفيذ'],
+    
+    'implementation.phases.design.title': 'التصميم والتكوين',
+    'implementation.phases.design.duration': 'الأسبوع 3-5',
+    'implementation.phases.design.description': 'سير عمل مخصص وتكوين النظام وتصميم واجهة المستخدم مصمم خصيصاً لاحتياجات أعمالك.',
+    'implementation.phases.design.deliverables': ['تصميم النظام', 'تكوين سير العمل', 'نماذج أولية للواجهة'],
+    
+    'implementation.phases.development.title': 'التطوير والتكامل',
+    'implementation.phases.development.duration': 'الأسبوع 6-9',
+    'implementation.phases.development.description': 'تطوير النظام وترحيل البيانات وتكامل طرف ثالث واختبار شامل.',
+    'implementation.phases.development.deliverables': ['النظام المطور', 'ترحيل البيانات', 'اختبار التكامل'],
+    
+    'implementation.phases.deployment.title': 'النشر والتدريب',
+    'implementation.phases.deployment.duration': 'الأسبوع 10-11',
+    'implementation.phases.deployment.description': 'دعم الانطلاق مع تدريب المستخدمين الشامل ومراقبة النظام والدعم الفوري.',
+    'implementation.phases.deployment.deliverables': ['النظام المباشر', 'المستخدمون المدربون', 'وثائق الدعم'],
+    
+    'implementation.phases.optimization.title': 'التحسين والدعم',
+    'implementation.phases.optimization.duration': 'مستمر',
+    'implementation.phases.optimization.description': 'التحسين المستمر ومراقبة الأداء وتحسينات الميزات والدعم المخصص.',
+    'implementation.phases.optimization.deliverables': ['تقارير الأداء', 'تحديثات الميزات', 'دعم 24/7'],
+    
+    // Timeline
+    'implementation.timeline.weeks.1-2': '1-2',
+    'implementation.timeline.weeks.3-5': '3-5',
+    'implementation.timeline.weeks.6-9': '6-9',
+    'implementation.timeline.weeks.10-11': '10-11',
+    'implementation.timeline.weeks.12+': '12+',
+    'implementation.timeline.phases.discovery': 'الاستكشاف',
+    'implementation.timeline.phases.design': 'التصميم',
+    'implementation.timeline.phases.development': 'التطوير',
+    'implementation.timeline.phases.deployment': 'النشر',
+    'implementation.timeline.phases.support': 'الدعم',
+    
+    // Implementation Stats
+    'implementation.key_deliverables': 'الإنجازات الرئيسية',
+    'implementation.stats.faster.metric': '85%',
+    'implementation.stats.faster.label': 'تنفيذ أسرع',
+    'implementation.stats.faster.desc': 'مقارنة بالطرق التقليدية',
+    'implementation.stats.downtime.metric': 'صفر',
+    'implementation.stats.downtime.label': 'وقت تعطل',
+    'implementation.stats.downtime.desc': 'عملية انتقال سلسة',
+    'implementation.stats.adoption.metric': '98%',
+    'implementation.stats.adoption.label': 'اعتماد المستخدمين',
+    'implementation.stats.adoption.desc': 'خلال الشهر الأول',
+    'implementation.stats.support.metric': '24/7',
+    'implementation.stats.support.label': 'دعم',
+    'implementation.stats.support.desc': 'فريق تنفيذ مخصص',
     
     // Features Section
     'features.core_modules': 'الوحدات الأساسية',
