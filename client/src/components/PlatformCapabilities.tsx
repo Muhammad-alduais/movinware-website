@@ -84,20 +84,20 @@ const PlatformCapabilities = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {[{
               metric: "500+",
-              label: "API Integrations",
-              desc: "Third-party connections available"
+              label: t('capabilities.stats.api'),
+              desc: t('capabilities.stats.api_desc')
             }, {
               metric: "99.9%",
-              label: "Uptime SLA",
-              desc: "Enterprise-grade reliability"
+              label: t('capabilities.stats.uptime'),
+              desc: t('capabilities.stats.uptime_desc')
             }, {
               metric: "24/7",
-              label: "System Monitoring",
-              desc: "Continuous performance tracking"
+              label: t('capabilities.stats.monitoring'),
+              desc: t('capabilities.stats.monitoring_desc')
             }, {
-              metric: "Real-time",
-              label: "Data Sync",
-              desc: "Instant updates across devices"
+              metric: t('capabilities.stats.realtime'),
+              label: t('capabilities.stats.sync'),
+              desc: t('capabilities.stats.sync_desc')
             }].map((stat, index) => <div key={index} className="text-center">
                   <div className="text-3xl font-light text-pulse-500 mb-2">{stat.metric}</div>
                   <div className="font-medium text-gray-900 mb-1">{stat.label}</div>

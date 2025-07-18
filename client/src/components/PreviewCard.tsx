@@ -1,6 +1,7 @@
 
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 interface PreviewCardProps {
   icon: React.ComponentType<{ className?: string }>;
@@ -23,6 +24,7 @@ const PreviewCard = ({
   className = "",
   index = 0
 }: PreviewCardProps) => {
+  const { t } = useLanguage();
   return (
     <div 
       className={`
@@ -53,8 +55,8 @@ const PreviewCard = ({
         onClick={onLearnMore}
         className="flex items-center text-pulse-500 font-medium text-sm group-hover:text-pulse-600 transition-colors duration-300 hover:gap-3 gap-2"
       >
-        Learn more
-        <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+        {t('common.learn_more')}
+        <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180" />
       </button>
     </div>
   );
