@@ -130,6 +130,27 @@ const translations = {
     'howItWorks.adaptation.title': 'Adaptation',
     'howItWorks.adaptation.description': 'Atlas learns from your environment and routines, becoming more effective over time.',
     
+    // ERP Solutions
+    'erp.section': 'ERP Solutions',
+    'erp.title': 'Complete Solutions for Every Need',
+    'erp.subtitle': 'Integrated modules designed to optimize your business efficiency and automate operations',
+    'erp.integration': 'Module Integration',
+    'erp.integration.subtitle': 'Unified system ensuring seamless data flow across all modules',
+    
+    // Contact Section
+    'contact.section': 'Contact Us',
+    'contact.title': 'Let\'s Start a Conversation',
+    'contact.subtitle': 'Connect with our expert team to discuss your enterprise needs',
+    'contact.form.title': 'Send a Message',
+    'contact.form.name': 'Full Name',
+    'contact.form.email': 'Email Address',
+    'contact.form.company': 'Company',
+    'contact.form.phone': 'Phone Number',
+    'contact.form.inquiry': 'Inquiry Type',
+    'contact.form.message': 'Message',
+    'contact.form.send': 'Send Message',
+    'contact.info.title': 'Contact Information',
+    
     // Common
     'common.learn_more': 'Learn More',
     'common.explore': 'Explore module details',
@@ -259,6 +280,27 @@ const translations = {
     'howItWorks.integration.description': 'يصل أطلس إلى موقعك ويتم دمجه في بيئة معيشتك أو عملك.',
     'howItWorks.adaptation.title': 'التكيف',
     'howItWorks.adaptation.description': 'يتعلم أطلس من بيئتك وروتينك، ويصبح أكثر فعالية مع مرور الوقت.',
+    
+    // ERP Solutions
+    'erp.section': 'حلول تخطيط موارد المؤسسات',
+    'erp.title': 'حلول شاملة لكل احتياجاتك',
+    'erp.subtitle': 'وحدات متكاملة مصممة لتحسين كفاءة أعمالك وأتمتة العمليات',
+    'erp.integration': 'تكامل الوحدات',
+    'erp.integration.subtitle': 'نظام موحد يضمن تدفق البيانات بسلاسة عبر جميع الوحدات',
+    
+    // Contact Section
+    'contact.section': 'تواصل معنا',
+    'contact.title': 'دعنا نبدأ محادثة',
+    'contact.subtitle': 'تواصل مع فريقنا من الخبراء لمناقشة احتياجات مؤسستك',
+    'contact.form.title': 'أرسل رسالة',
+    'contact.form.name': 'الاسم الكامل',
+    'contact.form.email': 'البريد الإلكتروني',
+    'contact.form.company': 'الشركة',
+    'contact.form.phone': 'رقم الهاتف',
+    'contact.form.inquiry': 'نوع الاستفسار',
+    'contact.form.message': 'الرسالة',
+    'contact.form.send': 'إرسال الرسالة',
+    'contact.info.title': 'معلومات الاتصال',
     
     // Common
     'common.learn_more': 'اعرف المزيد',
