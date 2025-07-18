@@ -32,12 +32,16 @@ const translations = {
     'value.title': 'We don\'t just build software',
     'value.subtitle': 'We build the future of your business',
     'value.ai.title': 'Smart automation that learns your business',
+    'value.ai.badge': 'AI Features',
     'value.ai.features': ['Predictive Analytics', 'Decision Automation', 'Intelligent Workflows', 'Advanced Analytics'],
     'value.speed.title': 'From setup to results in record time',
+    'value.speed.badge': 'Unmatched Speed',
     'value.speed.features': ['Rapid Deployment', 'Immediate ROI', 'Instant Benefits', 'Proven Methodology'],
     'value.culture.title': 'Built for Middle Eastern businesses',
+    'value.culture.badge': 'Cultural Fit',
     'value.culture.features': ['Bilingual Support', 'Native RTL Interfaces', 'Local Compliance', 'Cultural Alignment'],
     'value.adoption.title': 'Simple, intuitive, and user-friendly',
+    'value.adoption.badge': 'Easy Adoption',
     'value.adoption.features': ['Intuitive Design', 'Simplified Training', 'User-Friendly Interface', 'Ongoing Support'],
     
     // Platform Capabilities
@@ -158,12 +162,16 @@ const translations = {
     'value.title': 'نحن لا نصنع البرمجيات فقط',
     'value.subtitle': 'نحن نبني مستقبل أعمالك',
     'value.ai.title': 'أتمتة ذكية تتعلم من أعمالك',
+    'value.ai.badge': 'ميزات الذكاء الاصطناعي',
     'value.ai.features': ['التنبؤ التلقائي', 'أتمتة القرارات', 'سير عمل ذكي', 'تحليلات متقدمة'],
     'value.speed.title': 'من الإعداد إلى النتائج في وقت قياسي',
+    'value.speed.badge': 'سرعة لا مثيل لها',
     'value.speed.features': ['نشر سريع', 'عائد فوري على الاستثمار', 'فوائد فورية', 'منهجية مثبتة'],
     'value.culture.title': 'مصمم لأعمال منطقة الشرق الأوسط',
+    'value.culture.badge': 'التوافق الثقافي',
     'value.culture.features': ['دعم ثنائي اللغة', 'واجهات أصلية من اليمين لليسار', 'الامتثال المحلي', 'التوافق الثقافي'],
     'value.adoption.title': 'بسيط وبديهي وسهل الاستخدام',
+    'value.adoption.badge': 'اعتماد سهل',
     'value.adoption.features': ['تصميم بديهي', 'تدريب مبسط', 'واجهة سهلة الاستخدام', 'دعم مستمر'],
     
     // Platform Capabilities

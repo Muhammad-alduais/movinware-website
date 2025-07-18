@@ -118,7 +118,7 @@ const ValueSection = () => {
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">AI Features</span>
+                  <span className="text-sm font-medium">{t('value.ai.badge')}</span>
                 </div>
               </div>
               
@@ -149,7 +149,7 @@ const ValueSection = () => {
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">Unmatched Speed</span>
+                  <span className="text-sm font-medium">{t('value.speed.badge')}</span>
                 </div>
               </div>
               
@@ -180,7 +180,7 @@ const ValueSection = () => {
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">Cultural Fit</span>
+                  <span className="text-sm font-medium">{t('value.culture.badge')}</span>
                 </div>
               </div>
               
@@ -211,7 +211,7 @@ const ValueSection = () => {
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">Easy Adoption</span>
+                  <span className="text-sm font-medium">{t('value.adoption.badge')}</span>
                 </div>
               </div>
               
