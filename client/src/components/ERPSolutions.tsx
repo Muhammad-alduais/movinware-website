@@ -9,63 +9,63 @@ const ERPSolutions = () => {
   const [selectedSolution, setSelectedSolution] = useState<any>(null);
   const solutions = [{
     icon: Calculator,
-    title: "Accounting & Finance",
-    description: "Complete financial management with real-time insights.",
-    capabilities: ["Real-time Financial Reporting & Analytics", "Multi-currency Support & Conversion", "Tax Compliance & Regulatory Reporting", "Automated Accounts Payable/Receivable", "Budget Planning & Forecasting", "Cash Flow Management & Optimization", "Financial Audit Trail & Controls", "Integration with Banking & Payment Systems"],
-    timeline: "Full Integration",
-    fullDescription: "Complete financial management and reporting system with real-time insights and automated processes for comprehensive business control. Our accounting suite provides complete visibility into your financial operations with automated workflows, intelligent reporting, and seamless integration with banking and payment systems."
+    title: t('erp.accounting.title'),
+    description: t('erp.accounting.description'),
+    capabilities: t('erp.accounting.capabilities'),
+    timeline: t('erp.accounting.timeline'),
+    fullDescription: t('erp.accounting.fullDescription')
   }, {
     icon: Users,
-    title: "Human Resources",
-    description: "End-to-end HR management for the complete employee lifecycle.",
-    capabilities: ["Employee Self-service Portal & Mobile App", "Automated Payroll & Tax Calculations", "Performance Management & Goal Tracking", "Time & Attendance with Biometric Integration", "Recruitment & Applicant Tracking System", "Employee Benefits & Leave Management", "Training & Development Programs", "HR Analytics & Workforce Planning"],
-    timeline: "Complete HR Suite",
-    fullDescription: "Comprehensive HR management system covering the entire employee lifecycle from recruitment to retirement with advanced analytics. Our HR suite transforms people management with automated workflows, self-service capabilities, and data-driven insights that help you attract, retain, and develop top talent."
+    title: t('erp.hr.title'),
+    description: t('erp.hr.description'),
+    capabilities: t('erp.hr.capabilities'),
+    timeline: t('erp.hr.timeline'),
+    fullDescription: t('erp.hr.fullDescription')
   }, {
     icon: ShoppingCart,
-    title: "Sales & CRM",
-    description: "AI-powered sales and customer relationship management.",
-    capabilities: ["Lead Tracking & Opportunity Management", "Advanced Sales Pipeline & Forecasting", "Customer 360-degree View & Analytics", "Automated Marketing Campaign Management", "Quote & Proposal Generation", "Customer Support & Ticket Management", "Sales Team Performance Analytics", "Mobile CRM & Field Sales Tools"],
-    timeline: "Sales Optimization",
-    fullDescription: "End-to-end sales and customer relationship management with AI-powered insights and automation for maximum conversion rates. Our CRM platform provides complete customer visibility, automated sales processes, and intelligent insights that help you close more deals and build stronger customer relationships."
+    title: t('erp.sales.title'),
+    description: t('erp.sales.description'),
+    capabilities: t('erp.sales.capabilities'),
+    timeline: t('erp.sales.timeline'),
+    fullDescription: t('erp.sales.fullDescription')
   }, {
     icon: Package,
-    title: "Inventory Management",
-    description: "Smart inventory optimization with real-time tracking.",
-    capabilities: ["AI-powered Stock Optimization & Forecasting", "Barcode & RFID Scanning Integration", "Automated Reordering & Supplier Alerts", "Multi-location & Multi-warehouse Tracking", "Batch & Serial Number Management", "Cycle Counting & Physical Inventory", "Warehouse Layout & Pick Path Optimization", "Supplier Performance & Vendor Management"],
-    timeline: "Smart Inventory",
-    fullDescription: "Advanced inventory and warehouse management with real-time tracking and optimization capabilities for maximum efficiency. Our inventory system uses AI to predict demand, optimize stock levels, and automate reordering processes while providing complete visibility across all locations and warehouses."
+    title: t('erp.inventory.title'),
+    description: t('erp.inventory.description'),
+    capabilities: t('erp.inventory.capabilities'),
+    timeline: t('erp.inventory.timeline'),
+    fullDescription: t('erp.inventory.fullDescription')
   }, {
     icon: Factory,
-    title: "Manufacturing",
-    description: "Intelligent production management and quality control.",
-    capabilities: ["Production Planning & Capacity Optimization", "Quality Control Workflows & Compliance", "Resource Allocation & Equipment Scheduling", "Bill of Materials Management & Costing", "Shop Floor Control & Work Order Management", "Machine Integration & IoT Connectivity", "Lean Manufacturing & Waste Reduction", "Product Lifecycle & Engineering Change Management"],
-    timeline: "Production Excellence",
-    fullDescription: "Complete production management solution that optimizes manufacturing processes and quality control with real-time monitoring. Our manufacturing module enables digital transformation with IoT integration, automated workflows, and real-time production tracking that maximizes efficiency and ensures consistent quality."
+    title: t('erp.manufacturing.title'),
+    description: t('erp.manufacturing.description'),
+    capabilities: t('erp.manufacturing.capabilities'),
+    timeline: t('erp.manufacturing.timeline'),
+    fullDescription: t('erp.manufacturing.fullDescription')
   }, {
     icon: Wrench,
-    title: "Asset Management",
-    description: "Predictive asset management and maintenance optimization.",
-    capabilities: ["Preventive & Predictive Maintenance Scheduling", "Asset Lifecycle Tracking & Depreciation", "Work Order Management & Technician Dispatch", "Equipment Performance & IoT Analytics", "Spare Parts Inventory & Procurement", "Compliance Management & Safety Tracking", "Mobile Maintenance & Field Service", "Asset ROI & Cost Analysis"],
-    timeline: "Asset Optimization",
-    fullDescription: "Comprehensive asset tracking and maintenance management to maximize equipment uptime and ROI with predictive analytics. Our asset management solution uses IoT sensors and machine learning to predict failures before they occur, optimize maintenance schedules, and ensure maximum equipment availability and performance."
+    title: t('erp.assets.title'),
+    description: t('erp.assets.description'),
+    capabilities: t('erp.assets.capabilities'),
+    timeline: t('erp.assets.timeline'),
+    fullDescription: t('erp.assets.fullDescription')
   }];
   const integrationStats = [{
-    metric: "100%",
-    label: "Module Integration",
-    desc: "Seamless data flow across all modules"
+    metric: t('erp.integration.stats.module.metric'),
+    label: t('erp.integration.stats.module.label'),
+    desc: t('erp.integration.stats.module.desc')
   }, {
-    metric: "Real-time",
-    label: "Data Updates",
-    desc: "Instant synchronization everywhere"
+    metric: t('erp.integration.stats.realtime.metric'),
+    label: t('erp.integration.stats.realtime.label'),
+    desc: t('erp.integration.stats.realtime.desc')
   }, {
-    metric: "Single",
-    label: "Database",
-    desc: "Unified source of truth for all data"
+    metric: t('erp.integration.stats.database.metric'),
+    label: t('erp.integration.stats.database.label'),
+    desc: t('erp.integration.stats.database.desc')
   }, {
-    metric: "Custom",
-    label: "Workflows",
-    desc: "Tailored to your business processes"
+    metric: t('erp.integration.stats.workflows.metric'),
+    label: t('erp.integration.stats.workflows.label'),
+    desc: t('erp.integration.stats.workflows.desc')
   }];
   const headerBg = {
     backgroundImage: 'url("/Header-background.webp")',

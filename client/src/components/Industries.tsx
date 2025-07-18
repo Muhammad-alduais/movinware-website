@@ -10,59 +10,59 @@ const Industries = () => {
   const [selectedIndustry, setSelectedIndustry] = useState<any>(null);
   const industries = [{
     icon: GraduationCap,
-    title: "Education",
-    description: "Complete educational management solutions for modern institutions and learning environments.",
-    capabilities: ["Student Information Management System", "Advanced Learning Management Platform", "Financial Aid & Scholarship Processing", "Academic Performance Analytics & Reporting", "Online Course Management & Delivery", "Parent-Teacher Communication Portal", "Library & Resource Management", "Examination & Assessment Tools"],
-    timeline: "500+ Institutions",
-    clients: "Schools, Universities, Training Centers, Online Learning Platforms",
-    fullDescription: "Comprehensive solutions for educational institutions, from student management to curriculum planning and administrative efficiency. Our education suite transforms traditional learning environments with digital tools that enhance student engagement, streamline administrative processes, and provide deep insights into academic performance and institutional effectiveness.",
-    benefits: ["Streamlined administrative processes reduce workload by 60%", "Enhanced student engagement through digital tools", "Comprehensive analytics improve academic outcomes", "Integrated communication platforms connect all stakeholders"]
+    title: t('industries.education.title'),
+    description: t('industries.education.description'),
+    capabilities: t('industries.education.capabilities'),
+    timeline: t('industries.education.timeline'),
+    clients: t('industries.education.clients'),
+    fullDescription: t('industries.education.fullDescription'),
+    benefits: t('industries.education.benefits')
   }, {
     icon: ShoppingCart,
-    title: "Retail",
-    description: "End-to-end retail management for omnichannel success and customer satisfaction.",
-    capabilities: ["Advanced Point of Sale (POS) Systems", "Omnichannel E-commerce Integration", "Customer Loyalty & Rewards Management", "Multi-location Inventory Synchronization", "Price Management & Dynamic Pricing", "Customer Analytics & Personalization", "Vendor & Supplier Management", "Return & Exchange Processing"],
-    timeline: "1,000+ Stores",
-    clients: "Retail Chains, Online Stores, Fashion Brands, Specialty Retailers",
-    fullDescription: "Complete retail management and e-commerce solutions designed to optimize sales, inventory, and customer experience across all channels. Our retail platform unifies online and offline operations, providing real-time visibility into customer behavior, inventory levels, and sales performance across all touchpoints for maximum profitability.",
-    benefits: ["Omnichannel integration increases sales by 40%", "Real-time inventory management reduces stockouts", "Customer analytics drive personalized experiences", "Automated processes improve operational efficiency"]
+    title: t('industries.retail.title'),
+    description: t('industries.retail.description'),
+    capabilities: t('industries.retail.capabilities'),
+    timeline: t('industries.retail.timeline'),
+    clients: t('industries.retail.clients'),
+    fullDescription: t('industries.retail.fullDescription'),
+    benefits: t('industries.retail.benefits')
   }, {
     icon: Factory,
-    title: "Manufacturing",
-    description: "Smart manufacturing solutions for Industry 4.0 transformation and operational excellence.",
-    capabilities: ["Production Planning & Capacity Optimization", "Quality Management & Compliance Systems", "Predictive Equipment Maintenance", "Supply Chain Optimization & Tracking", "Real-time Production Monitoring", "Lean Manufacturing Implementation", "Batch & Serial Number Traceability", "Cost Analysis & Profitability Tracking"],
-    timeline: "200+ Factories",
-    clients: "Manufacturers, Assembly Lines, Processing Plants, Industrial Equipment",
-    fullDescription: "End-to-end manufacturing and production management solutions that optimize efficiency, quality control, and supply chain operations. Our manufacturing suite enables digital transformation with IoT integration, predictive analytics, and automated workflows that reduce waste, improve quality, and maximize operational efficiency while ensuring compliance.",
-    benefits: ["Predictive maintenance reduces downtime by 45%", "Quality management systems ensure compliance", "Real-time monitoring optimizes production efficiency", "Supply chain integration reduces costs and delays"]
+    title: t('industries.manufacturing.title'),
+    description: t('industries.manufacturing.description'),
+    capabilities: t('industries.manufacturing.capabilities'),
+    timeline: t('industries.manufacturing.timeline'),
+    clients: t('industries.manufacturing.clients'),
+    fullDescription: t('industries.manufacturing.fullDescription'),
+    benefits: t('industries.manufacturing.benefits')
   }, {
     icon: Truck,
-    title: "Logistics",
-    description: "Intelligent logistics and supply chain optimization platform for seamless operations.",
-    capabilities: ["AI-Powered Route Optimization", "Fleet Management & Vehicle Tracking", "Warehouse Automation & Control", "Real-time Shipment & Delivery Tracking", "Load Planning & Optimization", "Driver Management & Performance Analytics", "Customer Portal & Communication", "Cost Analysis & Freight Audit"],
-    timeline: "300+ Companies",
-    clients: "Shipping Companies, 3PL Providers, Freight Forwarders, Distribution Centers",
-    fullDescription: "Advanced logistics and supply chain optimization tools that ensure timely delivery, cost efficiency, and complete visibility across operations. Our logistics platform leverages AI and machine learning to optimize routes, reduce costs, and provide real-time visibility throughout the entire supply chain ecosystem for maximum efficiency.",
-    benefits: ["AI-powered route optimization reduces fuel costs by 30%", "Real-time tracking improves customer satisfaction", "Automated load planning maximizes efficiency", "Comprehensive analytics drive continuous improvement"]
+    title: t('industries.logistics.title'),
+    description: t('industries.logistics.description'),
+    capabilities: t('industries.logistics.capabilities'),
+    timeline: t('industries.logistics.timeline'),
+    clients: t('industries.logistics.clients'),
+    fullDescription: t('industries.logistics.fullDescription'),
+    benefits: t('industries.logistics.benefits')
   }];
   const companySizes = [{
     icon: TrendingUp,
-    title: "Startups",
-    count: "50+",
-    description: "Growing businesses ready to scale",
-    details: "Flexible solutions that grow with your business"
+    title: t('industries.startups.title'),
+    count: t('industries.startups.count'),
+    description: t('industries.startups.description'),
+    details: t('industries.startups.details')
   }, {
     icon: Users,
-    title: "SMEs",
-    count: "500+",
-    description: "Established mid-market companies",
-    details: "Comprehensive features for complex operations"
+    title: t('industries.smes.title'),
+    count: t('industries.smes.count'),
+    description: t('industries.smes.description'),
+    details: t('industries.smes.details')
   }, {
     icon: Building,
-    title: "Enterprises",
-    count: "100+",
-    description: "Large organizations with complex needs",
-    details: "Enterprise-grade security and customization"
+    title: t('industries.enterprises.title'),
+    count: t('industries.enterprises.count'),
+    description: t('industries.enterprises.description'),
+    details: t('industries.enterprises.details')
   }];
   const headerBg = {
     backgroundImage: 'url("/Header-background.webp")',
@@ -102,9 +102,9 @@ const Industries = () => {
       }}>
           <div className="bg-white rounded-3xl p-12 border border-gray-200 shadow-sm">
             <div className="text-center mb-12">
-              <h3 className="text-2xl font-light text-gray-900 mb-4">Trusted by companies of all sizes</h3>
+              <h3 className="text-2xl font-light text-gray-900 mb-4">{t('industries.trusted')}</h3>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                From startups to enterprises, we scale with your business needs and provide tailored solutions for every growth stage
+                {t('industries.trusted.subtitle')}
               </p>
             </div>
             

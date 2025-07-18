@@ -90,6 +90,38 @@ const translations = {
     'industries.logistics.title': 'Logistics',
     'industries.logistics.description': 'Intelligent logistics and supply chain optimization platform for seamless operations.',
     'industries.logistics.timeline': '300+ Companies',
+    'industries.logistics.capabilities': ['AI-Powered Route Optimization', 'Fleet Management & Vehicle Tracking', 'Warehouse Automation & Control', 'Real-time Shipment & Delivery Tracking', 'Load Planning & Optimization', 'Driver Management & Performance Analytics', 'Customer Portal & Communication', 'Cost Analysis & Freight Audit'],
+    'industries.logistics.clients': 'Shipping Companies, 3PL Providers, Freight Forwarders, Distribution Centers',
+    'industries.logistics.fullDescription': 'Advanced logistics and supply chain optimization tools that ensure timely delivery, cost efficiency, and complete visibility across operations. Our logistics platform leverages AI and machine learning to optimize routes, reduce costs, and provide real-time visibility throughout the entire supply chain ecosystem for maximum efficiency.',
+    'industries.logistics.benefits': ['AI-powered route optimization reduces fuel costs by 30%', 'Real-time tracking improves customer satisfaction', 'Automated load planning maximizes efficiency', 'Comprehensive analytics drive continuous improvement'],
+    
+    'industries.education.capabilities': ['Student Information Management System', 'Advanced Learning Management Platform', 'Financial Aid & Scholarship Processing', 'Academic Performance Analytics & Reporting', 'Online Course Management & Delivery', 'Parent-Teacher Communication Portal', 'Library & Resource Management', 'Examination & Assessment Tools'],
+    'industries.education.clients': 'Schools, Universities, Training Centers, Online Learning Platforms',
+    'industries.education.fullDescription': 'Comprehensive solutions for educational institutions, from student management to curriculum planning and administrative efficiency. Our education suite transforms traditional learning environments with digital tools that enhance student engagement, streamline administrative processes, and provide deep insights into academic performance and institutional effectiveness.',
+    'industries.education.benefits': ['Streamlined administrative processes reduce workload by 60%', 'Enhanced student engagement through digital tools', 'Comprehensive analytics improve academic outcomes', 'Integrated communication platforms connect all stakeholders'],
+    
+    'industries.retail.capabilities': ['Advanced Point of Sale (POS) Systems', 'Omnichannel E-commerce Integration', 'Customer Loyalty & Rewards Management', 'Multi-location Inventory Synchronization', 'Price Management & Dynamic Pricing', 'Customer Analytics & Personalization', 'Vendor & Supplier Management', 'Return & Exchange Processing'],
+    'industries.retail.clients': 'Retail Chains, Online Stores, Fashion Brands, Specialty Retailers',
+    'industries.retail.fullDescription': 'Complete retail management and e-commerce solutions designed to optimize sales, inventory, and customer experience across all channels. Our retail platform unifies online and offline operations, providing real-time visibility into customer behavior, inventory levels, and sales performance across all touchpoints for maximum profitability.',
+    'industries.retail.benefits': ['Omnichannel integration increases sales by 40%', 'Real-time inventory management reduces stockouts', 'Customer analytics drive personalized experiences', 'Automated processes improve operational efficiency'],
+    
+    'industries.manufacturing.capabilities': ['Production Planning & Capacity Optimization', 'Quality Management & Compliance Systems', 'Predictive Equipment Maintenance', 'Supply Chain Optimization & Tracking', 'Real-time Production Monitoring', 'Lean Manufacturing Implementation', 'Batch & Serial Number Traceability', 'Cost Analysis & Profitability Tracking'],
+    'industries.manufacturing.clients': 'Manufacturers, Assembly Lines, Processing Plants, Industrial Equipment',
+    'industries.manufacturing.fullDescription': 'End-to-end manufacturing and production management solutions that optimize efficiency, quality control, and supply chain operations. Our manufacturing suite enables digital transformation with IoT integration, predictive analytics, and automated workflows that reduce waste, improve quality, and maximize operational efficiency while ensuring compliance.',
+    'industries.manufacturing.benefits': ['Predictive maintenance reduces downtime by 45%', 'Quality management systems ensure compliance', 'Real-time monitoring optimizes production efficiency', 'Supply chain integration reduces costs and delays'],
+    
+    'industries.startups.title': 'Startups',
+    'industries.startups.count': '50+',
+    'industries.startups.description': 'Growing businesses ready to scale',
+    'industries.startups.details': 'Flexible solutions that grow with your business',
+    'industries.smes.title': 'SMEs',
+    'industries.smes.count': '500+',
+    'industries.smes.description': 'Established mid-market companies',
+    'industries.smes.details': 'Comprehensive features for complex operations',
+    'industries.enterprises.title': 'Enterprises',
+    'industries.enterprises.count': '100+',
+    'industries.enterprises.description': 'Large organizations with complex needs',
+    'industries.enterprises.details': 'Enterprise-grade security and customization',
     
     // CTA Section
     'cta.chip': 'Limited Availability',
@@ -136,6 +168,57 @@ const translations = {
     'erp.subtitle': 'Integrated modules designed to optimize your business efficiency and automate operations',
     'erp.integration': 'Module Integration',
     'erp.integration.subtitle': 'Unified system ensuring seamless data flow across all modules',
+    
+    // ERP Modules
+    'erp.accounting.title': 'Accounting & Finance',
+    'erp.accounting.description': 'Complete financial management with real-time insights.',
+    'erp.accounting.timeline': 'Full Integration',
+    'erp.accounting.capabilities': ['Real-time Financial Reporting & Analytics', 'Multi-currency Support & Conversion', 'Tax Compliance & Regulatory Reporting', 'Automated Accounts Payable/Receivable', 'Budget Planning & Forecasting', 'Cash Flow Management & Optimization', 'Financial Audit Trail & Controls', 'Integration with Banking & Payment Systems'],
+    'erp.accounting.fullDescription': 'Complete financial management and reporting system with real-time insights and automated processes for comprehensive business control. Our accounting suite provides complete visibility into your financial operations with automated workflows, intelligent reporting, and seamless integration with banking and payment systems.',
+    
+    'erp.hr.title': 'Human Resources',
+    'erp.hr.description': 'End-to-end HR management for the complete employee lifecycle.',
+    'erp.hr.timeline': 'Complete HR Suite',
+    'erp.hr.capabilities': ['Employee Self-service Portal & Mobile App', 'Automated Payroll & Tax Calculations', 'Performance Management & Goal Tracking', 'Time & Attendance with Biometric Integration', 'Recruitment & Applicant Tracking System', 'Employee Benefits & Leave Management', 'Training & Development Programs', 'HR Analytics & Workforce Planning'],
+    'erp.hr.fullDescription': 'Comprehensive HR management system covering the entire employee lifecycle from recruitment to retirement with advanced analytics. Our HR suite transforms people management with automated workflows, self-service capabilities, and data-driven insights that help you attract, retain, and develop top talent.',
+    
+    'erp.sales.title': 'Sales & CRM',
+    'erp.sales.description': 'AI-powered sales and customer relationship management.',
+    'erp.sales.timeline': 'Sales Optimization',
+    'erp.sales.capabilities': ['Lead Tracking & Opportunity Management', 'Advanced Sales Pipeline & Forecasting', 'Customer 360-degree View & Analytics', 'Automated Marketing Campaign Management', 'Quote & Proposal Generation', 'Customer Support & Ticket Management', 'Sales Team Performance Analytics', 'Mobile CRM & Field Sales Tools'],
+    'erp.sales.fullDescription': 'End-to-end sales and customer relationship management with AI-powered insights and automation for maximum conversion rates. Our CRM platform provides complete customer visibility, automated sales processes, and intelligent insights that help you close more deals and build stronger customer relationships.',
+    
+    'erp.inventory.title': 'Inventory Management',
+    'erp.inventory.description': 'Smart inventory optimization with real-time tracking.',
+    'erp.inventory.timeline': 'Smart Inventory',
+    'erp.inventory.capabilities': ['AI-powered Stock Optimization & Forecasting', 'Barcode & RFID Scanning Integration', 'Automated Reordering & Supplier Alerts', 'Multi-location & Multi-warehouse Tracking', 'Batch & Serial Number Management', 'Cycle Counting & Physical Inventory', 'Warehouse Layout & Pick Path Optimization', 'Supplier Performance & Vendor Management'],
+    'erp.inventory.fullDescription': 'Advanced inventory and warehouse management with real-time tracking and optimization capabilities for maximum efficiency. Our inventory system uses AI to predict demand, optimize stock levels, and automate reordering processes while providing complete visibility across all locations and warehouses.',
+    
+    'erp.manufacturing.title': 'Manufacturing',
+    'erp.manufacturing.description': 'Intelligent production management and quality control.',
+    'erp.manufacturing.timeline': 'Production Excellence',
+    'erp.manufacturing.capabilities': ['Production Planning & Capacity Optimization', 'Quality Control Workflows & Compliance', 'Resource Allocation & Equipment Scheduling', 'Bill of Materials Management & Costing', 'Shop Floor Control & Work Order Management', 'Machine Integration & IoT Connectivity', 'Lean Manufacturing & Waste Reduction', 'Product Lifecycle & Engineering Change Management'],
+    'erp.manufacturing.fullDescription': 'Complete production management solution that optimizes manufacturing processes and quality control with real-time monitoring. Our manufacturing module enables digital transformation with IoT integration, automated workflows, and real-time production tracking that maximizes efficiency and ensures consistent quality.',
+    
+    'erp.assets.title': 'Asset Management',
+    'erp.assets.description': 'Predictive asset management and maintenance optimization.',
+    'erp.assets.timeline': 'Asset Optimization',
+    'erp.assets.capabilities': ['Preventive & Predictive Maintenance Scheduling', 'Asset Lifecycle Tracking & Depreciation', 'Work Order Management & Technician Dispatch', 'Equipment Performance & IoT Analytics', 'Spare Parts Inventory & Procurement', 'Compliance Management & Safety Tracking', 'Mobile Maintenance & Field Service', 'Asset ROI & Cost Analysis'],
+    'erp.assets.fullDescription': 'Comprehensive asset tracking and maintenance management to maximize equipment uptime and ROI with predictive analytics. Our asset management solution uses IoT sensors and machine learning to predict failures before they occur, optimize maintenance schedules, and ensure maximum equipment availability and performance.',
+    
+    // ERP Integration Stats
+    'erp.integration.stats.module.metric': '100%',
+    'erp.integration.stats.module.label': 'Module Integration',
+    'erp.integration.stats.module.desc': 'Seamless data flow across all modules',
+    'erp.integration.stats.realtime.metric': 'Real-time',
+    'erp.integration.stats.realtime.label': 'Data Updates',
+    'erp.integration.stats.realtime.desc': 'Instant synchronization everywhere',
+    'erp.integration.stats.database.metric': 'Single',
+    'erp.integration.stats.database.label': 'Database',
+    'erp.integration.stats.database.desc': 'Unified source of truth for all data',
+    'erp.integration.stats.workflows.metric': 'Custom',
+    'erp.integration.stats.workflows.label': 'Workflows',
+    'erp.integration.stats.workflows.desc': 'Tailored to your business processes',
     
     // Contact Section
     'contact.section': 'Contact Us',
@@ -289,6 +372,38 @@ const translations = {
     'industries.logistics.title': 'اللوجستيات',
     'industries.logistics.description': 'منصة لوجستيات ذكية وتحسين سلسلة التوريد للعمليات السلسة.',
     'industries.logistics.timeline': '+300 شركة',
+    'industries.logistics.capabilities': ['تحسين المسارات المدعوم بالذكاء الاصطناعي', 'إدارة الأسطول وتتبع المركبات', 'أتمتة المستودعات والتحكم', 'تتبع الشحنات والتسليم في الوقت الفعلي', 'تخطيط وتحسين الأحمال', 'إدارة السائقين وتحليلات الأداء', 'بوابة العملاء والتواصل', 'تحليل التكلفة ومراجعة الشحن'],
+    'industries.logistics.clients': 'شركات الشحن، مقدمي الخدمات اللوجستية، وسطاء الشحن، مراكز التوزيع',
+    'industries.logistics.fullDescription': 'أدوات لوجستيات متقدمة وتحسين سلسلة التوريد تضمن التسليم في الوقت المحدد وكفاءة التكلفة والرؤية الكاملة عبر العمليات. تستفيد منصة اللوجستيات الخاصة بنا من الذكاء الاصطناعي والتعلم الآلي لتحسين المسارات وتقليل التكاليف وتوفير الرؤية في الوقت الفعلي في جميع أنحاء نظام سلسلة التوريد بأكمله لأقصى قدر من الكفاءة.',
+    'industries.logistics.benefits': ['تحسين المسارات المدعوم بالذكاء الاصطناعي يقلل تكاليف الوقود بنسبة 30%', 'التتبع في الوقت الفعلي يحسن رضا العملاء', 'تخطيط الأحمال الآلي يزيد من الكفاءة', 'التحليلات الشاملة تدفع التحسين المستمر'],
+    
+    'industries.education.capabilities': ['نظام إدارة معلومات الطلاب', 'منصة إدارة التعلم المتقدمة', 'معالجة المساعدات المالية والمنح الدراسية', 'تحليلات الأداء الأكاديمي والتقارير', 'إدارة وتسليم الدورات عبر الإنترنت', 'بوابة التواصل بين أولياء الأمور والمعلمين', 'إدارة المكتبة والموارد', 'أدوات الامتحانات والتقييم'],
+    'industries.education.clients': 'المدارس، الجامعات، مراكز التدريب، منصات التعلم عبر الإنترنت',
+    'industries.education.fullDescription': 'حلول شاملة للمؤسسات التعليمية، من إدارة الطلاب إلى تخطيط المناهج والكفاءة الإدارية. تحول مجموعة التعليم الخاصة بنا بيئات التعلم التقليدية بأدوات رقمية تعزز مشاركة الطلاب وتبسط العمليات الإدارية وتوفر رؤى عميقة في الأداء الأكاديمي والفعالية المؤسسية.',
+    'industries.education.benefits': ['العمليات الإدارية المبسطة تقلل عبء العمل بنسبة 60%', 'تعزيز مشاركة الطلاب من خلال الأدوات الرقمية', 'التحليلات الشاملة تحسن النتائج الأكاديمية', 'منصات التواصل المتكاملة تربط جميع أصحاب المصلحة'],
+    
+    'industries.retail.capabilities': ['أنظمة نقاط البيع المتقدمة', 'تكامل التجارة الإلكترونية متعددة القنوات', 'إدارة برامج الولاء والمكافآت', 'مزامنة المخزون متعددة المواقع', 'إدارة الأسعار والتسعير الديناميكي', 'تحليلات العملاء والتخصيص', 'إدارة البائعين والموردين', 'معالجة الإرجاع والاستبدال'],
+    'industries.retail.clients': 'سلاسل التجزئة، المتاجر الإلكترونية، العلامات التجارية للأزياء، تجار التجزئة المتخصصون',
+    'industries.retail.fullDescription': 'إدارة التجزئة الكاملة وحلول التجارة الإلكترونية المصممة لتحسين المبيعات والمخزون وتجربة العملاء عبر جميع القنوات. توحد منصة التجزئة الخاصة بنا العمليات عبر الإنترنت وغير المتصلة، مما يوفر رؤية في الوقت الفعلي لسلوك العملاء ومستويات المخزون وأداء المبيعات عبر جميع نقاط الاتصال لأقصى ربحية.',
+    'industries.retail.benefits': ['تكامل متعدد القنوات يزيد المبيعات بنسبة 40%', 'إدارة المخزون في الوقت الفعلي تقلل نفاد المخزون', 'تحليلات العملاء تدفع التجارب الشخصية', 'العمليات الآلية تحسن الكفاءة التشغيلية'],
+    
+    'industries.manufacturing.capabilities': ['تخطيط الإنتاج وتحسين السعة', 'أنظمة إدارة الجودة والامتثال', 'صيانة المعدات التنبؤية', 'تحسين وتتبع سلسلة التوريد', 'مراقبة الإنتاج في الوقت الفعلي', 'تنفيذ التصنيع الرشيق', 'تتبع الدفعات والأرقام التسلسلية', 'تحليل التكلفة وتتبع الربحية'],
+    'industries.manufacturing.clients': 'المصنعون، خطوط التجميع، مصانع المعالجة، المعدات الصناعية',
+    'industries.manufacturing.fullDescription': 'حلول التصنيع وإدارة الإنتاج الشاملة التي تحسن الكفاءة ومراقبة الجودة وعمليات سلسلة التوريد. تمكن مجموعة التصنيع الخاصة بنا التحول الرقمي مع تكامل إنترنت الأشياء والتحليلات التنبؤية وسير العمل الآلي الذي يقلل من النفايات ويحسن الجودة ويزيد من الكفاءة التشغيلية مع ضمان الامتثال.',
+    'industries.manufacturing.benefits': ['الصيانة التنبؤية تقلل وقت التوقف بنسبة 45%', 'أنظمة إدارة الجودة تضمن الامتثال', 'المراقبة في الوقت الفعلي تحسن كفاءة الإنتاج', 'تكامل سلسلة التوريد يقلل التكاليف والتأخيرات'],
+    
+    'industries.startups.title': 'الشركات الناشئة',
+    'industries.startups.count': '+50',
+    'industries.startups.description': 'الأعمال النامية المستعدة للتوسع',
+    'industries.startups.details': 'حلول مرنة تنمو مع أعمالك',
+    'industries.smes.title': 'الشركات الصغيرة والمتوسطة',
+    'industries.smes.count': '+500',
+    'industries.smes.description': 'الشركات الراسخة في السوق المتوسط',
+    'industries.smes.details': 'ميزات شاملة للعمليات المعقدة',
+    'industries.enterprises.title': 'المؤسسات الكبيرة',
+    'industries.enterprises.count': '+100',
+    'industries.enterprises.description': 'المنظمات الكبيرة ذات الاحتياجات المعقدة',
+    'industries.enterprises.details': 'أمان وتخصيص على مستوى المؤسسة',
     
     // CTA Section
     'cta.chip': 'توفر محدود',
@@ -335,6 +450,57 @@ const translations = {
     'erp.subtitle': 'وحدات متكاملة مصممة لتحسين كفاءة أعمالك وأتمتة العمليات',
     'erp.integration': 'تكامل الوحدات',
     'erp.integration.subtitle': 'نظام موحد يضمن تدفق البيانات بسلاسة عبر جميع الوحدات',
+    
+    // ERP Modules
+    'erp.accounting.title': 'المحاسبة والمالية',
+    'erp.accounting.description': 'إدارة مالية شاملة مع رؤى في الوقت الفعلي.',
+    'erp.accounting.timeline': 'التكامل الكامل',
+    'erp.accounting.capabilities': ['تقارير مالية وتحليلات في الوقت الفعلي', 'دعم العملات المتعددة والتحويل', 'الامتثال الضريبي والتقارير التنظيمية', 'حسابات الدفع/الاستلام الآلية', 'تخطيط الميزانية والتنبؤ', 'إدارة وتحسين التدفق النقدي', 'مسار المراجعة المالية والضوابط', 'التكامل مع أنظمة المصرفية والدفع'],
+    'erp.accounting.fullDescription': 'نظام إدارة مالية وتقارير شامل مع رؤى في الوقت الفعلي وعمليات آلية للسيطرة الشاملة على الأعمال. توفر مجموعة المحاسبة الخاصة بنا رؤية كاملة لعملياتك المالية مع سير عمل آلي وتقارير ذكية وتكامل سلس مع أنظمة المصرفية والدفع.',
+    
+    'erp.hr.title': 'الموارد البشرية',
+    'erp.hr.description': 'إدارة الموارد البشرية الشاملة لدورة حياة الموظف الكاملة.',
+    'erp.hr.timeline': 'مجموعة الموارد البشرية الكاملة',
+    'erp.hr.capabilities': ['بوابة الخدمة الذاتية للموظفين وتطبيق الهاتف المحمول', 'حسابات الرواتب والضرائب الآلية', 'إدارة الأداء وتتبع الأهداف', 'الوقت والحضور مع التكامل البيومتري', 'نظام التوظيف وتتبع المتقدمين', 'مزايا الموظفين وإدارة الإجازات', 'برامج التدريب والتطوير', 'تحليلات الموارد البشرية وتخطيط القوى العاملة'],
+    'erp.hr.fullDescription': 'نظام إدارة الموارد البشرية الشامل الذي يغطي دورة حياة الموظف بأكملها من التوظيف إلى التقاعد مع تحليلات متقدمة. تحول مجموعة الموارد البشرية الخاصة بنا إدارة الأشخاص بسير عمل آلي وقدرات الخدمة الذاتية ورؤى قائمة على البيانات تساعدك في جذب واستبقاء وتطوير المواهب العليا.',
+    
+    'erp.sales.title': 'المبيعات وإدارة علاقات العملاء',
+    'erp.sales.description': 'مبيعات وإدارة علاقات العملاء المدعومة بالذكاء الاصطناعي.',
+    'erp.sales.timeline': 'تحسين المبيعات',
+    'erp.sales.capabilities': ['تتبع العملاء المحتملين وإدارة الفرص', 'خط أنابيب المبيعات المتقدم والتنبؤ', 'رؤية شاملة للعملاء 360 درجة والتحليلات', 'إدارة حملات التسويق الآلية', 'إنشاء عروض الأسعار والاقتراحات', 'دعم العملاء وإدارة التذاكر', 'تحليلات أداء فريق المبيعات', 'إدارة علاقات العملاء المحمولة وأدوات المبيعات الميدانية'],
+    'erp.sales.fullDescription': 'إدارة المبيعات وعلاقات العملاء الشاملة مع رؤى مدعومة بالذكاء الاصطناعي وأتمتة لأقصى معدلات التحويل. توفر منصة إدارة علاقات العملاء الخاصة بنا رؤية كاملة للعملاء وعمليات مبيعات آلية ورؤى ذكية تساعدك في إغلاق المزيد من الصفقات وبناء علاقات أقوى مع العملاء.',
+    
+    'erp.inventory.title': 'إدارة المخزون',
+    'erp.inventory.description': 'تحسين المخزون الذكي مع التتبع في الوقت الفعلي.',
+    'erp.inventory.timeline': 'المخزون الذكي',
+    'erp.inventory.capabilities': ['تحسين المخزون والتنبؤ المدعوم بالذكاء الاصطناعي', 'تكامل مسح الباركود وRFID', 'إعادة الطلب الآلي وتنبيهات المورد', 'تتبع متعدد المواقع والمستودعات', 'إدارة الدفعات والأرقام التسلسلية', 'العد الدوري والجرد المادي', 'تخطيط المستودع وتحسين مسار الانتقاء', 'أداء المورد وإدارة البائعين'],
+    'erp.inventory.fullDescription': 'إدارة المخزون والمستودعات المتقدمة مع التتبع في الوقت الفعلي وقدرات التحسين لأقصى قدر من الكفاءة. يستخدم نظام المخزون الخاص بنا الذكاء الاصطناعي للتنبؤ بالطلب وتحسين مستويات المخزون وأتمتة عمليات إعادة الطلب مع توفير رؤية كاملة عبر جميع المواقع والمستودعات.',
+    
+    'erp.manufacturing.title': 'التصنيع',
+    'erp.manufacturing.description': 'إدارة الإنتاج الذكية ومراقبة الجودة.',
+    'erp.manufacturing.timeline': 'تميز الإنتاج',
+    'erp.manufacturing.capabilities': ['تخطيط الإنتاج وتحسين السعة', 'سير عمل مراقبة الجودة والامتثال', 'تخصيص الموارد وجدولة المعدات', 'إدارة قائمة المواد والتكاليف', 'التحكم في أرضية المصنع وإدارة أوامر العمل', 'تكامل الآلات واتصال إنترنت الأشياء', 'التصنيع الرشيق وتقليل النفايات', 'دورة حياة المنتج وإدارة تغيير الهندسة'],
+    'erp.manufacturing.fullDescription': 'حل إدارة الإنتاج الكامل الذي يحسن عمليات التصنيع ومراقبة الجودة مع المراقبة في الوقت الفعلي. تمكن وحدة التصنيع الخاصة بنا التحول الرقمي مع تكامل إنترنت الأشياء وسير العمل الآلي وتتبع الإنتاج في الوقت الفعلي الذي يزيد من الكفاءة ويضمن الجودة المتسقة.',
+    
+    'erp.assets.title': 'إدارة الأصول',
+    'erp.assets.description': 'إدارة الأصول التنبؤية وتحسين الصيانة.',
+    'erp.assets.timeline': 'تحسين الأصول',
+    'erp.assets.capabilities': ['جدولة الصيانة الوقائية والتنبؤية', 'تتبع دورة حياة الأصول والإهلاك', 'إدارة أوامر العمل وإرسال الفنيين', 'أداء المعدات وتحليلات إنترنت الأشياء', 'مخزون قطع الغيار والمشتريات', 'إدارة الامتثال وتتبع السلامة', 'الصيانة المحمولة وخدمة المجال', 'عائد الاستثمار للأصول وتحليل التكلفة'],
+    'erp.assets.fullDescription': 'تتبع الأصول الشامل وإدارة الصيانة لزيادة وقت تشغيل المعدات وعائد الاستثمار مع التحليلات التنبؤية. يستخدم حل إدارة الأصول الخاص بنا مستشعرات إنترنت الأشياء والتعلم الآلي للتنبؤ بالأعطال قبل حدوثها وتحسين جداول الصيانة وضمان أقصى توفر وأداء للمعدات.',
+    
+    // ERP Integration Stats
+    'erp.integration.stats.module.metric': '100%',
+    'erp.integration.stats.module.label': 'تكامل الوحدات',
+    'erp.integration.stats.module.desc': 'تدفق البيانات بسلاسة عبر جميع الوحدات',
+    'erp.integration.stats.realtime.metric': 'الوقت الفعلي',
+    'erp.integration.stats.realtime.label': 'تحديثات البيانات',
+    'erp.integration.stats.realtime.desc': 'المزامنة الفورية في كل مكان',
+    'erp.integration.stats.database.metric': 'موحد',
+    'erp.integration.stats.database.label': 'قاعدة البيانات',
+    'erp.integration.stats.database.desc': 'مصدر الحقيقة الموحد لجميع البيانات',
+    'erp.integration.stats.workflows.metric': 'مخصص',
+    'erp.integration.stats.workflows.label': 'سير العمل',
+    'erp.integration.stats.workflows.desc': 'مصمم حسب عمليات أعمالك',
     
     // Contact Section
     'contact.section': 'تواصل معنا',
