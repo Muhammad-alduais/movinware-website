@@ -151,6 +151,34 @@ const translations = {
     'contact.form.send': 'Send Message',
     'contact.info.title': 'Contact Information',
     
+    // Services Section
+    'services.section': 'Professional Services',
+    'services.title': 'Expert services for\nsuccessful implementation',
+    'services.subtitle': 'Our certified professionals ensure your ERP implementation is delivered on time, within budget, and exceeds expectations',
+    'services.methodology': 'Our Service Methodology',
+    'services.methodology.subtitle': 'A structured approach that ensures quality delivery and client satisfaction at every stage',
+    
+
+    
+    // Testimonials Section
+    'testimonials.section': 'Testimonials',
+    'testimonials.title': 'What others say',
+    
+    // Implementation Process
+    'implementation.section': 'Implementation Process',
+    'implementation.title': 'From concept to\ngo-live in 11 weeks',
+    'implementation.subtitle': 'Our proven methodology ensures successful implementation with minimal disruption to your business',
+    'implementation.timeline': 'Implementation Timeline',
+    'implementation.why_works': 'Why our process works',
+    'implementation.why_works.subtitle': 'Proven results from our implementation methodology',
+    
+    // Footer
+    'footer.description': 'AI-powered ERP solutions designed for modern businesses. Streamline operations, boost efficiency, and future-proof your business with intelligent automation.',
+    'footer.quick_links': 'Quick Links',
+    'footer.contact': 'Contact',
+    'footer.copyright': '© 2025 MovinWare. All rights reserved.',
+    'footer.built_by': 'Built entirely by Muhammad Al-Duais',
+    
     // Common
     'common.learn_more': 'Learn More',
     'common.explore': 'Explore module details',
@@ -301,6 +329,32 @@ const translations = {
     'contact.form.message': 'الرسالة',
     'contact.form.send': 'إرسال الرسالة',
     'contact.info.title': 'معلومات الاتصال',
+    
+    // Services Section
+    'services.section': 'الخدمات المهنية',
+    'services.title': 'خدمات خبراء\nلتنفيذ ناجح',
+    'services.subtitle': 'يضمن خبراؤنا المعتمدون تسليم تنفيذ نظام تخطيط الموارد في الوقت المحدد، ضمن الميزانية، ويتجاوز التوقعات',
+    'services.methodology': 'منهجية خدماتنا',
+    'services.methodology.subtitle': 'نهج منظم يضمن جودة التسليم ورضا العملاء في كل مرحلة',
+    
+    // Testimonials Section
+    'testimonials.section': 'الشهادات',
+    'testimonials.title': 'ما يقوله الآخرون',
+    
+    // Implementation Process
+    'implementation.section': 'عملية التنفيذ',
+    'implementation.title': 'من المفهوم إلى\nالتشغيل المباشر في 11 أسبوع',
+    'implementation.subtitle': 'منهجيتنا المثبتة تضمن تنفيذاً ناجحاً مع أقل قدر من التعطيل لأعمالك',
+    'implementation.timeline': 'الجدول الزمني للتنفيذ',
+    'implementation.why_works': 'لماذا تعمل عمليتنا',
+    'implementation.why_works.subtitle': 'نتائج مثبتة من منهجية التنفيذ الخاصة بنا',
+    
+    // Footer
+    'footer.description': 'حلول تخطيط موارد المؤسسات المدعومة بالذكاء الاصطناعي مصممة للأعمال الحديثة. قم بتبسيط العمليات وزيادة الكفاءة وضمان مستقبل أعمالك مع الأتمتة الذكية.',
+    'footer.quick_links': 'روابط سريعة',
+    'footer.contact': 'تواصل معنا',
+    'footer.copyright': '© 2025 MovinWare. جميع الحقوق محفوظة.',
+    'footer.built_by': 'تم بناؤه بالكامل بواسطة محمد الدعيس',
     
     // Common
     'common.learn_more': 'اعرف المزيد',

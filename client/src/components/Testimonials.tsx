@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { OptimizedBackground } from "./ui";
+import { useLanguage } from "../contexts/LanguageContext";
 interface TestimonialProps {
   content: string;
   author: string;
@@ -45,17 +46,18 @@ const TestimonialCard = ({
     </OptimizedBackground>;
 };
 const Testimonials = () => {
+  const { t } = useLanguage();
   const sectionRef = useRef<HTMLDivElement>(null);
   return <section className="py-12 bg-white relative" id="testimonials" ref={sectionRef}>
       <div className="section-container opacity-0 animate-on-scroll">
         <div className="flex items-center gap-4 mb-6">
           <div className="pulse-chip">
             
-            <span>Testimonials</span>
+            <span>{t('testimonials.section')}</span>
           </div>
         </div>
         
-        <h2 className="text-5xl font-display font-bold mb-12 text-left">What others say</h2>
+        <h2 className="text-5xl font-display font-bold mb-12 text-left">{t('testimonials.title')}</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => <TestimonialCard key={index} content={testimonial.content} author={testimonial.author} role={testimonial.role} gradient={testimonial.gradient} backgroundImage={testimonial.backgroundImage} />)}

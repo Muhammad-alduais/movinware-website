@@ -1,6 +1,8 @@
 import React from "react";
 import { Search, Palette, Code, Rocket, TrendingUp, Clock, CheckCircle, Users } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
 const ImplementationProcess = () => {
+  const { t } = useLanguage();
   const phases = [{
     icon: Search,
     title: "Discovery & Assessment",
@@ -65,14 +67,18 @@ const ImplementationProcess = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
           <div className="section-header-badge animate-badge-float mb-8">
             
-            <span className="font-semibold">Implementation Process</span>
+            <span className="font-semibold">{t('implementation.section')}</span>
           </div>
           <h2 className="section-header-title animate-header-glow">
-            From concept to<br />
-            <span className="font-medium">go-live in 11 weeks</span>
+            {t('implementation.title').split('\n').map((line, index) => (
+              <span key={index}>
+                {line}
+                {index === 0 && <br />}
+              </span>
+            ))}
           </h2>
           <p className="section-header-subtitle">
-            Our proven methodology ensures successful implementation with minimal disruption to your business
+            {t('implementation.subtitle')}
           </p>
         </div>
       </div>

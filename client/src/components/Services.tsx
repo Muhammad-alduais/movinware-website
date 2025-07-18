@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { Settings, Building2, Brain, Palette, Database, Headphones } from "lucide-react";
 import DetailModal from "./DetailModal";
 import PreviewCard from "./PreviewCard";
+import { useLanguage } from "../contexts/LanguageContext";
 const Services = () => {
+  const { t } = useLanguage();
   const [selectedService, setSelectedService] = useState<any>(null);
   const services = [{
     icon: Settings,
@@ -82,14 +84,18 @@ const Services = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
           <div className="section-header-badge animate-badge-float mb-8">
             
-            <span className="font-semibold">Professional Services</span>
+            <span className="font-semibold">{t('services.section')}</span>
           </div>
           <h2 className="section-header-title animate-header-glow">
-            Expert services for<br />
-            <span className="font-medium">successful implementation</span>
+            {t('services.title').split('\n').map((line, index) => (
+              <span key={index}>
+                {line}
+                {index === 0 && <br />}
+              </span>
+            ))}
           </h2>
           <p className="section-header-subtitle">
-            Our certified professionals ensure your ERP implementation is delivered on time, within budget, and exceeds expectations
+            {t('services.subtitle')}
           </p>
         </div>
       </div>
@@ -104,9 +110,9 @@ const Services = () => {
       }}>
           <div className="bg-white rounded-3xl p-12 border border-gray-200 shadow-sm">
             <div className="text-center mb-12">
-              <h3 className="text-2xl font-light text-gray-900 mb-4">Our Service Methodology</h3>
+              <h3 className="text-2xl font-light text-gray-900 mb-4">{t('services.methodology')}</h3>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                A structured approach that ensures quality delivery and client satisfaction at every stage
+                {t('services.methodology.subtitle')}
               </p>
             </div>
             

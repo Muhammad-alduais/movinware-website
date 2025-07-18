@@ -76,14 +76,18 @@ const Industries = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
           <div className="section-header-badge animate-badge-float mb-8">
             
-            <span className="font-semibold">Industries</span>
+            <span className="font-semibold">{t('industries.section')}</span>
           </div>
           <h2 className="section-header-title animate-header-glow">
-            Tailored for<br />
-            <span className="font-medium">every sector</span>
+            {t('industries.title').split('\n').map((line, index) => (
+              <span key={index}>
+                {line}
+                {index === 0 && <br />}
+              </span>
+            ))}
           </h2>
           <p className="section-header-subtitle">
-            Industry-specific solutions designed to meet the unique challenges and requirements of your business sector
+            {t('industries.subtitle')}
           </p>
         </div>
       </div>
