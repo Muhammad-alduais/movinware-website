@@ -8,69 +8,53 @@ const Services = () => {
   const [selectedService, setSelectedService] = useState<any>(null);
   const services = [{
     icon: Settings,
-    title: "ERP Implementation",
-    description: "End-to-end implementation with proven methodologies and dedicated project management.",
-    capabilities: ["System Architecture Design & Planning", "Custom Development & Configuration", "Data Migration & Integration Services", "Comprehensive User Training Programs", "Go-Live Support & Optimization", "Performance Monitoring & Tuning", "Change Management & User Adoption", "Quality Assurance & Testing"],
-    timeline: "8-12 weeks",
-    fullDescription: "Comprehensive ERP implementation services that transform your business operations with minimal disruption. Our proven methodology ensures successful deployment with dedicated project management, custom development, and comprehensive training programs that drive user adoption and business value.",
-    benefits: ["85% faster implementation compared to traditional methods", "Dedicated project manager ensures timeline adherence", "Proven methodology with 98% success rate", "Comprehensive training drives user adoption"],
-    processSteps: [{
-      title: "Discovery & Planning",
-      description: "Analyze current processes and create implementation roadmap",
-      deliverables: ["Requirements Analysis", "Project Timeline", "Resource Planning"]
-    }, {
-      title: "System Configuration",
-      description: "Configure system according to business requirements",
-      deliverables: ["System Setup", "Custom Workflows", "Integration Points"]
-    }, {
-      title: "Data Migration",
-      description: "Secure transfer of existing data to new system",
-      deliverables: ["Data Mapping", "Migration Scripts", "Validation Reports"]
-    }, {
-      title: "Training & Go-Live",
-      description: "User training and system deployment",
-      deliverables: ["Training Materials", "User Manuals", "Go-Live Support"]
-    }]
+    title: t('services.erp.title'),
+    description: t('services.erp.description'),
+    capabilities: t('services.erp.capabilities'),
+    timeline: t('services.erp.timeline'),
+    fullDescription: t('services.erp.fullDescription'),
+    benefits: t('services.erp.benefits'),
+    processSteps: t('services.erp.processSteps')
   }, {
     icon: Building2,
-    title: "Industry Solutions",
-    description: "Specialized solutions tailored to your industry's unique requirements and compliance needs.",
-    capabilities: ["Healthcare Management Systems", "Educational Platform Solutions", "Manufacturing Process Optimization", "Retail & E-commerce Integration", "Logistics & Supply Chain Management", "Financial Services Compliance", "Real Estate Management Systems", "Hospitality & Tourism Solutions"],
-    timeline: "6-10 weeks",
-    fullDescription: "Industry-specific solutions designed to address unique sector challenges and compliance requirements. Our deep industry expertise ensures solutions are tailored to your specific business environment, regulatory needs, and operational workflows for maximum effectiveness.",
-    benefits: ["Industry-specific features reduce customization time", "Built-in compliance for regulatory requirements", "Proven solutions across multiple sectors", "Reduced implementation risk with tested frameworks"]
+    title: t('services.industry.title'),
+    description: t('services.industry.description'),
+    capabilities: t('services.industry.capabilities'),
+    timeline: t('services.industry.timeline'),
+    fullDescription: t('services.industry.fullDescription'),
+    benefits: t('services.industry.benefits')
   }, {
     icon: Brain,
-    title: "AI Integration",
-    description: "Advanced AI capabilities to automate processes and provide intelligent business insights.",
-    capabilities: ["Predictive Analytics Implementation", "Process Automation Development", "Document Processing & OCR", "Decision Support Systems", "Customer Behavior Analysis", "Fraud Detection & Prevention", "Intelligent Reporting Systems", "Machine Learning Model Development"],
-    timeline: "4-8 weeks",
-    fullDescription: "Transform your business with AI-powered automation and intelligent insights. Our AI integration services leverage machine learning, predictive analytics, and automation to optimize operations, reduce manual tasks, and provide actionable insights that drive business growth.",
-    benefits: ["Predictive analytics improve decision accuracy by 85%", "Process automation reduces manual tasks by 70%", "AI insights drive revenue growth and cost reduction", "Continuous learning adapts to business changes"]
+    title: t('services.ai.title'),
+    description: t('services.ai.description'),
+    capabilities: t('services.ai.capabilities'),
+    timeline: t('services.ai.timeline'),
+    fullDescription: t('services.ai.fullDescription'),
+    benefits: t('services.ai.benefits')
   }, {
     icon: Palette,
-    title: "UX Design & Localization",
-    description: "User-centered design with full localization support for MENA markets.",
-    capabilities: ["User Experience (UX) Design", "Right-to-Left (RTL) Interface Design", "Multi-language Platform Support", "Cultural Adaptation & Localization", "Accessibility Standards Compliance", "Mobile-First Design Approach", "Brand Integration & Customization", "Usability Testing & Optimization"],
-    timeline: "3-6 weeks",
-    fullDescription: "Create intuitive, culturally-appropriate user experiences with comprehensive localization for MENA markets. Our design services ensure your platform is not only visually appealing but also accessible, culturally relevant, and optimized for diverse user needs.",
-    benefits: ["Culturally-adapted interfaces improve user adoption", "RTL design ensures native Arabic experience", "Accessibility compliance reaches broader audiences", "Mobile-first approach maximizes device compatibility"]
+    title: t('services.ux.title'),
+    description: t('services.ux.description'),
+    capabilities: t('services.ux.capabilities'),
+    timeline: t('services.ux.timeline'),
+    fullDescription: t('services.ux.fullDescription'),
+    benefits: t('services.ux.benefits')
   }, {
     icon: Database,
-    title: "Data Migration & Integration",
-    description: "Secure, efficient data migration with seamless third-party system integrations.",
-    capabilities: ["Legacy System Data Migration", "API Development & Integration", "Real-time Data Synchronization", "Data Validation & Quality Assurance", "Third-party System Connectors", "Cloud Migration Services", "Database Optimization & Tuning", "Data Security & Compliance"],
-    timeline: "2-4 weeks",
-    fullDescription: "Ensure seamless data transition and system integration with our comprehensive migration and integration services. We handle complex data transformations, API integrations, and real-time synchronization to maintain business continuity throughout the transition.",
-    benefits: ["Zero data loss with validated migration processes", "Real-time synchronization maintains data consistency", "API integrations connect all business systems", "Security protocols protect sensitive information"]
+    title: t('services.data.title'),
+    description: t('services.data.description'),
+    capabilities: t('services.data.capabilities'),
+    timeline: t('services.data.timeline'),
+    fullDescription: t('services.data.fullDescription'),
+    benefits: t('services.data.benefits')
   }, {
     icon: Headphones,
-    title: "Support & Maintenance",
-    description: "Comprehensive support services ensuring optimal system performance and user satisfaction.",
-    capabilities: ["24/7 Technical Support Services", "System Performance Monitoring", "Regular Security Updates", "User Training & Onboarding", "Preventive Maintenance Programs", "Issue Resolution & Bug Fixes", "Feature Enhancement Development", "System Health Reporting"],
-    timeline: "Ongoing",
-    fullDescription: "Maintain optimal system performance with our comprehensive support and maintenance services. Our dedicated support team provides 24/7 assistance, proactive monitoring, regular updates, and continuous optimization to ensure your system delivers consistent business value.",
-    benefits: ["24/7 support ensures minimal business disruption", "Proactive monitoring prevents issues before they occur", "Regular updates maintain security and performance", "Ongoing training maximizes user productivity"]
+    title: t('services.support.title'),
+    description: t('services.support.description'),
+    capabilities: t('services.support.capabilities'),
+    timeline: t('services.support.timeline'),
+    fullDescription: t('services.support.fullDescription'),
+    benefits: t('services.support.benefits')
   }];
   const headerBg = {
     backgroundImage: 'url("/Header-background.webp")',
@@ -118,20 +102,20 @@ const Services = () => {
             
             <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-4 relative">
               {[{
-              step: "Consultation",
-              description: "Understanding your requirements"
+              step: t('services.methodology.steps.consultation'),
+              description: t('services.methodology.steps.consultation.desc')
             }, {
-              step: "Planning",
-              description: "Detailed project roadmap"
+              step: t('services.methodology.steps.planning'),
+              description: t('services.methodology.steps.planning.desc')
             }, {
-              step: "Execution",
-              description: "Professional implementation"
+              step: t('services.methodology.steps.execution'),
+              description: t('services.methodology.steps.execution.desc')
             }, {
-              step: "Delivery",
-              description: "Quality assurance & handover"
+              step: t('services.methodology.steps.delivery'),
+              description: t('services.methodology.steps.delivery.desc')
             }, {
-              step: "Support",
-              description: "Ongoing maintenance & optimization"
+              step: t('services.methodology.steps.support'),
+              description: t('services.methodology.steps.support.desc')
             }].map((process, index) => <div key={index} className="flex flex-col items-center text-center relative flex-1">
                   <div className="w-12 h-12 bg-pulse-500 rounded-full flex items-center justify-center text-white font-medium mb-4 text-sm relative z-10">
                     {index + 1}
@@ -149,17 +133,17 @@ const Services = () => {
       }}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[{
-            metric: "50+",
-            label: "Certified Professionals",
-            desc: "Expert consultants and developers"
+            metric: t('services.stats.professionals.metric'),
+            label: t('services.stats.professionals.label'),
+            desc: t('services.stats.professionals.desc')
           }, {
-            metric: "500+",
-            label: "Successful Projects",
-            desc: "Across various industries"
+            metric: t('services.stats.projects.metric'),
+            label: t('services.stats.projects.label'),
+            desc: t('services.stats.projects.desc')
           }, {
-            metric: "99%",
-            label: "Client Satisfaction",
-            desc: "Based on project completion surveys"
+            metric: t('services.stats.satisfaction.metric'),
+            label: t('services.stats.satisfaction.label'),
+            desc: t('services.stats.satisfaction.desc')
           }].map((stat, index) => <div key={index} className="text-center bg-white rounded-3xl p-8 border border-gray-200">
                 <div className="text-3xl font-light text-pulse-500 mb-2">{stat.metric}</div>
                 <div className="font-medium text-gray-900 mb-1">{stat.label}</div>

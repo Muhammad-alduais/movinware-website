@@ -247,6 +247,94 @@ const translations = {
     'services.methodology': 'Our Service Methodology',
     'services.methodology.subtitle': 'A structured approach that ensures quality delivery and client satisfaction at every stage',
     
+    // Service Types
+    'services.erp.title': 'ERP Implementation',
+    'services.erp.description': 'End-to-end implementation with proven methodologies and dedicated project management.',
+    'services.erp.timeline': '8-12 weeks',
+    'services.erp.capabilities': ['System Architecture Design & Planning', 'Custom Development & Configuration', 'Data Migration & Integration Services', 'Comprehensive User Training Programs', 'Go-Live Support & Optimization', 'Performance Monitoring & Tuning', 'Change Management & User Adoption', 'Quality Assurance & Testing'],
+    'services.erp.fullDescription': 'Comprehensive ERP implementation services that transform your business operations with minimal disruption. Our proven methodology ensures successful deployment with dedicated project management, custom development, and comprehensive training programs that drive user adoption and business value.',
+    'services.erp.benefits': ['85% faster implementation compared to traditional methods', 'Dedicated project manager ensures timeline adherence', 'Proven methodology with 98% success rate', 'Comprehensive training drives user adoption'],
+    'services.erp.processSteps': [
+      {
+        'title': 'Discovery & Planning',
+        'description': 'Analyze current processes and create implementation roadmap',
+        'deliverables': ['Requirements Analysis', 'Project Timeline', 'Resource Planning']
+      },
+      {
+        'title': 'System Configuration',
+        'description': 'Configure system according to business requirements',
+        'deliverables': ['System Setup', 'Custom Workflows', 'Integration Points']
+      },
+      {
+        'title': 'Data Migration',
+        'description': 'Secure transfer of existing data to new system',
+        'deliverables': ['Data Mapping', 'Migration Scripts', 'Validation Reports']
+      },
+      {
+        'title': 'Training & Go-Live',
+        'description': 'User training and system deployment',
+        'deliverables': ['Training Materials', 'User Manuals', 'Go-Live Support']
+      }
+    ],
+    
+    'services.industry.title': 'Industry Solutions',
+    'services.industry.description': 'Specialized solutions tailored to your industry\'s unique requirements and compliance needs.',
+    'services.industry.timeline': '6-10 weeks',
+    'services.industry.capabilities': ['Healthcare Management Systems', 'Educational Platform Solutions', 'Manufacturing Process Optimization', 'Retail & E-commerce Integration', 'Logistics & Supply Chain Management', 'Financial Services Compliance', 'Real Estate Management Systems', 'Hospitality & Tourism Solutions'],
+    'services.industry.fullDescription': 'Industry-specific solutions designed to address unique sector challenges and compliance requirements. Our deep industry expertise ensures solutions are tailored to your specific business environment, regulatory needs, and operational workflows for maximum effectiveness.',
+    'services.industry.benefits': ['Industry-specific features reduce customization time', 'Built-in compliance for regulatory requirements', 'Proven solutions across multiple sectors', 'Reduced implementation risk with tested frameworks'],
+    
+    'services.ai.title': 'AI Integration',
+    'services.ai.description': 'Advanced AI capabilities to automate processes and provide intelligent business insights.',
+    'services.ai.timeline': '4-8 weeks',
+    'services.ai.capabilities': ['Predictive Analytics Implementation', 'Process Automation Development', 'Document Processing & OCR', 'Decision Support Systems', 'Customer Behavior Analysis', 'Fraud Detection & Prevention', 'Intelligent Reporting Systems', 'Machine Learning Model Development'],
+    'services.ai.fullDescription': 'Transform your business with AI-powered automation and intelligent insights. Our AI integration services leverage machine learning, predictive analytics, and automation to optimize operations, reduce manual tasks, and provide actionable insights that drive business growth.',
+    'services.ai.benefits': ['Predictive analytics improve decision accuracy by 85%', 'Process automation reduces manual tasks by 70%', 'AI insights drive revenue growth and cost reduction', 'Continuous learning adapts to business changes'],
+    
+    'services.ux.title': 'UX Design & Localization',
+    'services.ux.description': 'User-centered design with full localization support for MENA markets.',
+    'services.ux.timeline': '3-6 weeks',
+    'services.ux.capabilities': ['User Experience (UX) Design', 'Right-to-Left (RTL) Interface Design', 'Multi-language Platform Support', 'Cultural Adaptation & Localization', 'Accessibility Standards Compliance', 'Mobile-First Design Approach', 'Brand Integration & Customization', 'Usability Testing & Optimization'],
+    'services.ux.fullDescription': 'Create intuitive, culturally-appropriate user experiences with comprehensive localization for MENA markets. Our design services ensure your platform is not only visually appealing but also accessible, culturally relevant, and optimized for diverse user needs.',
+    'services.ux.benefits': ['Culturally-adapted interfaces improve user adoption', 'RTL design ensures native Arabic experience', 'Accessibility compliance reaches broader audiences', 'Mobile-first approach maximizes device compatibility'],
+    
+    'services.data.title': 'Data Migration & Integration',
+    'services.data.description': 'Secure, efficient data migration with seamless third-party system integrations.',
+    'services.data.timeline': '2-4 weeks',
+    'services.data.capabilities': ['Legacy System Data Migration', 'API Development & Integration', 'Real-time Data Synchronization', 'Data Validation & Quality Assurance', 'Third-party System Connectors', 'Cloud Migration Services', 'Database Optimization & Tuning', 'Data Security & Compliance'],
+    'services.data.fullDescription': 'Ensure seamless data transition and system integration with our comprehensive migration and integration services. We handle complex data transformations, API integrations, and real-time synchronization to maintain business continuity throughout the transition.',
+    'services.data.benefits': ['Zero data loss with validated migration processes', 'Real-time synchronization maintains data consistency', 'API integrations connect all business systems', 'Security protocols protect sensitive information'],
+    
+    'services.support.title': 'Support & Maintenance',
+    'services.support.description': 'Comprehensive support services ensuring optimal system performance and user satisfaction.',
+    'services.support.timeline': 'Ongoing',
+    'services.support.capabilities': ['24/7 Technical Support Services', 'System Performance Monitoring', 'Regular Security Updates', 'User Training & Onboarding', 'Preventive Maintenance Programs', 'Issue Resolution & Bug Fixes', 'Feature Enhancement Development', 'System Health Reporting'],
+    'services.support.fullDescription': 'Maintain optimal system performance with our comprehensive support and maintenance services. Our dedicated support team provides 24/7 assistance, proactive monitoring, regular updates, and continuous optimization to ensure your system delivers consistent business value.',
+    'services.support.benefits': ['24/7 support ensures minimal business disruption', 'Proactive monitoring prevents issues before they occur', 'Regular updates maintain security and performance', 'Ongoing training maximizes user productivity'],
+    
+    // Methodology Steps
+    'services.methodology.steps.consultation': 'Consultation',
+    'services.methodology.steps.consultation.desc': 'Understanding your requirements',
+    'services.methodology.steps.planning': 'Planning',
+    'services.methodology.steps.planning.desc': 'Detailed project roadmap',
+    'services.methodology.steps.execution': 'Execution',
+    'services.methodology.steps.execution.desc': 'Professional implementation',
+    'services.methodology.steps.delivery': 'Delivery',
+    'services.methodology.steps.delivery.desc': 'Quality assurance & handover',
+    'services.methodology.steps.support': 'Support',
+    'services.methodology.steps.support.desc': 'Ongoing maintenance & optimization',
+    
+    // Statistics
+    'services.stats.professionals.metric': '50+',
+    'services.stats.professionals.label': 'Certified Professionals',
+    'services.stats.professionals.desc': 'Expert consultants and developers',
+    'services.stats.projects.metric': '500+',
+    'services.stats.projects.label': 'Successful Projects',
+    'services.stats.projects.desc': 'Across various industries',
+    'services.stats.satisfaction.metric': '99%',
+    'services.stats.satisfaction.label': 'Client Satisfaction',
+    'services.stats.satisfaction.desc': 'Based on project completion surveys',
+    
 
     
     // Testimonials Section
@@ -554,6 +642,105 @@ const translations = {
     'features.mobile_cloud': 'منصة الهاتف المحمول والسحابة',
     'features.anywhere_access': 'الوصول من أي مكان',
     'features.mobile_description': 'الوصول إلى بيانات أعمالك من أي مكان مع ضمان وقت تشغيل 99.9% وقدرات بدون اتصال.',
+    
+    // Services Section
+    'services.section': 'الخدمات المهنية',
+    'services.title': 'خدمات متخصصة للتنفيذ\nالناجح',
+    'services.subtitle': 'يضمن محترفونا المعتمدون تسليم تطبيق تخطيط موارد المؤسسات في الوقت المحدد وفي حدود الميزانية ويتجاوز التوقعات',
+    'services.methodology': 'منهجية خدماتنا',
+    'services.methodology.subtitle': 'نهج منظم يضمن جودة التسليم ورضا العملاء في كل مرحلة',
+    
+    // Service Types
+    'services.erp.title': 'تطبيق تخطيط موارد المؤسسات',
+    'services.erp.description': 'تطبيق شامل مع منهجيات مؤكدة وإدارة مشاريع مخصصة.',
+    'services.erp.timeline': '8-12 أسبوع',
+    'services.erp.capabilities': ['تصميم وتخطيط هيكل النظام', 'التطوير والتكوين المخصص', 'خدمات ترحيل البيانات والتكامل', 'برامج تدريب المستخدمين الشاملة', 'دعم الانطلاق والتحسين', 'مراقبة الأداء والضبط', 'إدارة التغيير وتبني المستخدمين', 'ضمان الجودة والاختبار'],
+    'services.erp.fullDescription': 'خدمات تطبيق تخطيط موارد المؤسسات الشاملة التي تحول عمليات أعمالك مع الحد الأدنى من التعطيل. تضمن منهجيتنا المؤكدة النشر الناجح مع إدارة مشاريع مخصصة وتطوير مخصص وبرامج تدريب شاملة تدفع تبني المستخدمين وقيمة الأعمال.',
+    'services.erp.benefits': ['تطبيق أسرع بنسبة 85% مقارنة بالطرق التقليدية', 'مدير مشروع مخصص يضمن الالتزام بالجدول الزمني', 'منهجية مؤكدة بمعدل نجاح 98%', 'التدريب الشامل يدفع تبني المستخدمين'],
+    'services.erp.processSteps': [
+      {
+        'title': 'الاستكشاف والتخطيط',
+        'description': 'تحليل العمليات الحالية وإنشاء خارطة طريق للتطبيق',
+        'deliverables': ['تحليل المتطلبات', 'الجدول الزمني للمشروع', 'تخطيط الموارد']
+      },
+      {
+        'title': 'تكوين النظام',
+        'description': 'تكوين النظام وفقاً لمتطلبات الأعمال',
+        'deliverables': ['إعداد النظام', 'سير العمل المخصص', 'نقاط التكامل']
+      },
+      {
+        'title': 'ترحيل البيانات',
+        'description': 'النقل الآمن للبيانات الموجودة إلى النظام الجديد',
+        'deliverables': ['تخطيط البيانات', 'سكريبت الترحيل', 'تقارير التحقق']
+      },
+      {
+        'title': 'التدريب والانطلاق',
+        'description': 'تدريب المستخدمين ونشر النظام',
+        'deliverables': ['مواد التدريب', 'دليل المستخدمين', 'دعم الانطلاق']
+      }
+    ],
+    
+    'services.industry.title': 'حلول الصناعة',
+    'services.industry.description': 'حلول متخصصة مصممة لمتطلبات صناعتك الفريدة واحتياجات الامتثال.',
+    'services.industry.timeline': '6-10 أسابيع',
+    'services.industry.capabilities': ['أنظمة إدارة الرعاية الصحية', 'حلول المنصات التعليمية', 'تحسين عمليات التصنيع', 'تكامل التجزئة والتجارة الإلكترونية', 'إدارة اللوجستيات وسلسلة التوريد', 'امتثال الخدمات المالية', 'أنظمة إدارة العقارات', 'حلول الضيافة والسياحة'],
+    'services.industry.fullDescription': 'حلول خاصة بالصناعة مصممة لمعالجة تحديات القطاع الفريدة ومتطلبات الامتثال. تضمن خبرتنا العميقة في الصناعة أن الحلول مصممة خصيصاً لبيئة أعمالك المحددة والاحتياجات التنظيمية وسير العمل التشغيلي لأقصى فعالية.',
+    'services.industry.benefits': ['الميزات الخاصة بالصناعة تقلل وقت التخصيص', 'امتثال مدمج للمتطلبات التنظيمية', 'حلول مؤكدة عبر قطاعات متعددة', 'تقليل مخاطر التطبيق مع إطارات عمل مختبرة'],
+    
+    'services.ai.title': 'تكامل الذكاء الاصطناعي',
+    'services.ai.description': 'قدرات ذكاء اصطناعي متقدمة لأتمتة العمليات وتوفير رؤى أعمال ذكية.',
+    'services.ai.timeline': '4-8 أسابيع',
+    'services.ai.capabilities': ['تطبيق التحليلات التنبؤية', 'تطوير أتمتة العمليات', 'معالجة المستندات والتعرف البصري على الرموز', 'أنظمة دعم القرارات', 'تحليل سلوك العملاء', 'اكتشاف الاحتيال والوقاية', 'أنظمة التقارير الذكية', 'تطوير نماذج التعلم الآلي'],
+    'services.ai.fullDescription': 'حول أعمالك بالأتمتة المدعومة بالذكاء الاصطناعي والرؤى الذكية. تستفيد خدمات تكامل الذكاء الاصطناعي لدينا من التعلم الآلي والتحليلات التنبؤية والأتمتة لتحسين العمليات وتقليل المهام اليدوية وتوفير رؤى قابلة للتنفيذ تدفع نمو الأعمال.',
+    'services.ai.benefits': ['التحليلات التنبؤية تحسن دقة القرارات بنسبة 85%', 'أتمتة العمليات تقلل المهام اليدوية بنسبة 70%', 'رؤى الذكاء الاصطناعي تدفع نمو الإيرادات وتقليل التكاليف', 'التعلم المستمر يتكيف مع تغيرات الأعمال'],
+    
+    'services.ux.title': 'تصميم تجربة المستخدم والتوطين',
+    'services.ux.description': 'تصميم يركز على المستخدم مع دعم التوطين الكامل لأسواق الشرق الأوسط وشمال أفريقيا.',
+    'services.ux.timeline': '3-6 أسابيع',
+    'services.ux.capabilities': ['تصميم تجربة المستخدم', 'تصميم واجهة من اليمين إلى اليسار', 'دعم المنصة متعددة اللغات', 'التكيف الثقافي والتوطين', 'امتثال معايير إمكانية الوصول', 'نهج التصميم المحمول أولاً', 'تكامل العلامة التجارية والتخصيص', 'اختبار وتحسين سهولة الاستخدام'],
+    'services.ux.fullDescription': 'إنشاء تجارب مستخدم بديهية ومناسبة ثقافياً مع التوطين الشامل لأسواق الشرق الأوسط وشمال أفريقيا. تضمن خدمات التصميم لدينا أن منصتك ليست جذابة بصرياً فحسب، بل أيضاً يمكن الوصول إليها وذات صلة ثقافية ومُحسنة لاحتياجات المستخدمين المتنوعة.',
+    'services.ux.benefits': ['الواجهات المكيفة ثقافياً تحسن تبني المستخدمين', 'تصميم من اليمين إلى اليسار يضمن تجربة عربية أصيلة', 'امتثال إمكانية الوصول يصل إلى جماهير أوسع', 'نهج المحمول أولاً يزيد من توافق الأجهزة'],
+    
+    'services.data.title': 'ترحيل البيانات والتكامل',
+    'services.data.description': 'ترحيل بيانات آمن وفعال مع تكامل أنظمة طرف ثالث سلس.',
+    'services.data.timeline': '2-4 أسابيع',
+    'services.data.capabilities': ['ترحيل بيانات الأنظمة القديمة', 'تطوير وتكامل واجهات برمجة التطبيقات', 'مزامنة البيانات في الوقت الفعلي', 'التحقق من صحة البيانات وضمان الجودة', 'موصلات أنظمة الطرف الثالث', 'خدمات الترحيل السحابية', 'تحسين وضبط قواعد البيانات', 'أمان البيانات والامتثال'],
+    'services.data.fullDescription': 'ضمان انتقال البيانات السلس وتكامل النظام مع خدمات الترحيل والتكامل الشاملة لدينا. نتعامل مع تحولات البيانات المعقدة وتكامل واجهات برمجة التطبيقات والمزامنة في الوقت الفعلي للحفاظ على استمرارية الأعمال طوال فترة الانتقال.',
+    'services.data.benefits': ['عدم فقدان البيانات مع عمليات ترحيل مُتحقق منها', 'المزامنة في الوقت الفعلي تحافظ على اتساق البيانات', 'تكامل واجهات برمجة التطبيقات يربط جميع أنظمة الأعمال', 'بروتوكولات الأمان تحمي المعلومات الحساسة'],
+    
+    'services.support.title': 'الدعم والصيانة',
+    'services.support.description': 'خدمات دعم شاملة تضمن الأداء الأمثل للنظام ورضا المستخدمين.',
+    'services.support.timeline': 'مستمر',
+    'services.support.capabilities': ['خدمات الدعم الفني على مدار الساعة طوال أيام الأسبوع', 'مراقبة أداء النظام', 'تحديثات الأمان المنتظمة', 'تدريب المستخدمين والإعداد', 'برامج الصيانة الوقائية', 'حل المشاكل وإصلاح الأخطاء', 'تطوير تحسينات الميزات', 'تقارير صحة النظام'],
+    'services.support.fullDescription': 'الحفاظ على الأداء الأمثل للنظام مع خدمات الدعم والصيانة الشاملة لدينا. يوفر فريق الدعم المخصص لدينا مساعدة على مدار الساعة طوال أيام الأسبوع ومراقبة استباقية وتحديثات منتظمة وتحسين مستمر لضمان تقديم نظامك قيمة أعمال متسقة.',
+    'services.support.benefits': ['الدعم على مدار الساعة طوال أيام الأسبوع يضمن الحد الأدنى من تعطيل الأعمال', 'المراقبة الاستباقية تمنع المشاكل قبل حدوثها', 'التحديثات المنتظمة تحافظ على الأمان والأداء', 'التدريب المستمر يزيد من إنتاجية المستخدمين'],
+    
+    // Methodology Steps
+    'services.methodology.steps.consultation': 'الاستشارة',
+    'services.methodology.steps.consultation.desc': 'فهم متطلباتك',
+    'services.methodology.steps.planning': 'التخطيط',
+    'services.methodology.steps.planning.desc': 'خارطة طريق مفصلة للمشروع',
+    'services.methodology.steps.execution': 'التنفيذ',
+    'services.methodology.steps.execution.desc': 'تطبيق مهني',
+    'services.methodology.steps.delivery': 'التسليم',
+    'services.methodology.steps.delivery.desc': 'ضمان الجودة والتسليم',
+    'services.methodology.steps.support': 'الدعم',
+    'services.methodology.steps.support.desc': 'الصيانة والتحسين المستمر',
+    
+    // Statistics
+    'services.stats.professionals.metric': '+50',
+    'services.stats.professionals.label': 'محترف معتمد',
+    'services.stats.professionals.desc': 'استشاريون ومطورون خبراء',
+    'services.stats.projects.metric': '+500',
+    'services.stats.projects.label': 'مشروع ناجح',
+    'services.stats.projects.desc': 'عبر صناعات متنوعة',
+    'services.stats.satisfaction.metric': '99%',
+    'services.stats.satisfaction.label': 'رضا العملاء',
+    'services.stats.satisfaction.desc': 'بناءً على استطلاعات إكمال المشاريع',
+    
+    // Missing Industries translations
+    'industries.trusted': 'موثوق بها من قبل شركات من جميع الأحجام',
+    'industries.trusted.subtitle': 'من الشركات الناشئة إلى المؤسسات، نتوسع مع احتياجات أعمالك ونوفر حلول مخصصة لكل مرحلة نمو',
     
     // Footer
     'footer.description': 'حلول تخطيط موارد المؤسسات المدعومة بالذكاء الاصطناعي مصممة للأعمال الحديثة. قم بتبسيط العمليات وزيادة الكفاءة وضمان مستقبل أعمالك مع الأتمتة الذكية.',
