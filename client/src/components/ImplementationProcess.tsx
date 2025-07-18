@@ -111,6 +111,24 @@ const ImplementationProcess = () => {
                   {language === 'ar' ? (
                     /* Arabic Layout - Enhanced RTL Design */
                     <div className="flex flex-col lg:flex-row gap-8">
+                      {/* Deliverables Section - Left Side in Arabic */}
+                      <div className="lg:w-80">
+                        <div className="bg-gradient-to-br from-pulse-50 to-purple-50 rounded-2xl p-6 border border-pulse-200 arabic-card-shadow">
+                          <h4 className="text-base font-bold text-gray-900 mb-5 flex items-center flex-row-reverse text-right font-arabic">
+                            <CheckCircle className="w-5 h-5 text-green-500 ml-2" />
+                            {t('implementation.key_deliverables')}
+                          </h4>
+                          <div className="space-y-4">
+                            {phase.deliverables.map((deliverable, deliverableIndex) => (
+                              <div key={deliverableIndex} className="flex items-center text-sm text-gray-700 flex-row-reverse text-right bg-white rounded-xl p-3 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+                                <div className="w-3 h-3 bg-gradient-to-r from-pulse-500 to-purple-600 rounded-full ml-3 flex-shrink-0 shadow-sm"></div>
+                                <span className="font-arabic font-medium">{deliverable}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+
                       {/* Main Content Section - Right Side in Arabic */}
                       <div className="flex-1 font-arabic">
                         {/* Header with Icon and Title */}
@@ -134,24 +152,6 @@ const ImplementationProcess = () => {
                           <p className="text-gray-700 leading-relaxed text-right font-arabic text-lg">
                             {phase.description}
                           </p>
-                        </div>
-                      </div>
-
-                      {/* Deliverables Section - Left Side in Arabic */}
-                      <div className="lg:w-80">
-                        <div className="bg-gradient-to-br from-pulse-50 to-purple-50 rounded-2xl p-6 border border-pulse-200 arabic-card-shadow">
-                          <h4 className="text-base font-bold text-gray-900 mb-5 flex items-center flex-row-reverse text-right font-arabic">
-                            <CheckCircle className="w-5 h-5 text-green-500 ml-2" />
-                            {t('implementation.key_deliverables')}
-                          </h4>
-                          <div className="space-y-4">
-                            {phase.deliverables.map((deliverable, deliverableIndex) => (
-                              <div key={deliverableIndex} className="flex items-center text-sm text-gray-700 flex-row-reverse text-right bg-white rounded-xl p-3 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
-                                <div className="w-3 h-3 bg-gradient-to-r from-pulse-500 to-purple-600 rounded-full ml-3 flex-shrink-0 shadow-sm"></div>
-                                <span className="font-arabic font-medium">{deliverable}</span>
-                              </div>
-                            ))}
-                          </div>
                         </div>
                       </div>
                     </div>
