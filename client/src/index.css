@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 @font-face {
   font-family: 'Brockmann';
@@ -107,6 +108,57 @@
   .font-arabic body,
   .font-arabic * {
     font-family: 'Tajawal', 'GraphikArabic', sans-serif !important;
+  }
+  
+  .font-arabic .section-title {
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .font-arabic .section-subtitle {
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  /* RTL Support */
+  [dir="rtl"] {
+    text-align: right;
+  }
+  
+  [dir="rtl"] .text-left {
+    text-align: right;
+  }
+  
+  [dir="rtl"] .text-right {
+    text-align: left;
+  }
+  
+  [dir="rtl"] .ml-2 {
+    margin-left: 0;
+    margin-right: 0.5rem;
+  }
+  
+  [dir="rtl"] .mr-2 {
+    margin-right: 0;
+    margin-left: 0.5rem;
+  }
+  
+  [dir="rtl"] .pl-4 {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+  
+  [dir="rtl"] .pr-4 {
+    padding-right: 0;
+    padding-left: 1rem;
+  }
+  
+  [dir="rtl"] .flex-row {
+    flex-direction: row-reverse;
+  }
+  
+  [dir="rtl"] .ArrowRight {
+    transform: rotate(180deg);
   }
 
   /* Smooth scrolling */

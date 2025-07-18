@@ -111,16 +111,16 @@ const Hero = () => {
             animationDelay: "0.3s"
           }}>
               {t('hero.title').split('\n').map((line, index) => (
-                <React.Fragment key={index}>
+                <span key={index}>
                   {line}
                   {index === 0 && <br className="hidden sm:inline" />}
-                </React.Fragment>
+                </span>
               ))}
             </h1>
             
             <p style={{
             animationDelay: "0.5s"
-          }} className="section-subtitle mt-3 sm:mt-6 mb-4 sm:mb-8 leading-relaxed opacity-0 animate-fade-in text-gray-950 font-normal sm:text-lg text-lg text-left">
+          }} className="section-subtitle mt-3 sm:mt-6 mb-4 sm:mb-8 leading-relaxed opacity-0 animate-fade-in text-gray-950 font-normal sm:text-lg text-lg">
               {t('hero.subtitle')}
             </p>
             
@@ -139,7 +139,7 @@ const Hero = () => {
               border: '1px solid white'
             }}>
                 {t('hero.cta')}
-                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1 rtl:rotate-180" />
               </a>
             </div>
           </div>
