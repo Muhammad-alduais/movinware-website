@@ -1,0 +1,668 @@
+
+The Elements that need Arabic translation:CTA.tsx:
+
+Line 19: Chip text "Limited Availability" needs Arabic translation
+Line 22: Heading "Be Among the First to Experience Atlas" needs Arabic translation
+Line 23: Span text "Experience Atlas" needs Arabic translation
+Line 26: Paragraph text "We're accepting a limited number of early adopters. Submit your application today to secure your place in the future of robotics." needs Arabic translation
+Line 29: Button text "Request Early Access" needs Arabic translation
+Line 32: Button text "Join Waitlist" needs Arabic translation
+DetailModal.tsx:
+
+Line 59: Heading "Key Capabilities" needs Arabic translation
+Line 90: Heading "Key Benefits" needs Arabic translation
+Line 110: Heading "Process Overview" needs Arabic translation
+Line 170: Heading "Perfect for:" needs Arabic translation
+DetailsSection.tsx:
+
+Line 17: Heading "The details" needs Arabic translation
+Line 23: Heading "Precision engineering meets adaptive intelligence" needs Arabic translation
+Line 32: Span text "Height:" needs Arabic translation
+Line 43: Span text "Capacity:" needs Arabic translation
+Line 54: Span text "Weight:" needs Arabic translation
+Line 65: Span text "Uptime:" needs Arabic translation
+Line 76: Span text "Movement:" needs Arabic translation
+Line 90: Chip text "Request a demo" needs Arabic translation
+Line 93: Heading "See it for yourself" needs Arabic translation
+Line 101: Placeholder text "Full name" needs Arabic translation
+Line 111: Placeholder text "Email address" needs Arabic translation
+Line 121: Placeholder text "Company (optional)" needs Arabic translation
+Line 129: Button text "Request access" needs Arabic translation
+ERPSolutions.tsx:
+
+Line 17: Title "Accounting & Finance" needs Arabic translation
+Line 18: Description "Complete financial management with real-time insights." needs Arabic translation
+Line 19: Capability "Real-time Financial Reporting & Analytics" needs Arabic translation
+Line 19: Capability "Multi-currency Support & Conversion" needs Arabic translation
+Line 19: Capability "Tax Compliance & Regulatory Reporting" needs Arabic translation
+Line 19: Capability "Automated Accounts Payable/Receivable" needs Arabic translation
+Line 19: Capability "Budget Planning & Forecasting" needs Arabic translation
+Line 19: Capability "Cash Flow Management & Optimization" needs Arabic translation
+Line 19: Capability "Financial Audit Trail & Controls" needs Arabic translation
+Line 19: Capability "Integration with Banking & Payment Systems" needs Arabic translation
+Line 20: Timeline "Full Integration" needs Arabic translation
+Line 21: Full Description "Complete financial management and reporting system with real-time insights and automated processes for comprehensive business control. Our accounting suite provides complete visibility into your financial operations with automated workflows, intelligent reporting, and seamless integration with banking and payment systems." needs Arabic translation
+Line 23: Title "Human Resources" needs Arabic translation
+Line 24: Description "End-to-end HR management for the complete employee lifecycle." needs Arabic translation
+Line 25: Capability "Employee Self-service Portal & Mobile App" needs Arabic translation
+Line 25: Capability "Automated Payroll & Tax Calculations" needs Arabic translation
+Line 25: Capability "Performance Management & Goal Tracking" needs Arabic translation
+Line 25: Capability "Time & Attendance with Biometric Integration" needs Arabic translation
+Line 25: Capability "Recruitment & Applicant Tracking System" needs Arabic translation
+Line 25: Capability "Employee Benefits & Leave Management" needs Arabic translation
+Line 25: Capability "Training & Development Programs" needs Arabic translation
+Line 25: Capability "HR Analytics & Workforce Planning" needs Arabic translation
+Line 26: Timeline "Complete HR Suite" needs Arabic translation
+Line 27: Full Description "Comprehensive HR management system covering the entire employee lifecycle from recruitment to retirement with advanced analytics. Our HR suite transforms people management with automated workflows, self-service capabilities, and data-driven insights that help you attract, retain, and develop top talent." needs Arabic translation
+Line 29: Title "Sales & CRM" needs Arabic translation
+Line 30: Description "AI-powered sales and customer relationship management." needs Arabic translation
+Line 31: Capability "Lead Tracking & Opportunity Management" needs Arabic translation
+Line 31: Capability "Advanced Sales Pipeline & Forecasting" needs Arabic translation
+Line 31: Capability "Customer 360-degree View & Analytics" needs Arabic translation
+Line 31: Capability "Automated Marketing Campaign Management" needs Arabic translation
+Line 31: Capability "Quote & Proposal Generation" needs Arabic translation
+Line 31: Capability "Customer Support & Ticket Management" needs Arabic translation
+Line 31: Capability "Sales Team Performance Analytics" needs Arabic translation
+Line 31: Capability "Mobile CRM & Field Sales Tools" needs Arabic translation
+Line 32: Timeline "Sales Optimization" needs Arabic translation
+Line 33: Full Description "End-to-end sales and customer relationship management with AI-powered insights and automation for maximum conversion rates. Our CRM platform provides complete customer visibility, automated sales processes, and intelligent insights that help you close more deals and build stronger customer relationships." needs Arabic translation
+Line 35: Title "Inventory Management" needs Arabic translation
+Line 36: Description "Smart inventory optimization with real-time tracking." needs Arabic translation
+Line 37: Capability "AI-powered Stock Optimization & Forecasting" needs Arabic translation
+Line 37: Capability "Barcode & RFID Scanning Integration" needs Arabic translation
+Line 37: Capability "Automated Reordering & Supplier Alerts" needs Arabic translation
+Line 37: Capability "Multi-location & Multi-warehouse Tracking" needs Arabic translation
+Line 37: Capability "Batch & Serial Number Management" needs Arabic translation
+Line 37: Capability "Cycle Counting & Physical Inventory" needs Arabic translation
+Line 37: Capability "Warehouse Layout & Pick Path Optimization" needs Arabic translation
+Line 37: Capability "Supplier Performance & Vendor Management" needs Arabic translation
+Line 38: Timeline "Smart Inventory" needs Arabic translation
+Line 39: Full Description "Advanced inventory and warehouse management with real-time tracking and optimization capabilities for maximum efficiency. Our inventory system uses AI to predict demand, optimize stock levels, and automate reordering processes while providing complete visibility across all locations and warehouses." needs Arabic translation
+Line 41: Title "Manufacturing" needs Arabic translation
+Line 42: Description "Intelligent production management and quality control." needs Arabic translation
+Line 43: Capability "Production Planning & Capacity Optimization" needs Arabic translation
+Line 43: Capability "Quality Control Workflows & Compliance" needs Arabic translation
+Line 43: Capability "Resource Allocation & Equipment Scheduling" needs Arabic translation
+Line 43: Capability "Bill of Materials Management & Costing" needs Arabic translation
+Line 43: Capability "Shop Floor Control & Work Order Management" needs Arabic translation
+Line 43: Capability "Machine Integration & IoT Connectivity" needs Arabic translation
+Line 43: Capability "Lean Manufacturing & Waste Reduction" needs Arabic translation
+Line 43: Capability "Product Lifecycle & Engineering Change Management" needs Arabic translation
+Line 44: Timeline "Production Excellence" needs Arabic translation
+Line 45: Full Description "Complete production management solution that optimizes manufacturing processes and quality control with real-time monitoring. Our manufacturing module enables digital transformation with IoT integration, automated workflows, and real-time production tracking that maximizes efficiency and ensures consistent quality." needs Arabic translation
+Line 47: Title "Asset Management" needs Arabic translation
+Line 48: Description "Predictive asset management and maintenance optimization." needs Arabic translation
+Line 49: Capability "Preventive & Predictive Maintenance Scheduling" needs Arabic translation
+Line 49: Capability "Asset Lifecycle Tracking & Depreciation" needs Arabic translation
+Line 49: Capability "Work Order Management & Technician Dispatch" needs Arabic translation
+Line 49: Capability "Equipment Performance & IoT Analytics" needs Arabic translation
+Line 49: Capability "Spare Parts Inventory & Procurement" needs Arabic translation
+Line 49: Capability "Compliance Management & Safety Tracking" needs Arabic translation
+Line 49: Capability "Mobile Maintenance & Field Service" needs Arabic translation
+Line 49: Capability "Asset ROI & Cost Analysis" needs Arabic translation
+Line 50: Timeline "Asset Optimization" needs Arabic translation
+Line 51: Full Description "Comprehensive asset tracking and maintenance management to maximize equipment uptime and ROI with predictive analytics. Our asset management solution uses IoT sensors and machine learning to predict failures before they occur, optimize maintenance schedules, and ensure maximum equipment availability and performance." needs Arabic translation
+Line 54: Metric "100%" needs Arabic translation
+Line 55: Label "Module Integration" needs Arabic translation
+Line 56: Description "Seamless data flow across all modules" needs Arabic translation
+Line 57: Metric "Real-time" needs Arabic translation
+Line 58: Label "Data Updates" needs Arabic translation
+Line 59: Description "Instant synchronization everywhere" needs Arabic translation
+Line 60: Metric "Single" needs Arabic translation
+Line 61: Label "Database" needs Arabic translation
+Line 62: Description "Unified source of truth for all data" needs Arabic translation
+Line 63: Metric "Custom" needs Arabic translation
+Line 64: Label "Workflows" needs Arabic translation
+Line 65: Description "Tailored to your business processes" needs Arabic translation
+Features.tsx:
+
+Line 69: Chip text "Features" needs Arabic translation
+Line 72: Heading "Advanced Intelligence, Human-Like Intuition" needs Arabic translation
+Line 73: Break text "Human-Like Intuition" needs Arabic translation
+Line 76: Paragraph text "Built with cutting-edge technology to understand, learn, and adapt to your unique needs." needs Arabic translation
+Line 85: Title "Adaptive Learning" needs Arabic translation
+Line 86: Description "Atlas learns from your interactions, continuously improving its responses and actions to better serve your needs." needs Arabic translation
+Line 92: Title "Natural Interaction" needs Arabic translation
+Line 93: Description "Communicate using natural language and gestures. Atlas understands context and responds appropriately." needs Arabic translation
+Line 99: Title "Precise Movement" needs Arabic translation
+Line 100: Description "Advanced motorized joints provide fluid, human-like movement with exceptional balance and coordination." needs Arabic translation
+Line 106: Title "Spatial Awareness" needs Arabic translation
+Line 107: Description "Advanced sensors and mapping technology allow Atlas to navigate complex environments with ease." needs Arabic translation
+Line 113: Title "Enhanced Security" needs Arabic translation
+Line 114: Description "Built-in protocols protect your data and privacy, while physical safeguards ensure safe operation." needs Arabic translation
+Line 120: Title "Task Assistance" needs Arabic translation
+Line 121: Description "From simple reminders to complex multi-step tasks, Atlas can assist with a wide range of activities." needs Arabic translation
+HowItWorks.tsx:
+
+Line 49: Chip text "Process" needs Arabic translation
+Line 51: Heading "How Atlas Integrates Into Your Life" needs Arabic translation
+Line 53: Paragraph text "A seamless four-step process from request to full integration." needs Arabic translation
+Line 60: Title "Request Access" needs Arabic translation
+Line 61: Description "Fill out the application form to join our early access program and secure your spot in line." needs Arabic translation
+Line 66: Title "Personalization" needs Arabic translation
+Line 67: Description "We'll work with you to customize Atlas to your specific needs and preferences." needs Arabic translation
+Line 72: Title "Integration" needs Arabic translation
+Line 73: Description "Atlas arrives at your location and is integrated into your living or working environment." needs Arabic translation
+Line 78: Title "Adaptation" needs Arabic translation
+Line 79: Description "Through daily interaction, Atlas learns and adapts to your routines, preferences, and needs." needs Arabic translation
+Line 109: Title "Next Generation Companion" needs Arabic translation
+Line 110: Description "Designed for human interaction" needs Arabic translation
+HumanIntuitionSection.tsx:
+
+Line 10: Chip text "Human-Like Intuition" needs Arabic translation
+Line 12: Heading "Beyond algorithms to true understanding" needs Arabic translation
+Line 13: Paragraph text "Atlas goes beyond programmed responses to develop contextual awareness and adaptive learning patterns that mirror human intuition. This enables natural interactions that feel like working with a human colleague rather than a machine." needs Arabic translation
+Line 20: List item "Learns from human demonstrations and refines its approach over time" needs Arabic translation
+Line 21: List item "Anticipates needs based on situational awareness and past interactions" needs Arabic translation
+Line 22: List item "Adapts to changing environments without explicit reprogramming" needs Arabic translation
+Line 23: List item "Makes decisions with nuanced understanding of human preferences" needs Arabic translation
+HumanoidSection.tsx:
+
+Line 80: Chip text "Humanoid" needs Arabic translation
+Line 84: Heading "Why Humanoid" needs Arabic translation
+Line 100: Span text "The vision" needs Arabic translation
+Line 104: Heading "We're giving AI a way to navigate the physical world" needs Arabic translation
+Line 122: Span text "The vision" needs Arabic translation
+Line 126: Heading "We're bringing adaptive intelligence to where humans work" needs Arabic translation
+Line 144: Span text "The vision" needs Arabic translation
+Line 148: Heading "We're creating companions, not replacements" needs Arabic translation
+Line 148: Span text "not replacements" needs Arabic translation
+ImageShowcaseSection.tsx:
+
+Line 10: Heading "Experience the Future Today" needs Arabic translation
+Line 13: Paragraph text "Our cutting-edge humanoid robot is designed to transform how we interact with technology in everyday environments." needs Arabic translation
+Line 24: Heading "Next Generation Robotics" needs Arabic translation
+Line 25: Paragraph text "Built with precision engineering and sophisticated AI, our robots seamlessly integrate into various environments, from homes to hospitals, providing assistance and enriching human experiences." needs Arabic translation
+ImplementationProcess.tsx:
+
+Line 70: Heading "Implementation Timeline" needs Arabic translation
+Line 76: Text "Week" needs Arabic translation
+Line 77: Text "Discovery" needs Arabic translation
+Line 79: Text "Week" needs Arabic translation
+Line 80: Text "Design" needs Arabic translation
+Line 82: Text "Week" needs Arabic translation
+Line 83: Text "Development" needs Arabic translation
+Line 85: Text "Week" needs Arabic translation
+Line 86: Text "Deployment" needs Arabic translation
+Line 88: Text "Week" needs Arabic translation
+Line 89: Text "Support" needs Arabic translation
+Line 106: Heading "Key Deliverables" needs Arabic translation
+Line 140: Heading "Why our process works" needs Arabic translation
+Line 141: Paragraph text "Proven results from our implementation methodology" needs Arabic translation
+Line 145: Metric "85%" needs Arabic translation
+Line 146: Label "Faster Implementation" needs Arabic translation
+Line 147: Description "Compared to traditional methods" needs Arabic translation
+Line 148: Metric "Zero" needs Arabic translation
+Line 149: Label "Downtime" needs Arabic translation
+Line 150: Description "Seamless transition process" needs Arabic translation
+Line 151: Metric "98%" needs Arabic translation
+Line 152: Label "User Adoption" needs Arabic translation
+Line 153: Description "Within first month" needs Arabic translation
+Line 154: Metric "24/7" needs Arabic translation
+Line 155: Label "Support" needs Arabic translation
+Line 156: Description "Dedicated implementation team" needs Arabic translation
+Industries.tsx:
+
+Line 17: Title "Education" needs Arabic translation
+Line 18: Description "Complete educational management solutions for modern institutions and learning environments." needs Arabic translation
+Line 19: Capability "Student Information Management System" needs Arabic translation
+Line 19: Capability "Advanced Learning Management Platform" needs Arabic translation
+Line 19: Capability "Financial Aid & Scholarship Processing" needs Arabic translation
+Line 19: Capability "Academic Performance Analytics & Reporting" needs Arabic translation
+Line 19: Capability "Online Course Management & Delivery" needs Arabic translation
+Line 19: Capability "Parent-Teacher Communication Portal" needs Arabic translation
+Line 19: Capability "Library & Resource Management" needs Arabic translation
+Line 19: Capability "Examination & Assessment Tools" needs Arabic translation
+Line 20: Timeline "500+ Institutions" needs Arabic translation
+Line 21: Clients "Schools, Universities, Training Centers, Online Learning Platforms" needs Arabic translation
+Line 22: Full Description "Comprehensive solutions for educational institutions, from student management to curriculum planning and administrative efficiency. Our education suite transforms traditional learning environments with digital tools that enhance student engagement, streamline administrative processes, and provide deep insights into academic performance and institutional effectiveness." needs Arabic translation
+Line 23: Benefit "Streamlined administrative processes reduce workload by 60%" needs Arabic translation
+Line 23: Benefit "Enhanced student engagement through digital tools" needs Arabic translation
+Line 23: Benefit "Comprehensive analytics improve academic outcomes" needs Arabic translation
+Line 23: Benefit "Integrated communication platforms connect all stakeholders" needs Arabic translation
+Line 25: Title "Retail" needs Arabic translation
+Line 26: Description "End-to-end retail management for omnichannel success and customer satisfaction." needs Arabic translation
+Line 27: Capability "Advanced Point of Sale (POS) Systems" needs Arabic translation
+Line 27: Capability "Omnichannel E-commerce Integration" needs Arabic translation
+Line 27: Capability "Customer Loyalty & Rewards Management" needs Arabic translation
+Line 27: Capability "Multi-location & Multi-warehouse Tracking" needs Arabic translation
+Line 27: Capability "Price Management & Dynamic Pricing" needs Arabic translation
+Line 27: Capability "Customer Analytics & Personalization" needs Arabic translation
+Line 27: Capability "Vendor & Supplier Management" needs Arabic translation
+Line 27: Capability "Return & Exchange Processing" needs Arabic translation
+Line 28: Timeline "1,000+ Stores" needs Arabic translation
+Line 29: Clients "Retail Chains, Online Stores, Fashion Brands, Specialty Retailers" needs Arabic translation
+Line 30: Full Description "Complete retail management and e-commerce solutions designed to optimize sales, inventory, and customer experience across all channels. Our retail platform unifies online and offline operations, providing real-time visibility into customer behavior, inventory levels, and sales performance across all touchpoints for maximum profitability." needs Arabic translation
+Line 31: Benefit "Omnichannel integration increases sales by 40%" needs Arabic translation
+Line 31: Benefit "Real-time inventory management reduces stockouts" needs Arabic translation
+Line 31: Benefit "Customer analytics drive personalized experiences" needs Arabic translation
+Line 31: Benefit "Automated processes improve operational efficiency" needs Arabic translation
+Line 33: Title "Manufacturing" needs Arabic translation
+Line 34: Description "Smart manufacturing solutions for Industry 4.0 transformation and operational excellence." needs Arabic translation
+Line 35: Capability "Production Planning & Capacity Optimization" needs Arabic translation
+Line 35: Capability "Quality Management & Compliance Systems" needs Arabic translation
+Line 35: Capability "Predictive Equipment Maintenance" needs Arabic translation
+Line 35: Capability "Supply Chain Optimization & Tracking" needs Arabic translation
+Line 35: Capability "Real-time Production Monitoring" needs Arabic translation
+Line 35: Capability "Lean Manufacturing Implementation" needs Arabic translation
+Line 35: Capability "Batch & Serial Number Traceability" needs Arabic translation
+Line 35: Capability "Cost Analysis & Profitability Tracking" needs Arabic translation
+Line 36: Timeline "200+ Factories" needs Arabic translation
+Line 37: Clients "Manufacturers, Assembly Lines, Processing Plants, Industrial Equipment" needs Arabic translation
+Line 38: Full Description "End-to-end manufacturing and production management solutions that optimize efficiency, quality control, and supply chain operations. Our manufacturing suite enables digital transformation with IoT integration, predictive analytics, and automated workflows that reduce waste, improve quality, and maximize operational efficiency while ensuring compliance." needs Arabic translation
+Line 39: Benefit "Predictive maintenance reduces downtime by 45%" needs Arabic translation
+Line 39: Benefit "Quality management systems ensure compliance" needs Arabic translation
+Line 39: Benefit "Real-time monitoring optimizes production efficiency" needs Arabic translation
+Line 39: Benefit "Supply chain integration reduces costs and delays" needs Arabic translation
+Line 41: Title "Logistics" needs Arabic translation
+Line 42: Description "Intelligent logistics and supply chain optimization platform for seamless operations." needs Arabic translation
+Line 43: Capability "AI-Powered Route Optimization" needs Arabic translation
+Line 43: Capability "Fleet Management & Vehicle Tracking" needs Arabic translation
+Line 43: Capability "Warehouse Automation & Control" needs Arabic translation
+Line 43: Capability "Real-time Shipment & Delivery Tracking" needs Arabic translation
+Line 43: Capability "Load Planning & Optimization" needs Arabic translation
+Line 43: Capability "Driver Management & Performance Analytics" needs Arabic translation
+Line 43: Capability "Customer Portal & Communication" needs Arabic translation
+Line 43: Capability "Cost Analysis & Freight Audit" needs Arabic translation
+Line 44: Timeline "300+ Companies" needs Arabic translation
+Line 45: Clients "Shipping Companies, 3PL Providers, Freight Forwarders, Distribution Centers" needs Arabic translation
+Line 46: Full Description "Advanced logistics and supply chain optimization tools that ensure timely delivery, cost efficiency, and complete visibility across operations. Our logistics platform leverages AI and machine learning to optimize routes, reduce costs, and provide real-time visibility throughout the entire supply chain ecosystem for maximum efficiency." needs Arabic translation
+Line 47: Benefit "AI-powered route optimization reduces fuel costs by 30%" needs Arabic translation
+Line 47: Benefit "Real-time tracking improves customer satisfaction" needs Arabic translation
+Line 47: Benefit "Automated load planning maximizes efficiency" needs Arabic translation
+Line 47: Benefit "Comprehensive analytics drive continuous improvement" needs Arabic translation
+Line 50: Title "Startups" needs Arabic translation
+Line 51: Count "50+" needs Arabic translation
+Line 52: Description "Growing businesses ready to scale" needs Arabic translation
+Line 53: Details "Flexible solutions that grow with your business" needs Arabic translation
+Line 54: Title "SMEs" needs Arabic translation
+Line 55: Count "500+" needs Arabic translation
+Line 56: Description "Established mid-market companies" needs Arabic translation
+Line 57: Details "Comprehensive features for complex operations" needs Arabic translation
+Line 58: Title "Enterprises" needs Arabic translation
+Line 59: Count "100+" needs Arabic translation
+Line 60: Description "Large organizations with complex needs" needs Arabic translation
+Line 61: Details "Enterprise-grade security and customization" needs Arabic translation
+LanguageSwitcher.tsx:
+
+Line 20: Native name "English" needs Arabic translation (though it's a native name, it's hardcoded)
+Line 21: Native name "Arabic" needs Arabic translation (though it's a native name, it's hardcoded)
+Line 20: Name "English" needs Arabic translation
+Line 21: Name "Arabic" needs Arabic translation
+Line 49: Button text "Switch language" needs Arabic translation
+Line 51: Span text "English" (for currentLang.nativeName) needs Arabic translation
+Line 60: Span text "English" (for lang.nativeName) needs Arabic translation
+Line 61: Span text "English" (for lang.name) needs Arabic translation
+Line 60: Span text "Arabic" (for lang.nativeName) needs Arabic translation
+Line 61: Span text "Arabic" (for lang.name) needs Arabic translation
+LottieAnimation.tsx:
+
+All elements appear to have Arabic translation support.
+MadeByHumans.tsx:
+
+Line 19: Heading "Made By AI & Human" needs Arabic translation
+Navbar.tsx:
+
+Line 30: aria-label "MovinWare" needs Arabic translation
+Line 35: aria-label "Toggle menu" (for mobile menu button) needs Arabic translation
+Line 35: aria-label "Close menu" (for mobile menu button) needs Arabic translation
+Line 50: aria-label "Close" (for mobile menu close button) needs Arabic translation
+Line 100: Text "MovinWare" (in footer) needs Arabic translation
+Newsletter.tsx:
+
+Line 12: Chip text "Newsletter" needs Arabic translation
+Line 15: Heading "Subscribe to the newsletter" needs Arabic translation
+Line 17: Paragraph text "Be first to hear about breakthroughs, partnerships, and deployment opportunities" needs Arabic translation
+Line 21: Placeholder text "Email address" needs Arabic translation
+Line 24: Button text "Submitting..." needs Arabic translation
+Line 24: Button text "Submit" needs Arabic translation
+PlatformCapabilities.tsx:
+
+Line 17: Title "Core Modules" needs Arabic translation
+Line 18: Description "Essential business modules for complete operations management and workflow automation." needs Arabic translation
+Line 19: Capability "Advanced Accounting & Financial Reporting" needs Arabic translation
+Line 19: Capability "Comprehensive Human Resources Management" needs Arabic translation
+Line 19: Capability "Sales CRM with Pipeline Automation" needs Arabic translation
+Line 19: Capability "Smart Inventory & Supply Chain Control" needs Arabic translation
+Line 19: Capability "Project Management & Resource Planning" needs Arabic translation
+Line 19: Capability "Document Management & Workflow Automation" needs Arabic translation
+Line 19: Capability "Multi-location Operations Support" needs Arabic translation
+Line 19: Capability "Real-time Business Intelligence Dashboard" needs Arabic translation
+Line 20: Timeline "Core Foundation" needs Arabic translation
+Line 21: Full Description "Comprehensive business modules covering all aspects of your operations, designed to streamline processes and boost productivity across your entire organization. Our core modules provide the foundation for digital transformation with integrated workflows, automated processes, and real-time data synchronization across all business functions." needs Arabic translation
+Line 22: Benefit "Integrated workflow automation reduces manual tasks by 70%" needs Arabic translation
+Line 22: Benefit "Real-time data synchronization across all departments" needs Arabic translation
+Line 22: Benefit "Comprehensive reporting and analytics dashboard" needs Arabic translation
+Line 22: Benefit "Multi-location support with centralized control" needs Arabic translation
+Line 24: Title "AI Features" needs Arabic translation
+Line 25: Description "Advanced AI technology that learns and optimizes your business processes automatically." needs Arabic translation
+Line 26: Capability "Machine Learning Predictive Analytics" needs Arabic translation
+Line 26: Capability "Intelligent Process Automation Workflows" needs Arabic translation
+Line 26: Capability "Natural Language Report Generation" needs Arabic translation
+Line 26: Capability "AI-Powered Decision Recommendation Engine" needs Arabic translation
+Line 26: Capability "Smart Data Pattern Recognition" needs Arabic translation
+Line 26: Capability "Automated Anomaly Detection & Alerts" needs Arabic translation
+Line 26: Capability "Intelligent Customer Behavior Analysis" needs Arabic translation
+Line 26: Capability "Voice-to-Data Input Processing" needs Arabic translation
+Line 27: Timeline "Smart Enhancement" needs Arabic translation
+Line 28: Full Description "Intelligent automation and insights powered by advanced AI technology that learns from your business patterns to provide actionable recommendations. Our AI features continuously evolve with your business, identifying opportunities for optimization and automating complex decision-making processes to drive growth and efficiency." needs Arabic translation
+Line 29: Benefit "Predictive analytics improve decision-making accuracy by 85%" needs Arabic translation
+Line 29: Benefit "Automated workflows reduce processing time by 60%" needs Arabic translation
+Line 29: Benefit "AI-powered insights drive revenue growth" needs Arabic translation
+Line 29: Benefit "Continuous learning adapts to your business evolution" needs Arabic translation
+Line 31: Title "Integration Hub" needs Arabic translation
+Line 32: Description "Connect with 500+ platforms and systems seamlessly for unified data flow." needs Arabic translation
+Line 33: Capability "Enterprise API Gateway Management" needs Arabic translation
+Line 33: Capability "Real-time Data Synchronization Engine" needs Arabic translation
+Line 33: Capability "Legacy System Migration Tools" needs Arabic translation
+Line 33: Capability "Third-party Platform Connectors" needs Arabic translation
+Line 33: Capability "Custom Integration Development" needs Arabic translation
+Line 33: Capability "Webhook & Event-driven Architecture" needs Arabic translation
+Line 33: Capability "Data Mapping & Transformation Tools" needs Arabic translation
+Line 33: Capability "Security & Authentication Management" needs Arabic translation
+Line 34: Timeline "Seamless Connection" needs Arabic translation
+Line 35: Full Description "Seamless connectivity with your existing tools and systems, ensuring data flows smoothly across your entire technology stack without disruption. Our integration hub supports both modern APIs and legacy systems, providing a unified data ecosystem that eliminates silos and enables comprehensive business intelligence." needs Arabic translation
+Line 36: Benefit "Connect 500+ third-party applications instantly" needs Arabic translation
+Line 36: Benefit "Eliminate data silos with unified integration" needs Arabic translation
+Line 36: Benefit "Legacy system support ensures smooth migration" needs Arabic translation
+Line 36: Benefit "Real-time synchronization keeps data current" needs Arabic translation
+Line 38: Title "Mobile & Cloud Platform" needs Arabic translation
+Line 39: Description "Access your business data anywhere with 99.9% uptime guarantee and offline capabilities." needs Arabic translation
+Line 40: Capability "Progressive Web Application (PWA)" needs Arabic translation
+Line 40: Capability "Native iOS & Android Applications" needs Arabic translation
+Line 40: Capability "Offline-first Data Synchronization" needs Arabic translation
+Line 40: Capability "Multi-device Real-time Collaboration" needs Arabic translation
+Line 40: Capability "Cloud Infrastructure Auto-scaling" needs Arabic translation
+Line 40: Capability "Enterprise-grade Security & Encryption" needs Arabic translation
+Line 40: Capability "Automated Backup & Disaster Recovery" needs Arabic translation
+Line 40: Capability "Global CDN for Optimal Performance" needs Arabic translation
+Line 41: Timeline "Anywhere Access" needs Arabic translation
+Line 42: Full Description "Access your business data anywhere, anytime, on any device with our cloud-native platform that ensures maximum uptime and security. Built with modern cloud architecture, our platform provides seamless mobile experiences with robust offline capabilities and enterprise-grade security that scales with your business needs." needs Arabic translation
+Line 43: Benefit "99.9% uptime SLA with automatic failover" needs Arabic translation
+Line 43: Benefit "Offline functionality ensures continuous productivity" needs Arabic translation
+Line 43: Benefit "Enterprise-grade security protects your data" needs Arabic translation
+Line 43: Benefit "Global CDN provides optimal performance worldwide" needs Arabic translation
+Line 88: Metric "500+" needs Arabic translation
+Line 89: Label "API Integrations" needs Arabic translation
+Line 90: Description "Third-party connections available" needs Arabic translation
+Line 91: Metric "99.9%" needs Arabic translation
+Line 92: Label "Uptime SLA" needs Arabic translation
+Line 93: Description "Enterprise-grade reliability" needs Arabic translation
+Line 94: Metric "24/7" needs Arabic translation
+Line 95: Label "System Monitoring" needs Arabic translation
+Line 96: Description "Continuous performance tracking" needs Arabic translation
+Line 97: Metric "Real-time" needs Arabic translation
+Line 98: Label "Data Sync" needs Arabic translation
+Line 99: Description "Instant updates across devices" needs Arabic translation
+PreviewCard.tsx:
+
+Line 50: Button text "Learn more" needs Arabic translation
+RobotShowcaseSection.tsx:
+
+Line 20: Chip text "Meet the Future" needs Arabic translation
+Line 22: Heading "Precision Engineering Meets Adaptive AI" needs Arabic translation
+Line 23: Span text "Adaptive AI" needs Arabic translation
+Line 26: Paragraph text "Our humanoid robot represents the perfect fusion of cutting-edge mechanical engineering and state-of-the-art artificial intelligence, designed to seamlessly integrate into human environments." needs Arabic translation
+Line 39: Heading "Next Generation Companion" needs Arabic translation
+Line 40: Paragraph text "Designed for human interaction" needs Arabic translation
+Line 42: Button text "Learn More" needs Arabic translation
+Line 48: Heading "Advanced Sensors" needs Arabic translation
+Line 49: Paragraph text "High-precision sensors provide real-time environmental awareness and object recognition." needs Arabic translation
+Line 56: Heading "Adaptive Learning" needs Arabic translation
+Line 57: Paragraph text "Continuously learns from interactions to improve performance and personalize responses." needs Arabic translation
+Line 64: Heading "Fluid Movement" needs Arabic translation
+Line 65: Paragraph text "Engineered for natural, human-like movement with high degrees of freedom in all joints." needs Arabic translation
+Services.tsx:
+
+Line 17: Title "ERP Implementation" needs Arabic translation
+Line 18: Description "End-to-end implementation with proven methodologies and dedicated project management." needs Arabic translation
+Line 19: Capability "System Architecture Design & Planning" needs Arabic translation
+Line 19: Capability "Custom Development & Configuration" needs Arabic translation
+Line 19: Capability "Data Migration & Integration Services" needs Arabic translation
+Line 19: Capability "Comprehensive User Training Programs" needs Arabic translation
+Line 19: Capability "Go-Live Support & Optimization" needs Arabic translation
+Line 19: Capability "Performance Monitoring & Tuning" needs Arabic translation
+Line 19: Capability "Change Management & User Adoption" needs Arabic translation
+Line 19: Capability "Quality Assurance & Testing" needs Arabic translation
+Line 20: Timeline "8-12 weeks" needs Arabic translation
+Line 21: Full Description "Comprehensive ERP implementation services that transform your business operations with minimal disruption. Our proven methodology ensures successful deployment with dedicated project management, custom development, and comprehensive training programs that drive user adoption and business value." needs Arabic translation
+Line 22: Benefit "85% faster implementation compared to traditional methods" needs Arabic translation
+Line 22: Benefit "Dedicated project manager ensures timeline adherence" needs Arabic translation
+Line 22: Benefit "Proven methodology with 98% success rate" needs Arabic translation
+Line 22: Benefit "Comprehensive training drives user adoption" needs Arabic translation
+Line 23: Process Step Title "Discovery & Planning" needs Arabic translation
+Line 24: Process Step Description "Analyze current processes and create implementation roadmap" needs Arabic translation
+Line 25: Deliverable "Requirements Analysis" needs Arabic translation
+Line 25: Deliverable "Project Timeline" needs Arabic translation
+Line 25: Deliverable "Resource Planning" needs Arabic translation
+Line 26: Process Step Title "System Configuration" needs Arabic translation
+Line 27: Process Step Description "Configure system according to business requirements" needs Arabic translation
+Line 28: Deliverable "System Setup" needs Arabic translation
+Line 28: Deliverable "Custom Workflows" needs Arabic translation
+Line 28: Deliverable "Integration Points" needs Arabic translation
+Line 29: Process Step Title "Data Migration" needs Arabic translation
+Line 30: Process Step Description "Secure transfer of existing data to new system" needs Arabic translation
+Line 31: Deliverable "Data Mapping" needs Arabic translation
+Line 31: Deliverable "Migration Scripts" needs Arabic translation
+Line 31: Deliverable "Validation Reports" needs Arabic translation
+Line 32: Process Step Title "Training & Go-Live" needs Arabic translation
+Line 33: Process Step Description "User training and system deployment" needs Arabic translation
+Line 34: Deliverable "Training Materials" needs Arabic translation
+Line 34: Deliverable "User Manuals" needs Arabic translation
+Line 34: Deliverable "Go-Live Support" needs Arabic translation
+Line 36: Title "Industry Solutions" needs Arabic translation
+Line 37: Description "Specialized solutions tailored to your industry's unique requirements and compliance needs." needs Arabic translation
+Line 38: Capability "Healthcare Management Systems" needs Arabic translation
+Line 38: Capability "Educational Platform Solutions" needs Arabic translation
+Line 38: Capability "Manufacturing Process Optimization" needs Arabic translation
+Line 38: Capability "Retail & E-commerce Integration" needs Arabic translation
+Line 38: Capability "Logistics & Supply Chain Management" needs Arabic translation
+Line 38: Capability "Financial Services Compliance" needs Arabic translation
+Line 38: Capability "Real Estate Management Systems" needs Arabic translation
+Line 38: Capability "Hospitality & Tourism Solutions" needs Arabic translation
+Line 39: Timeline "6-10 weeks" needs Arabic translation
+Line 40: Full Description "Industry-specific solutions designed to address unique sector challenges and compliance requirements. Our deep industry expertise ensures solutions are tailored to your specific business environment, regulatory needs, and operational workflows for maximum effectiveness." needs Arabic translation
+Line 41: Benefit "Industry-specific features reduce customization time" needs Arabic translation
+Line 41: Benefit "Built-in compliance for regulatory requirements" needs Arabic translation
+Line 41: Benefit "Proven solutions across multiple sectors" needs Arabic translation
+Line 41: Benefit "Reduced implementation risk with tested frameworks" needs Arabic translation
+Line 43: Title "AI Integration" needs Arabic translation
+Line 44: Description "Advanced AI capabilities to automate processes and provide intelligent business insights." needs Arabic translation
+Line 45: Capability "Predictive Analytics Implementation" needs Arabic translation
+Line 45: Capability "Process Automation Development" needs Arabic translation
+Line 45: Capability "Document Processing & OCR" needs Arabic translation
+Line 45: Capability "Decision Support Systems" needs Arabic translation
+Line 45: Capability "Customer Behavior Analysis" needs Arabic translation
+Line 45: Capability "Fraud Detection & Prevention" needs Arabic translation
+Line 45: Capability "Intelligent Reporting Systems" needs Arabic translation
+Line 45: Capability "Machine Learning Model Development" needs Arabic translation
+Line 46: Timeline "4-8 weeks" needs Arabic translation
+Line 47: Full Description "Transform your business with AI-powered automation and intelligent insights. Our AI integration services leverage machine learning, predictive analytics, and automation to optimize operations, reduce manual tasks, and provide actionable insights that drive business growth." needs Arabic translation
+Line 48: Benefit "Predictive analytics improve decision accuracy by 85%" needs Arabic translation
+Line 48: Benefit "Process automation reduces manual tasks by 70%" needs Arabic translation
+Line 48: Benefit "AI insights drive revenue growth and cost reduction" needs Arabic translation
+Line 48: Benefit "Continuous learning adapts to business changes" needs Arabic translation
+Line 50: Title "UX Design & Localization" needs Arabic translation
+Line 51: Description "User-centered design with full localization support for MENA markets." needs Arabic translation
+Line 52: Capability "User Experience (UX) Design" needs Arabic translation
+Line 52: Capability "Right-to-Left (RTL) Interface Design" needs Arabic translation
+Line 52: Capability "Multi-language Platform Support" needs Arabic translation
+Line 52: Capability "Cultural Adaptation & Localization" needs Arabic translation
+Line 52: Capability "Accessibility Standards Compliance" needs Arabic translation
+Line 52: Capability "Mobile-First Design Approach" needs Arabic translation
+Line 52: Capability "Brand Integration & Customization" needs Arabic translation
+Line 52: Capability "Usability Testing & Optimization" needs Arabic translation
+Line 53: Timeline "3-6 weeks" needs Arabic translation
+Line 54: Full Description "Create intuitive, culturally-appropriate user experiences with comprehensive localization for MENA markets. Our design services ensure your platform is not only visually appealing but also accessible, culturally relevant, and optimized for diverse user needs." needs Arabic translation
+Line 55: Benefit "Culturally-adapted interfaces improve user adoption" needs Arabic translation
+Line 55: Benefit "RTL design ensures native Arabic experience" needs Arabic translation
+Line 55: Benefit "Accessibility compliance reaches broader audiences" needs Arabic translation
+Line 55: Benefit "Mobile-first approach maximizes device compatibility" needs Arabic translation
+Line 57: Title "Data Migration & Integration" needs Arabic translation
+Line 58: Description "Secure, efficient data migration with seamless third-party system integrations." needs Arabic translation
+Line 59: Capability "Legacy System Data Migration" needs Arabic translation
+Line 59: Capability "API Development & Integration" needs Arabic translation
+Line 59: Capability "Real-time Data Synchronization" needs Arabic translation
+Line 59: Capability "Data Validation & Quality Assurance" needs Arabic translation
+Line 59: Capability "Third-party System Connectors" needs Arabic translation
+Line 59: Capability "Cloud Migration Services" needs Arabic translation
+Line 59: Capability "Database Optimization & Tuning" needs Arabic translation
+Line 59: Capability "Data Security & Compliance" needs Arabic translation
+Line 60: Timeline "2-4 weeks" needs Arabic translation
+Line 61: Full Description "Ensure seamless data transition and system integration with our comprehensive migration and integration services. We handle complex data transformations, API integrations, and real-time synchronization to maintain business continuity throughout the transition." needs Arabic translation
+Line 62: Benefit "Zero data loss with validated migration processes" needs Arabic translation
+Line 62: Benefit "Real-time synchronization maintains data consistency" needs Arabic translation
+Line 62: Benefit "API integrations connect all business systems" needs Arabic translation
+Line 62: Benefit "Security protocols protect sensitive information" needs Arabic translation
+Line 64: Title "Support & Maintenance" needs Arabic translation
+Line 65: Description "Comprehensive support services ensuring optimal system performance and user satisfaction." needs Arabic translation
+Line 66: Capability "24/7 Technical Support Services" needs Arabic translation
+Line 66: Capability "System Performance Monitoring" needs Arabic translation
+Line 66: Capability "Regular Security Updates" needs Arabic translation
+Line 66: Capability "User Training & Onboarding" needs Arabic translation
+Line 66: Capability "Preventive Maintenance Programs" needs Arabic translation
+Line 66: Capability "Issue Resolution & Bug Fixes" needs Arabic translation
+Line 66: Capability "Feature Enhancement Development" needs Arabic translation
+Line 66: Capability "System Health Reporting" needs Arabic translation
+Line 67: Timeline "Ongoing" needs Arabic translation
+Line 68: Full Description "Maintain optimal system performance with our comprehensive support and maintenance services. Our dedicated support team provides 24/7 assistance, proactive monitoring, regular updates, and continuous optimization to ensure your system delivers consistent business value." needs Arabic translation
+Line 69: Benefit "24/7 support ensures minimal business disruption" needs Arabic translation
+Line 69: Benefit "Proactive monitoring prevents issues before they occur" needs Arabic translation
+Line 69: Benefit "Regular updates maintain security and performance" needs Arabic translation
+Line 69: Benefit "Ongoing training maximizes user productivity" needs Arabic translation
+Line 114: Heading "Our Service Methodology" needs Arabic translation
+Line 115: Paragraph text "A structured approach that ensures quality delivery and client satisfaction at every stage" needs Arabic translation
+Line 120: Step "Consultation" needs Arabic translation
+Line 121: Description "Understanding your requirements" needs Arabic translation
+Line 122: Step "Planning" needs Arabic translation
+Line 123: Description "Detailed project roadmap" needs Arabic translation
+Line 124: Step "Execution" needs Arabic translation
+Line 125: Description "Professional implementation" needs Arabic translation
+Line 126: Step "Delivery" needs Arabic translation
+Line 127: Description "Quality assurance & handover" needs Arabic translation
+Line 128: Step "Support" needs Arabic translation
+Line 129: Description "Ongoing maintenance & optimization" needs Arabic translation
+Line 136: Metric "50+" needs Arabic translation
+Line 137: Label "Certified Professionals" needs Arabic translation
+Line 138: Description "Expert consultants and developers" needs Arabic translation
+Line 139: Metric "500+" needs Arabic translation
+Line 140: Label "Successful Projects" needs Arabic translation
+Line 141: Description "Across various industries" needs Arabic translation
+Line 142: Metric "99%" needs Arabic translation
+Line 143: Label "Client Satisfaction" needs Arabic translation
+Line 144: Description "Based on project completion surveys" needs Arabic translation
+SpecsSection.tsx:
+
+Line 12: Chip text "Specs" needs Arabic translation
+Line 18: Heading "Atlas works with your team, not instead of it. By handling repetitive tasks, improving safety conditions, and learning from every interaction, Atlas helps humans focus on what they do best: create, solve, and innovate." needs Arabic translation
+Testimonials.tsx:
+
+Line 17: Content "MovinWare transformed our production operations, streamlining workflows while our team focuses on strategic growth. 40% increase in efficiency within two months." needs Arabic translation
+Line 18: Author "Sarah Chen" needs Arabic translation
+Line 19: Role "VP of Operations, Axion Manufacturing" needs Arabic translation
+Line 21: Content "Implementing MovinWare in our logistics centers reduced operational costs by 35% while improving accuracy. The AI-powered insights are game-changing." needs Arabic translation
+Line 22: Author "Michael Rodriguez" needs Arabic translation
+Line 23: Role "Director of Logistics, GlobalShip" needs Arabic translation
+Line 25: Content "As a mid-size business, we never thought advanced ERP would be accessible to us. MovinWare changed that with its intuitive design and affordable pricing." needs Arabic translation
+Line 26: Author "Jason Lee" needs Arabic translation
+Line 27: Role "CEO, Innovative Solutions Inc." needs Arabic translation
+Line 37: Chip text "Testimonials" needs Arabic translation
+Line 40: Heading "What others say" needs Arabic translation
+ValueSection.tsx:
+
+Line 100: Span text "AI Features" needs Arabic translation
+Line 120: Span text "Unmatched Speed" needs Arabic translation
+Line 140: Span text "Cultural Fit" needs Arabic translation
+Line 160: Span text "Easy Adoption" needs Arabic translation
+Contact.tsx:
+
+Line 20: Title "Email" needs Arabic translation
+Line 21: Value "info@movinware.com" needs Arabic translation
+Line 23: Title "Phone" needs Arabic translation
+Line 24: Value "+966 561820949" needs Arabic translation
+Line 26: Title "Location" needs Arabic translation
+Line 27: Value "Online" needs Arabic translation
+Line 30: Title "Talk to Expert" needs Arabic translation
+Line 31: Description "Schedule a call with our experts" needs Arabic translation
+Line 33: Title "Schedule Consultation" needs Arabic translation
+Line 34: Description "Book a free consultation" needs Arabic translation
+Line 36: Title "WhatsApp Support" needs Arabic translation
+Line 37: Description "Get instant support via WhatsApp" needs Arabic translation
+Line 50: Error message "Please enter your full name" needs Arabic translation
+Line 54: Error message "Please enter your email address" needs Arabic translation
+Line 58: Error message "Please enter a valid email address" needs Arabic translation
+Line 62: Error message "Please enter your message" needs Arabic translation
+Line 100: Button text "Sending..." needs Arabic translation
+Line 103: Button text "Message Sent!" needs Arabic translation
+Line 106: Button text "Try Again" needs Arabic translation
+Line 110: Success toast title "Message sent successfully!" needs Arabic translation
+Line 111: Success toast description "We'll get back to you within 24 hours." needs Arabic translation
+Line 120: Success toast title "Opening your email client..." needs Arabic translation
+Line 121: Success toast description "EmailJS failed, using your default email client instead." needs Arabic translation
+Line 121: Success toast description "Please send the email from your email client to complete the process." needs Arabic translation
+Line 124: Error toast title "Failed to send message" needs Arabic translation
+Line 125: Error toast description "Please try again or contact us directly at info@movinware.com" needs Arabic translation
+Line 134: Success message "Message delivered successfully!" needs Arabic translation
+Line 137: Success message description "We've received your message and will respond within 24 hours." needs Arabic translation
+Line 143: Error message "Failed to send message" needs Arabic translation
+Line 146: Error message description "Please try again or contact us directly at" needs Arabic translation
+Line 147: Email link "info@movinware.com" needs Arabic translation
+Line 170: Option "General Inquiry" needs Arabic translation
+Line 171: Option "ERP Implementation" needs Arabic translation
+Line 172: Option "Custom Development" needs Arabic translation
+Line 173: Option "Support" needs Arabic translation
+Line 174: Option "Partnership" needs Arabic translation
+Line 175: Option "Demo Request" needs Arabic translation
+Line 180: Placeholder "Tell us about your project..." needs Arabic translation
+Footer.tsx:
+
+Line 20: Brand name "MovinWare" needs Arabic translation
+Line 22: Paragraph text "AI-powered ERP solutions designed for modern businesses. Streamline operations, boost efficiency, and future-proof your business with intelligent automation." needs Arabic translation
+Line 38: Heading "Quick Links" needs Arabic translation
+Line 40: Link "Platform" needs Arabic translation
+Line 41: Link "Industries" needs Arabic translation
+Line 42: Link "Services" needs Arabic translation
+Line 43: Link "Contact" needs Arabic translation
+Line 50: Heading "Contact" needs Arabic translation
+Line 54: Text "info@movinware.com" needs Arabic translation
+Line 55: Text "+966 561820949" needs Arabic translation
+Line 56: Text "Online" needs Arabic translation
+Line 66: Copyright text "© 2025 MovinWare. All rights reserved." needs Arabic translation
+Line 68: Text "Built entirely by" needs Arabic translation
+Line 69: Name "Muhammad Al-Duais" needs Arabic translation
+BackToTop.tsx:
+
+Line 60: aria-label "Back to top" needs Arabic translation
+LottieAnimation.tsx:
+
+All elements appear to have Arabic translation support.
+OptimizedBackground.tsx:
+
+All elements appear to have Arabic translation support.
+OptimizedImage.tsx:
+
+All elements appear to have Arabic translation support.
+PreviewCard.tsx:
+
+Line 50: Button text "Learn more" needs Arabic translation
+Testimonials.tsx:
+
+Line 17: Content "MovinWare transformed our production operations, streamlining workflows while our team focuses on strategic growth. 40% increase in efficiency within two months." needs Arabic translation
+Line 18: Author "Sarah Chen" needs Arabic translation
+Line 19: Role "VP of Operations, Axion Manufacturing" needs Arabic translation
+Line 21: Content "Implementing MovinWare in our logistics centers reduced operational costs by 35% while improving accuracy. The AI-powered insights are game-changing." needs Arabic translation
+Line 22: Author "Michael Rodriguez" needs Arabic translation
+Line 23: Role "Director of Logistics, GlobalShip" needs Arabic translation
+Line 25: Content "As a mid-size business, we never thought advanced ERP would be accessible to us. MovinWare changed that with its intuitive design and affordable pricing." needs Arabic translation
+Line 26: Author "Jason Lee" needs Arabic translation
+Line 27: Role "CEO, Innovative Solutions Inc." needs Arabic translation
+Line 37: Chip text "Testimonials" needs Arabic translation
+Line 40: Heading "What others say" needs Arabic translation
+Index.tsx:
+
+All elements appear to have Arabic translation support.
+NotFound.tsx:
+
+Line 14: Heading "404" needs Arabic translation
+Line 15: Paragraph "Oops! Page not found" needs Arabic translation
+Line 16: Link "Return to Home" needs Arabic translation
