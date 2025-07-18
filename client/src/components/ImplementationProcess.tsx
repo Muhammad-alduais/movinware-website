@@ -108,53 +108,81 @@ const ImplementationProcess = () => {
         }}>
               <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-500">
                 <div className="p-8 lg:p-12">
-                  <div className={`flex flex-col lg:flex-row lg:items-center gap-8 ${
-                    language === 'ar' ? 'lg:flex-row-reverse' : ''
-                  }`}>
-                    <div className={`flex-1 ${language === 'ar' ? 'font-arabic' : ''}`}>
-                      <div className={`flex items-center mb-4 ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
-                        <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ${
-                          language === 'ar' ? 'ml-4' : 'mr-4'
-                        } ${phase.color}`}>
-                          <phase.icon className="w-6 h-6" />
+                  {language === 'ar' ? (
+                    /* Arabic Layout - RTL Design */
+                    <div className="flex flex-col lg:flex-row gap-8">
+                      {/* Main Content - Right Side in Arabic */}
+                      <div className="flex-1 font-arabic">
+                        <div className="flex items-center mb-6 flex-row-reverse">
+                          <div className={`w-14 h-14 rounded-2xl flex items-center justify-center ml-4 ${phase.color}`}>
+                            <phase.icon className="w-7 h-7" />
+                          </div>
+                          <div className="text-right">
+                            <h3 className="text-2xl font-semibold text-gray-900 font-arabic leading-tight mb-2">
+                              {phase.title}
+                            </h3>
+                            <div className="inline-flex items-center px-3 py-1 rounded-full bg-pulse-100 text-pulse-600 text-sm font-medium">
+                              {phase.duration}
+                            </div>
+                          </div>
                         </div>
-                        <div className={language === 'ar' ? 'text-right' : ''}>
-                          <h3 className={`text-2xl font-medium text-gray-900 ${
-                            language === 'ar' ? 'font-arabic' : ''
-                          }`}>{phase.title}</h3>
-                          <p className={`text-pulse-500 font-medium ${
-                            language === 'ar' ? 'font-arabic' : ''
-                          }`}>{phase.duration}</p>
-                        </div>
+                        <p className="text-gray-600 leading-relaxed text-right font-arabic text-lg mb-6">
+                          {phase.description}
+                        </p>
                       </div>
-                      <p className={`text-gray-600 leading-relaxed mb-6 ${
-                        language === 'ar' ? 'text-right font-arabic' : ''
-                      }`}>
-                        {phase.description}
-                      </p>
-                    </div>
 
-                    <div className={`lg:w-80 ${language === 'ar' ? 'font-arabic' : ''}`}>
-                      <h4 className={`text-sm font-medium text-gray-900 mb-4 flex items-center ${
-                        language === 'ar' ? 'flex-row-reverse text-right' : ''
-                      }`}>
-                        <CheckCircle className={`w-4 h-4 text-green-500 ${
-                          language === 'ar' ? 'ml-2' : 'mr-2'
-                        }`} />
-                        {t('implementation.key_deliverables')}
-                      </h4>
-                      <div className="space-y-3">
-                        {phase.deliverables.map((deliverable, deliverableIndex) => <div key={deliverableIndex} className={`flex items-center text-sm text-gray-600 ${
-                          language === 'ar' ? 'flex-row-reverse text-right' : ''
-                        }`}>
-                            <div className={`w-2 h-2 bg-pulse-500 rounded-full ${
-                              language === 'ar' ? 'ml-3' : 'mr-3'
-                            }`}></div>
-                            {deliverable}
-                          </div>)}
+                      {/* Deliverables - Left Side in Arabic */}
+                      <div className="lg:w-80">
+                        <div className="bg-gray-50 rounded-2xl p-6">
+                          <h4 className="text-sm font-semibold text-gray-900 mb-4 flex items-center flex-row-reverse text-right font-arabic">
+                            <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
+                            {t('implementation.key_deliverables')}
+                          </h4>
+                          <div className="space-y-3">
+                            {phase.deliverables.map((deliverable, deliverableIndex) => (
+                              <div key={deliverableIndex} className="flex items-center text-sm text-gray-600 flex-row-reverse text-right">
+                                <div className="w-2 h-2 bg-pulse-500 rounded-full ml-3 flex-shrink-0"></div>
+                                <span className="font-arabic">{deliverable}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  ) : (
+                    /* English Layout - LTR Design */
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-8">
+                      <div className="flex-1">
+                        <div className="flex items-center mb-4">
+                          <div className={`w-12 h-12 rounded-2xl flex items-center justify-center mr-4 ${phase.color}`}>
+                            <phase.icon className="w-6 h-6" />
+                          </div>
+                          <div>
+                            <h3 className="text-2xl font-medium text-gray-900">{phase.title}</h3>
+                            <p className="text-pulse-500 font-medium">{phase.duration}</p>
+                          </div>
+                        </div>
+                        <p className="text-gray-600 leading-relaxed mb-6">
+                          {phase.description}
+                        </p>
+                      </div>
+
+                      <div className="lg:w-80">
+                        <h4 className="text-sm font-medium text-gray-900 mb-4 flex items-center">
+                          <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                          {t('implementation.key_deliverables')}
+                        </h4>
+                        <div className="space-y-3">
+                          {phase.deliverables.map((deliverable, deliverableIndex) => (
+                            <div key={deliverableIndex} className="flex items-center text-sm text-gray-600">
+                              <div className="w-2 h-2 bg-pulse-500 rounded-full mr-3"></div>
+                              {deliverable}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>)}

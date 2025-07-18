@@ -97,8 +97,20 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: 1.6;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+  }
+
+  /* Enhanced Arabic typography */
+  .font-arabic h1, .font-arabic h2, .font-arabic h3, .font-arabic h4 {
+    font-weight: 600;
+    line-height: 1.3;
     letter-spacing: 0.01em;
+  }
+
+  .font-arabic p {
+    line-height: 1.8;
+    letter-spacing: 0.02em;
   }
 
   /* RTL support for Arabic */
