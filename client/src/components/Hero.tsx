@@ -110,10 +110,12 @@ const Hero = () => {
             <h1 className="section-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight opacity-0 animate-fade-in" style={{
             animationDelay: "0.3s"
           }}>
-              {t('hero.title').split('\n').map((line, index) => <React.Fragment key={index}>
+              {t('hero.title').split('\n').map((line, index) => (
+                <React.Fragment key={index}>
                   {line}
                   {index === 0 && <br className="hidden sm:inline" />}
-                </React.Fragment>)}
+                </React.Fragment>
+              ))}
             </h1>
             
             <p style={{

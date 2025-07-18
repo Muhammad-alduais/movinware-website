@@ -498,3 +498,13 @@
     @apply text-lg md:text-xl;
   }
 }
+
+/* Pulse gradient background */
+.bg-pulse-gradient {
+  background: linear-gradient(135deg, rgba(73, 66, 228, 0.8) 0%, rgba(73, 66, 228, 0.2) 100%);
+}
+
+/* Fade in animation */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
