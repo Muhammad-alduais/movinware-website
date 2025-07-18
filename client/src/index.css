@@ -90,6 +90,23 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
+  /* Arabic text improvements */
+  .font-arabic {
+    font-family: 'GraphikArabic', 'Tajawal', 'Arial', sans-serif;
+    font-feature-settings: 'liga' 1, 'dlig' 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+  }
+
+  /* RTL support for Arabic */
+  [dir="rtl"] {
+    text-align: right;
+    direction: rtl;
+  }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;

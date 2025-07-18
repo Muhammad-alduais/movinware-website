@@ -786,13 +786,7 @@ const translations = {
     'features.mobile_cloud': 'منصة الهاتف المحمول والسحابة',
     'features.anywhere_access': 'الوصول من أي مكان',
     'features.mobile_description': 'الوصول إلى بيانات أعمالك من أي مكان مع ضمان وقت تشغيل 99.9% وقدرات بدون اتصال.',
-    
-    // Services Section
-    'services.section': 'الخدمات المهنية',
-    'services.title': 'خدمات متخصصة للتنفيذ\nالناجح',
-    'services.subtitle': 'يضمن محترفونا المعتمدون تسليم تطبيق تخطيط موارد المؤسسات في الوقت المحدد وفي حدود الميزانية ويتجاوز التوقعات',
-    'services.methodology': 'منهجية خدماتنا',
-    'services.methodology.subtitle': 'نهج منظم يضمن جودة التسليم ورضا العملاء في كل مرحلة',
+
     
     // Service Types
     'services.erp.title': 'تطبيق تخطيط موارد المؤسسات',
@@ -882,9 +876,7 @@ const translations = {
     'services.stats.satisfaction.label': 'رضا العملاء',
     'services.stats.satisfaction.desc': 'بناءً على استطلاعات إكمال المشاريع',
     
-    // Missing Industries translations
-    'industries.trusted': 'موثوق بها من قبل شركات من جميع الأحجام',
-    'industries.trusted.subtitle': 'من الشركات الناشئة إلى المؤسسات، نتوسع مع احتياجات أعمالك ونوفر حلول مخصصة لكل مرحلة نمو',
+
     
     // Footer
     'footer.description': 'حلول تخطيط موارد المؤسسات المدعومة بالذكاء الاصطناعي مصممة للأعمال الحديثة. قم بتبسيط العمليات وزيادة الكفاءة وضمان مستقبل أعمالك مع الأتمتة الذكية.',

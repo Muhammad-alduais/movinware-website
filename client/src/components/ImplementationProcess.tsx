@@ -2,7 +2,7 @@ import React from "react";
 import { Search, Palette, Code, Rocket, TrendingUp, Clock, CheckCircle, Users } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 const ImplementationProcess = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const phases = [{
     icon: Search,
     title: t('implementation.phases.discovery.title'),
@@ -108,30 +108,48 @@ const ImplementationProcess = () => {
         }}>
               <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-500">
                 <div className="p-8 lg:p-12">
-                  <div className="flex flex-col lg:flex-row lg:items-center gap-8">
-                    <div className="flex-1">
-                      <div className="flex items-center mb-4">
-                        <div className={`w-12 h-12 rounded-2xl flex items-center justify-center mr-4 ${phase.color}`}>
+                  <div className={`flex flex-col lg:flex-row lg:items-center gap-8 ${
+                    language === 'ar' ? 'lg:flex-row-reverse' : ''
+                  }`}>
+                    <div className={`flex-1 ${language === 'ar' ? 'font-arabic' : ''}`}>
+                      <div className={`flex items-center mb-4 ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
+                        <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ${
+                          language === 'ar' ? 'ml-4' : 'mr-4'
+                        } ${phase.color}`}>
                           <phase.icon className="w-6 h-6" />
                         </div>
-                        <div>
-                          <h3 className="text-2xl font-medium text-gray-900">{phase.title}</h3>
-                          <p className="text-pulse-500 font-medium">{phase.duration}</p>
+                        <div className={language === 'ar' ? 'text-right' : ''}>
+                          <h3 className={`text-2xl font-medium text-gray-900 ${
+                            language === 'ar' ? 'font-arabic' : ''
+                          }`}>{phase.title}</h3>
+                          <p className={`text-pulse-500 font-medium ${
+                            language === 'ar' ? 'font-arabic' : ''
+                          }`}>{phase.duration}</p>
                         </div>
                       </div>
-                      <p className="text-gray-600 leading-relaxed mb-6">
+                      <p className={`text-gray-600 leading-relaxed mb-6 ${
+                        language === 'ar' ? 'text-right font-arabic' : ''
+                      }`}>
                         {phase.description}
                       </p>
                     </div>
 
-                    <div className="lg:w-80">
-                      <h4 className="text-sm font-medium text-gray-900 mb-4 flex items-center">
-                        <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <div className={`lg:w-80 ${language === 'ar' ? 'font-arabic' : ''}`}>
+                      <h4 className={`text-sm font-medium text-gray-900 mb-4 flex items-center ${
+                        language === 'ar' ? 'flex-row-reverse text-right' : ''
+                      }`}>
+                        <CheckCircle className={`w-4 h-4 text-green-500 ${
+                          language === 'ar' ? 'ml-2' : 'mr-2'
+                        }`} />
                         {t('implementation.key_deliverables')}
                       </h4>
                       <div className="space-y-3">
-                        {phase.deliverables.map((deliverable, deliverableIndex) => <div key={deliverableIndex} className="flex items-center text-sm text-gray-600">
-                            <div className="w-2 h-2 bg-pulse-500 rounded-full mr-3"></div>
+                        {phase.deliverables.map((deliverable, deliverableIndex) => <div key={deliverableIndex} className={`flex items-center text-sm text-gray-600 ${
+                          language === 'ar' ? 'flex-row-reverse text-right' : ''
+                        }`}>
+                            <div className={`w-2 h-2 bg-pulse-500 rounded-full ${
+                              language === 'ar' ? 'ml-3' : 'mr-3'
+                            }`}></div>
                             {deliverable}
                           </div>)}
                       </div>
@@ -146,8 +164,12 @@ const ImplementationProcess = () => {
           <div className="text-center mb-12 opacity-0 animate-slide-up" style={{
           animationDelay: "0.8s"
         }}>
-            <h3 className="text-2xl font-light text-gray-900 mb-4">{t('implementation.why_works')}</h3>
-            <p className="text-gray-600">{t('implementation.why_works.subtitle')}</p>
+            <h3 className={`text-2xl font-light text-gray-900 mb-4 ${
+              language === 'ar' ? 'font-arabic' : ''
+            }`}>{t('implementation.why_works')}</h3>
+            <p className={`text-gray-600 ${
+              language === 'ar' ? 'font-arabic' : ''
+            }`}>{t('implementation.why_works.subtitle')}</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -167,12 +189,20 @@ const ImplementationProcess = () => {
             metric: t('implementation.stats.support.metric'),
             label: t('implementation.stats.support.label'),
             desc: t('implementation.stats.support.desc')
-          }].map((stat, index) => <div key={index} className="text-center bg-gray-50 rounded-3xl p-6 border border-gray-100 opacity-0 animate-fade-scale hover:animate-gentle-float" style={{
+          }].map((stat, index) => <div key={index} className={`text-center bg-gray-50 rounded-3xl p-6 border border-gray-100 opacity-0 animate-fade-scale hover:animate-gentle-float ${
+            language === 'ar' ? 'font-arabic' : ''
+          }`} style={{
             animationDelay: `${0.9 + 0.1 * index}s`
           }}>
-                <div className="text-3xl font-light text-pulse-500 mb-2">{stat.metric}</div>
-                <div className="font-medium text-gray-900 mb-1">{stat.label}</div>
-                <div className="text-xs text-gray-600">{stat.desc}</div>
+                <div className={`text-3xl font-light text-pulse-500 mb-2 ${
+                  language === 'ar' ? 'font-arabic' : ''
+                }`}>{stat.metric}</div>
+                <div className={`font-medium text-gray-900 mb-1 ${
+                  language === 'ar' ? 'font-arabic' : ''
+                }`}>{stat.label}</div>
+                <div className={`text-xs text-gray-600 ${
+                  language === 'ar' ? 'font-arabic' : ''
+                }`}>{stat.desc}</div>
               </div>)}
           </div>
         </div>
