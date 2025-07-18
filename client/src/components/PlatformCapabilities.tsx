@@ -10,34 +10,34 @@ const PlatformCapabilities = () => {
   const [selectedCapability, setSelectedCapability] = useState<any>(null);
   const capabilities = [{
     icon: Cpu,
-    title: "Core Modules",
-    description: "Essential business modules for complete operations management and workflow automation.",
+    title: t('features.core_modules'),
+    description: t('features.core_description'),
     capabilities: ["Advanced Accounting & Financial Reporting", "Comprehensive Human Resources Management", "Sales CRM with Pipeline Automation", "Smart Inventory & Supply Chain Control", "Project Management & Resource Planning", "Document Management & Workflow Automation", "Multi-location Operations Support", "Real-time Business Intelligence Dashboard"],
-    timeline: "Core Foundation",
+    timeline: t('features.core_foundation'),
     fullDescription: "Comprehensive business modules covering all aspects of your operations, designed to streamline processes and boost productivity across your entire organization. Our core modules provide the foundation for digital transformation with integrated workflows, automated processes, and real-time data synchronization across all business functions.",
     benefits: ["Integrated workflow automation reduces manual tasks by 70%", "Real-time data synchronization across all departments", "Comprehensive reporting and analytics dashboard", "Multi-location support with centralized control"]
   }, {
     icon: Zap,
-    title: "AI Features",
-    description: "Advanced AI technology that learns and optimizes your business processes automatically.",
+    title: t('features.ai_features'),
+    description: t('features.ai_description'),
     capabilities: ["Machine Learning Predictive Analytics", "Intelligent Process Automation Workflows", "Natural Language Report Generation", "AI-Powered Decision Recommendation Engine", "Smart Data Pattern Recognition", "Automated Anomaly Detection & Alerts", "Intelligent Customer Behavior Analysis", "Voice-to-Data Input Processing"],
-    timeline: "Smart Enhancement",
+    timeline: t('features.smart_enhancement'),
     fullDescription: "Intelligent automation and insights powered by advanced AI technology that learns from your business patterns to provide actionable recommendations. Our AI features continuously evolve with your business, identifying opportunities for optimization and automating complex decision-making processes to drive growth and efficiency.",
     benefits: ["Predictive analytics improve decision-making accuracy by 85%", "Automated workflows reduce processing time by 60%", "AI-powered insights drive revenue growth", "Continuous learning adapts to your business evolution"]
   }, {
     icon: Link,
-    title: "Integration Hub",
-    description: "Connect with 500+ platforms and systems seamlessly for unified data flow.",
+    title: t('features.integration_hub'),
+    description: t('features.integration_description'),
     capabilities: ["Enterprise API Gateway Management", "Real-time Data Synchronization Engine", "Legacy System Migration Tools", "Third-party Platform Connectors", "Custom Integration Development", "Webhook & Event-driven Architecture", "Data Mapping & Transformation Tools", "Security & Authentication Management"],
-    timeline: "Seamless Connection",
+    timeline: t('features.seamless_connection'),
     fullDescription: "Seamless connectivity with your existing tools and systems, ensuring data flows smoothly across your entire technology stack without disruption. Our integration hub supports both modern APIs and legacy systems, providing a unified data ecosystem that eliminates silos and enables comprehensive business intelligence.",
     benefits: ["Connect 500+ third-party applications instantly", "Eliminate data silos with unified integration", "Legacy system support ensures smooth migration", "Real-time synchronization keeps data current"]
   }, {
     icon: Smartphone,
-    title: "Mobile & Cloud Platform",
-    description: "Access your business data anywhere with 99.9% uptime guarantee and offline capabilities.",
+    title: t('features.mobile_cloud'),
+    description: t('features.mobile_description'),
     capabilities: ["Progressive Web Application (PWA)", "Native iOS & Android Applications", "Offline-first Data Synchronization", "Multi-device Real-time Collaboration", "Cloud Infrastructure Auto-scaling", "Enterprise-grade Security & Encryption", "Automated Backup & Disaster Recovery", "Global CDN for Optimal Performance"],
-    timeline: "Anywhere Access",
+    timeline: t('features.anywhere_access'),
     fullDescription: "Access your business data anywhere, anytime, on any device with our cloud-native platform that ensures maximum uptime and security. Built with modern cloud architecture, our platform provides seamless mobile experiences with robust offline capabilities and enterprise-grade security that scales with your business needs.",
     benefits: ["99.9% uptime SLA with automatic failover", "Offline functionality ensures continuous productivity", "Enterprise-grade security protects your data", "Global CDN provides optimal performance worldwide"]
   }];

@@ -150,6 +150,12 @@ const translations = {
     'contact.form.message': 'Message',
     'contact.form.send': 'Send Message',
     'contact.info.title': 'Contact Information',
+    'contact.inquiry.general': 'General Inquiry',
+    'contact.inquiry.erp': 'ERP Implementation',
+    'contact.inquiry.custom': 'Custom Development',
+    'contact.inquiry.support': 'Support',
+    'contact.inquiry.partnership': 'Partnership',
+    'contact.inquiry.demo': 'Demo Request',
     
     // Services Section
     'services.section': 'Professional Services',
@@ -171,6 +177,20 @@ const translations = {
     'implementation.timeline': 'Implementation Timeline',
     'implementation.why_works': 'Why our process works',
     'implementation.why_works.subtitle': 'Proven results from our implementation methodology',
+    
+    // Features Section
+    'features.core_modules': 'Core Modules',
+    'features.core_foundation': 'Core Foundation',
+    'features.core_description': 'Essential business modules for complete operations management and workflow automation.',
+    'features.ai_features': 'AI Features',
+    'features.smart_enhancement': 'Smart Enhancement',
+    'features.ai_description': 'Advanced AI technology that learns and optimizes your business processes automatically.',
+    'features.integration_hub': 'Integration Hub',
+    'features.seamless_connection': 'Seamless Connection',
+    'features.integration_description': 'Connect with 500+ platforms and systems seamlessly for unified data flow.',
+    'features.mobile_cloud': 'Mobile & Cloud Platform',
+    'features.anywhere_access': 'Anywhere Access',
+    'features.mobile_description': 'Access your business data anywhere with 99.9% uptime guarantee and offline capabilities.',
     
     // Footer
     'footer.description': 'AI-powered ERP solutions designed for modern businesses. Streamline operations, boost efficiency, and future-proof your business with intelligent automation.',
@@ -329,6 +349,12 @@ const translations = {
     'contact.form.message': 'الرسالة',
     'contact.form.send': 'إرسال الرسالة',
     'contact.info.title': 'معلومات الاتصال',
+    'contact.inquiry.general': 'استفسار عام',
+    'contact.inquiry.erp': 'تنفيذ نظام تخطيط الموارد',
+    'contact.inquiry.custom': 'تطوير مخصص',
+    'contact.inquiry.support': 'دعم',
+    'contact.inquiry.partnership': 'شراكة',
+    'contact.inquiry.demo': 'طلب عرض توضيحي',
     
     // Services Section
     'services.section': 'الخدمات المهنية',
@@ -348,6 +374,20 @@ const translations = {
     'implementation.timeline': 'الجدول الزمني للتنفيذ',
     'implementation.why_works': 'لماذا تعمل عمليتنا',
     'implementation.why_works.subtitle': 'نتائج مثبتة من منهجية التنفيذ الخاصة بنا',
+    
+    // Features Section
+    'features.core_modules': 'الوحدات الأساسية',
+    'features.core_foundation': 'الأساس الأساسي',
+    'features.core_description': 'وحدات أعمال أساسية لإدارة العمليات الكاملة وأتمتة سير العمل.',
+    'features.ai_features': 'ميزات الذكاء الاصطناعي',
+    'features.smart_enhancement': 'التحسين الذكي',
+    'features.ai_description': 'تقنية ذكاء اصطناعي متقدمة تتعلم وتحسن عمليات أعمالك تلقائياً.',
+    'features.integration_hub': 'مركز التكامل',
+    'features.seamless_connection': 'الاتصال السلس',
+    'features.integration_description': 'اتصل مع أكثر من 500 منصة ونظام بسلاسة لتدفق بيانات موحد.',
+    'features.mobile_cloud': 'منصة الهاتف المحمول والسحابة',
+    'features.anywhere_access': 'الوصول من أي مكان',
+    'features.mobile_description': 'الوصول إلى بيانات أعمالك من أي مكان مع ضمان وقت تشغيل 99.9% وقدرات بدون اتصال.',
     
     // Footer
     'footer.description': 'حلول تخطيط موارد المؤسسات المدعومة بالذكاء الاصطناعي مصممة للأعمال الحديثة. قم بتبسيط العمليات وزيادة الكفاءة وضمان مستقبل أعمالك مع الأتمتة الذكية.',

@@ -232,12 +232,12 @@ This message was sent via the MovinWare contact form on ${new Date().toLocaleDat
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">{t('contact.form.inquiry')}</label>
                 <select name="inquiryType" value={formData.inquiryType} onChange={handleInputChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pulse-500 focus:border-transparent transition-all duration-200">
-                  <option>General Inquiry</option>
-                  <option>ERP Implementation</option>
-                  <option>Custom Development</option>
-                  <option>Support</option>
-                  <option>Partnership</option>
-                  <option>Demo Request</option>
+                  <option value="General Inquiry">{t('contact.inquiry.general')}</option>
+                  <option value="ERP Implementation">{t('contact.inquiry.erp')}</option>
+                  <option value="Custom Development">{t('contact.inquiry.custom')}</option>
+                  <option value="Support">{t('contact.inquiry.support')}</option>
+                  <option value="Partnership">{t('contact.inquiry.partnership')}</option>
+                  <option value="Demo Request">{t('contact.inquiry.demo')}</option>
                 </select>
               </div>
               <div>
