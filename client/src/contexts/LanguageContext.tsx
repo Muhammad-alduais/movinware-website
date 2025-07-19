@@ -453,7 +453,7 @@ const translations = {
   ar: {
     // Navigation
     'nav.home': 'الرئيسية',
-    'nav.value': 'قيمة شاملة',
+    'nav.value': 'القيمة شاملة',
     'nav.platform': 'المنصة',
     'nav.industries': 'الصناعات',
     'nav.erp': 'الحلول',
