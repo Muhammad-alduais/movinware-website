@@ -88,7 +88,7 @@ const ImplementationProcess = () => {
         animationDelay: "0.2s"
       }}>
           <div className="bg-gray-50 rounded-3xl p-8 border border-gray-100">
-            <h3 className="text-xl font-medium text-gray-900 mb-8 text-center">Implementation Timeline</h3>
+            <h3 className={`text-xl font-medium text-gray-900 mb-8 text-center ${language === 'ar' ? 'font-arabic' : ''}`}>{t('implementation.timeline_title')}</h3>
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               {timeline.map((item, index) => <div key={index} className="flex flex-col items-center text-center relative">
                   <div className="w-12 h-12 bg-pulse-500 rounded-full flex items-center justify-center text-white font-medium mb-3">

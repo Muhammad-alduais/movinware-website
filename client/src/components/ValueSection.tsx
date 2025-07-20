@@ -3,7 +3,8 @@ import { OptimizedBackground } from "./ui";
 import { useLanguage } from "../contexts/LanguageContext";
 const ValueSection = () => {
   const {
-    t
+    t,
+    language
   } = useLanguage();
   const sectionRef = useRef<HTMLDivElement>(null);
   const cardsContainerRef = useRef<HTMLDivElement>(null);
@@ -95,10 +96,10 @@ const ValueSection = () => {
               </div>
             </div>
             
-            <h2 className="section-title text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-1 md:mb-2">
+            <h2 className={`section-title text-3xl sm:text-4xl md:text-5xl font-bold mb-1 md:mb-2 ${language === 'ar' ? 'font-arabic' : 'font-brockmann'}`}>
               {t('value.title')}
             </h2>
-            <p className="text-xl text-gray-600 mb-4">
+            <p className={`text-xl text-gray-600 mb-4 ${language === 'ar' ? 'font-arabic' : 'font-inter'}`}>
               {t('value.subtitle')}
             </p>
           </div>
@@ -124,11 +125,11 @@ const ValueSection = () => {
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
+                  <h3 className={`text-2xl sm:text-3xl md:text-4xl text-white font-bold leading-tight mb-4 ${language === 'ar' ? 'font-arabic' : 'font-brockmann'}`}>
                     {t('value.ai.title')}
                   </h3>
                   <ul className="text-white/90 space-y-2">
-                    {t('value.ai.features').map((feature, index) => <li key={index}>• {feature}</li>)}
+                    {(Array.isArray(t('value.ai.features')) ? t('value.ai.features') : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
                   </ul>
                 </div>
               </div>
@@ -155,11 +156,11 @@ const ValueSection = () => {
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
+                  <h3 className={`text-2xl sm:text-3xl md:text-4xl text-white font-bold leading-tight mb-4 ${language === 'ar' ? 'font-arabic' : 'font-brockmann'}`}>
                     {t('value.speed.title')}
                   </h3>
                   <ul className="text-white/90 space-y-2">
-                    {t('value.speed.features').map((feature, index) => <li key={index}>• {feature}</li>)}
+                    {(Array.isArray(t('value.speed.features')) ? t('value.speed.features') : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
                   </ul>
                 </div>
               </div>
@@ -186,11 +187,11 @@ const ValueSection = () => {
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
+                  <h3 className={`text-2xl sm:text-3xl md:text-4xl text-white font-bold leading-tight mb-4 ${language === 'ar' ? 'font-arabic' : 'font-brockmann'}`}>
                     {t('value.culture.title')}
                   </h3>
                   <ul className="text-white/90 space-y-2">
-                    {t('value.culture.features').map((feature, index) => <li key={index}>• {feature}</li>)}
+                    {(Array.isArray(t('value.culture.features')) ? t('value.culture.features') : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
                   </ul>
                 </div>
               </div>
@@ -217,11 +218,11 @@ const ValueSection = () => {
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
+                  <h3 className={`text-2xl sm:text-3xl md:text-4xl text-white font-bold leading-tight mb-4 ${language === 'ar' ? 'font-arabic' : 'font-brockmann'}`}>
                     {t('value.adoption.title')}
                   </h3>
                   <ul className="text-white/90 space-y-2">
-                    {t('value.adoption.features').map((feature, index) => <li key={index}>• {feature}</li>)}
+                    {(Array.isArray(t('value.adoption.features')) ? t('value.adoption.features') : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
                   </ul>
                 </div>
               </div>

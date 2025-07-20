@@ -10,7 +10,8 @@ const Hero = () => {
   const [lottieData, setLottieData] = useState<any>(null);
   const [isMobile, setIsMobile] = useState(false);
   const {
-    t
+    t,
+    language
   } = useLanguage();
   useEffect(() => {
     // Check if mobile on mount and when window resizes
@@ -107,10 +108,10 @@ const Hero = () => {
               <span>{t('hero.chip')}</span>
             </div>
             
-            <h1 className="section-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight opacity-0 animate-fade-in" style={{
+            <h1 className={`section-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight opacity-0 animate-fade-in ${language === 'ar' ? 'font-arabic' : 'font-brockmann'}`} style={{
             animationDelay: "0.3s"
           }}>
-              {t('hero.title').split('\n').map((line, index) => (
+              {String(t('hero.title')).split('\n').map((line: string, index: number) => (
                 <span key={index}>
                   {line}
                   {index === 0 && <br className="hidden sm:inline" />}
@@ -120,7 +121,7 @@ const Hero = () => {
             
             <p style={{
             animationDelay: "0.5s"
-          }} className="section-subtitle mt-3 sm:mt-6 mb-4 sm:mb-8 leading-relaxed opacity-0 animate-fade-in text-gray-950 font-normal sm:text-lg text-lg">
+          }} className={`section-subtitle mt-3 sm:mt-6 mb-4 sm:mb-8 leading-relaxed opacity-0 animate-fade-in text-gray-950 font-normal sm:text-lg text-lg ${language === 'ar' ? 'font-arabic' : 'font-inter'}`}>
               {t('hero.subtitle')}
             </p>
             

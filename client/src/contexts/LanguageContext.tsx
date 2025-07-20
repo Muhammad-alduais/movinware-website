@@ -408,6 +408,7 @@ const translations = {
     
     // Implementation Stats
     'implementation.key_deliverables': 'Key Deliverables',
+    'implementation.timeline_title': 'Implementation Timeline',
     'implementation.stats.faster.metric': '85%',
     'implementation.stats.faster.label': 'Faster Implementation',
     'implementation.stats.faster.desc': 'Compared to traditional methods',
@@ -767,6 +768,7 @@ const translations = {
     
     // Implementation Stats
     'implementation.key_deliverables': 'الإنجازات الرئيسية',
+    'implementation.timeline_title': 'الجدول الزمني للتنفيذ',
     'implementation.stats.faster.metric': '85%',
     'implementation.stats.faster.label': 'تنفيذ أسرع',
     'implementation.stats.faster.desc': 'مقارنة بالطرق التقليدية',

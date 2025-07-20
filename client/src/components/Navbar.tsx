@@ -5,7 +5,8 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "../contexts/LanguageContext";
 const Navbar = () => {
   const {
-    t
+    t,
+    language
   } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,7 +51,7 @@ const Navbar = () => {
               </g>
             </svg>
           </div>
-          <div className="text-2xl font-bold text-gray-900">MovinWare</div>
+          <div className={`text-2xl font-bold text-gray-900 ${language === 'ar' ? 'font-arabic' : 'font-brockmann'}`}>MovinWare</div>
         </a>
 
         {/* Desktop Navigation */}

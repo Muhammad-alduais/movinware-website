@@ -74,9 +74,9 @@ export default {
         },
       },
       fontFamily: {
-        'display': ['Playfair Display', 'serif'],
         'sans': ['Inter', 'system-ui', 'sans-serif'],
-        'brockmann': ['Brockmann', 'serif'],
+        'brockmann': ['Brockmann', 'Inter', 'sans-serif'],
+        'inter': ['Inter', 'system-ui', 'sans-serif'],
         'arabic': ['GraphikArabic', 'Tajawal', 'Arial', 'sans-serif'],
       },
       boxShadow: {

@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 /* GraphikArabic Font */
 @font-face {
@@ -191,7 +189,17 @@
   }
 
   body {
-    @apply bg-white text-black font-sans antialiased;
+    @apply bg-white text-black antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Font classes for English */
+  .font-brockmann {
+    font-family: 'Brockmann', 'Inter', sans-serif;
+  }
+  
+  .font-inter {
+    font-family: 'Inter', sans-serif;
   }
 
   .font-arabic body,
@@ -466,7 +474,7 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl font-display font-bold tracking-tight;
+    @apply text-3xl md:text-4xl lg:text-5xl font-brockmann font-bold tracking-tight;
   }
 
   .section-subtitle {

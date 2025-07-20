@@ -48,7 +48,7 @@ const DetailsSection = () => {
               className="relative h-48 sm:h-64 p-6 sm:p-8 flex items-end"
               style={{ backgroundPosition: "center" }}
             >
-              <h2 className="text-2xl sm:text-3xl font-display text-white font-bold">
+              <h2 className="text-2xl sm:text-3xl font-brockmann text-white font-bold">
                 The details
               </h2>
             </OptimizedBackground>
@@ -58,7 +58,7 @@ const DetailsSection = () => {
             backgroundColor: "#FFFFFF",
             border: "1px solid #ECECEC"
           }}>
-              <h3 className="text-lg sm:text-xl font-display mb-6 sm:mb-8">
+              <h3 className="text-lg sm:text-xl font-brockmann mb-6 sm:mb-8">
                 Precision engineering meets adaptive intelligence
               </h3>
 
@@ -142,7 +142,7 @@ const DetailsSection = () => {
               <div className="inline-block px-4 sm:px-6 py-2 border border-white text-white rounded-full text-xs mb-4">
                 Request a demo
               </div>
-              <h2 className="text-2xl sm:text-3xl font-display text-white font-bold mt-auto">
+              <h2 className="text-2xl sm:text-3xl font-brockmann text-white font-bold mt-auto">
                 See it for yourself
               </h2>
             </OptimizedBackground>
