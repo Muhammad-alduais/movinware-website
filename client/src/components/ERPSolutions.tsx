@@ -115,7 +115,7 @@ const ERPSolutions = () => {
                 
                 <div className="flex items-center text-pulse-500 font-medium text-sm group-hover:text-pulse-600 transition-colors duration-300 cursor-pointer mt-auto" onClick={() => setSelectedSolution(solution)}>
                   {t('common.explore')}
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300 rtl:rotate-180 rtl:mr-2 rtl:ml-0" />
                 </div>
               </div>
             </div>)}
