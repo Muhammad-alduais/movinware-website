@@ -7,6 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { useLanguage } from "../contexts/LanguageContext";
 
 interface DetailModalProps {
   isOpen: boolean;
@@ -52,6 +53,7 @@ const DetailModal = ({
   ctaButtons,
   icon: Icon 
 }: DetailModalProps) => {
+  const { t, language } = useLanguage();
   const defaultCTAButtons = [
     { text: "Get Started", variant: "primary" as const, action: undefined },
     { text: "Schedule Demo", variant: "secondary" as const, action: undefined }
@@ -87,9 +89,9 @@ const DetailModal = ({
           {/* Capabilities Section */}
           {capabilities && capabilities.length > 0 && (
             <div>
-              <h3 className="text-xl font-medium text-gray-900 mb-6 flex items-center">
+              <h3 className={`text-xl font-medium text-gray-900 mb-6 flex items-center ${language === 'ar' ? 'font-arabic' : ''}`}>
                 <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                Key Capabilities
+                {t('modal.key_capabilities')}
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {capabilities.map((capability, index) => (
@@ -105,7 +107,7 @@ const DetailModal = ({
           {/* Benefits Section */}
           {benefits && benefits.length > 0 && (
             <div>
-              <h3 className="text-xl font-medium text-gray-900 mb-6">Key Benefits</h3>
+              <h3 className={`text-xl font-medium text-gray-900 mb-6 ${language === 'ar' ? 'font-arabic' : ''}`}>{t('modal.key_benefits')}</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-start">
@@ -120,7 +122,7 @@ const DetailModal = ({
           {/* Process Steps Section */}
           {processSteps && processSteps.length > 0 && (
             <div>
-              <h3 className="text-xl font-medium text-gray-900 mb-6">Process Overview</h3>
+              <h3 className={`text-xl font-medium text-gray-900 mb-6 ${language === 'ar' ? 'font-arabic' : ''}`}>{t('modal.process_overview')}</h3>
               <div className="space-y-6">
                 {processSteps.map((step, index) => (
                   <div key={index} className="border-l-2 border-pulse-500 pl-6 relative">
@@ -154,7 +156,7 @@ const DetailModal = ({
                 {pricing.originalPrice && (
                   <div className="flex items-center justify-center">
                     <span className="text-sm text-gray-400 line-through mr-2">{pricing.originalPrice}</span>
-                    <span className="text-sm text-green-600 font-medium">Save 25%</span>
+                    <span className={`text-sm text-green-600 font-medium ${language === 'ar' ? 'font-arabic' : ''}`}>{t('modal.save_discount')}</span>
                   </div>
                 )}
               </div>
@@ -172,7 +174,7 @@ const DetailModal = ({
           {/* Clients Section */}
           {clients && (
             <div className="border-t border-gray-100 pt-6">
-              <h4 className="font-medium text-gray-900 mb-3">Perfect for:</h4>
+              <h4 className={`font-medium text-gray-900 mb-3 ${language === 'ar' ? 'font-arabic' : ''}`}>{t('modal.perfect_for')}</h4>
               <p className="text-gray-600">{clients}</p>
             </div>
           )}

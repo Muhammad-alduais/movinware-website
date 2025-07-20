@@ -448,7 +448,14 @@ const translations = {
     'common.required': 'required',
     'common.loading': 'Loading...',
     'common.success': 'Success',
-    'common.error': 'Error'
+    'common.error': 'Error',
+    
+    // Modal/Detail specific
+    'modal.key_capabilities': 'Key Capabilities',
+    'modal.key_benefits': 'Key Benefits',
+    'modal.process_overview': 'Process Overview',
+    'modal.perfect_for': 'Perfect for:',
+    'modal.save_discount': 'Save 25%'
   },
   ar: {
     // Navigation
@@ -891,7 +898,14 @@ const translations = {
     'common.required': 'مطلوب',
     'common.loading': 'جاري التحميل...',
     'common.success': 'نجح',
-    'common.error': 'خطأ'
+    'common.error': 'خطأ',
+    
+    // Modal/Detail specific
+    'modal.key_capabilities': 'القدرات الرئيسية',
+    'modal.key_benefits': 'الفوائد الرئيسية',
+    'modal.process_overview': 'نظرة عامة على العملية',
+    'modal.perfect_for': 'مثالي لـ:',
+    'modal.save_discount': 'وفر 25%'
   }
 };
 
