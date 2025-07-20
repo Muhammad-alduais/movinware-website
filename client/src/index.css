@@ -263,6 +263,26 @@
     scroll-behavior: smooth;
   }
 
+  /* Navigation styles */
+  .nav-link {
+    @apply text-gray-700 hover:text-pulse-600 font-medium transition-colors duration-200 relative;
+  }
+  
+  .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: currentColor;
+    border-radius: 1px;
+  }
+  
+  .mobile-nav-link {
+    @apply block w-full text-left text-gray-700 hover:text-pulse-600 hover:bg-gray-50 font-medium py-3 px-4 rounded-lg transition-all duration-200;
+  }
+
   /* Custom scrollbar */
   ::-webkit-scrollbar {
     width: 8px;
