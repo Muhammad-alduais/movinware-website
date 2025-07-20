@@ -5,38 +5,38 @@ const ImplementationProcess = () => {
   const { t, language } = useLanguage();
   const phases = [{
     icon: Search,
-    title: t('implementation.phases.discovery.title'),
-    duration: t('implementation.phases.discovery.duration'),
-    description: t('implementation.phases.discovery.description'),
-    deliverables: t('implementation.phases.discovery.deliverables'),
+    title: t('implementation.phases.discovery.title') as string,
+    duration: t('implementation.phases.discovery.duration') as string,
+    description: t('implementation.phases.discovery.description') as string,
+    deliverables: t('implementation.phases.discovery.deliverables') as string[],
     color: "bg-blue-50 text-blue-600"
   }, {
     icon: Palette,
-    title: t('implementation.phases.design.title'),
-    duration: t('implementation.phases.design.duration'),
-    description: t('implementation.phases.design.description'),
-    deliverables: t('implementation.phases.design.deliverables'),
+    title: t('implementation.phases.design.title') as string,
+    duration: t('implementation.phases.design.duration') as string,
+    description: t('implementation.phases.design.description') as string,
+    deliverables: t('implementation.phases.design.deliverables') as string[],
     color: "bg-purple-50 text-purple-600"
   }, {
     icon: Code,
-    title: t('implementation.phases.development.title'),
-    duration: t('implementation.phases.development.duration'),
-    description: t('implementation.phases.development.description'),
-    deliverables: t('implementation.phases.development.deliverables'),
+    title: t('implementation.phases.development.title') as string,
+    duration: t('implementation.phases.development.duration') as string,
+    description: t('implementation.phases.development.description') as string,
+    deliverables: t('implementation.phases.development.deliverables') as string[],
     color: "bg-green-50 text-green-600"
   }, {
     icon: Rocket,
-    title: t('implementation.phases.deployment.title'),
-    duration: t('implementation.phases.deployment.duration'),
-    description: t('implementation.phases.deployment.description'),
-    deliverables: t('implementation.phases.deployment.deliverables'),
+    title: t('implementation.phases.deployment.title') as string,
+    duration: t('implementation.phases.deployment.duration') as string,
+    description: t('implementation.phases.deployment.description') as string,
+    deliverables: t('implementation.phases.deployment.deliverables') as string[],
     color: "bg-orange-50 text-orange-600"
   }, {
     icon: TrendingUp,
-    title: t('implementation.phases.optimization.title'),
-    duration: t('implementation.phases.optimization.duration'),
-    description: t('implementation.phases.optimization.description'),
-    deliverables: t('implementation.phases.optimization.deliverables'),
+    title: t('implementation.phases.optimization.title') as string,
+    duration: t('implementation.phases.optimization.duration') as string,
+    description: t('implementation.phases.optimization.description') as string,
+    deliverables: t('implementation.phases.optimization.deliverables') as string[],
     color: "bg-pulse-50 text-pulse-600"
   }];
   const timeline = [{
@@ -109,49 +109,35 @@ const ImplementationProcess = () => {
               <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-500">
                 <div className="p-8 lg:p-12">
                   {language === 'ar' ? (
-                    /* Arabic Layout - Enhanced RTL Design */
-                    <div className="flex flex-col lg:flex-row gap-10 lg:gap-12">
-                      {/* Deliverables Section - Left Side in Arabic */}
-                      <div className="lg:w-96">
-                        <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-3xl p-8 border-2 border-blue-100 shadow-xl hover:shadow-2xl transition-all duration-300">
-                          <h4 className="text-lg font-bold text-gray-900 mb-6 flex items-center flex-row-reverse text-right font-arabic">
-                            <CheckCircle className="w-6 h-6 text-green-500 ml-3" />
-                            {t('implementation.key_deliverables')}
-                          </h4>
-                          <div className="space-y-5">
-                            {phase.deliverables.map((deliverable, deliverableIndex) => (
-                              <div key={deliverableIndex} className="flex items-center text-base text-gray-800 flex-row-reverse text-right bg-white rounded-2xl p-5 shadow-lg border border-gray-100 hover:shadow-xl hover:border-blue-200 transition-all duration-300 transform hover:-translate-y-1">
-                                <div className="w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full ml-4 flex-shrink-0 shadow-md"></div>
-                                <span className="font-arabic font-semibold leading-relaxed">{deliverable}</span>
-                              </div>
-                            ))}
+                    /* Arabic Layout - RTL version of English design */
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-8" dir="rtl">
+                      <div className="flex-1">
+                        <div className="flex items-center mb-4">
+                          <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ml-4 ${phase.color}`}>
+                            <phase.icon className="w-6 h-6" />
+                          </div>
+                          <div>
+                            <h3 className="text-2xl font-medium text-gray-900 font-arabic">{phase.title}</h3>
+                            <p className="text-pulse-500 font-medium font-arabic">{phase.duration}</p>
                           </div>
                         </div>
+                        <p className="text-gray-600 leading-relaxed mb-6 font-arabic">
+                          {phase.description}
+                        </p>
                       </div>
 
-                      {/* Main Content Section - Right Side in Arabic */}
-                      <div className="flex-1 font-arabic">
-                        {/* Header with Icon and Title */}
-                        <div className="flex items-start mb-8 flex-row-reverse">
-                          <div className={`w-20 h-20 rounded-3xl flex items-center justify-center ml-6 shadow-2xl ${phase.color} transform hover:scale-105 transition-transform duration-300`}>
-                            <phase.icon className="w-10 h-10 text-white" />
-                          </div>
-                          <div className="text-right flex-1">
-                            <h3 className="text-3xl font-bold text-gray-900 font-arabic leading-tight mb-4">
-                              {phase.title}
-                            </h3>
-                            <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white text-base font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                              <Clock className="w-5 h-5 ml-3" />
-                              {phase.duration}
+                      <div className="lg:w-80">
+                        <h4 className="text-sm font-medium text-gray-900 mb-4 flex items-center font-arabic">
+                          <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
+                          {t('implementation.key_deliverables')}
+                        </h4>
+                        <div className="space-y-3">
+                          {phase.deliverables.map((deliverable, deliverableIndex) => (
+                            <div key={deliverableIndex} className="flex items-center text-sm text-gray-600">
+                              <div className="w-2 h-2 bg-pulse-500 rounded-full ml-3"></div>
+                              <span className="font-arabic">{deliverable}</span>
                             </div>
-                          </div>
-                        </div>
-
-                        {/* Description */}
-                        <div className="bg-gradient-to-l from-blue-50 via-white to-indigo-50 rounded-3xl p-8 border-r-4 border-blue-500 shadow-lg">
-                          <p className="text-gray-800 leading-relaxed text-right font-arabic text-xl font-medium">
-                            {phase.description}
-                          </p>
+                          ))}
                         </div>
                       </div>
                     </div>
