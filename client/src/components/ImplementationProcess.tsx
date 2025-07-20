@@ -70,7 +70,7 @@ const ImplementationProcess = () => {
             <span className="font-semibold">{t('implementation.section')}</span>
           </div>
           <h2 className="section-header-title animate-header-glow">
-            {t('implementation.title').split('\n').map((line, index) => (
+            {(t('implementation.title') as string).split('\n').map((line: string, index: number) => (
               <span key={index}>
                 {line}
                 {index === 0 && <br />}
@@ -109,23 +109,8 @@ const ImplementationProcess = () => {
               <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-500">
                 <div className="p-8 lg:p-12">
                   {language === 'ar' ? (
-                    /* Arabic Layout - RTL version of English design */
+                    /* Arabic Layout - RTL version with swapped order */
                     <div className="flex flex-col lg:flex-row lg:items-center gap-8" dir="rtl">
-                      <div className="flex-1">
-                        <div className="flex items-center mb-4">
-                          <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ml-4 ${phase.color}`}>
-                            <phase.icon className="w-6 h-6" />
-                          </div>
-                          <div>
-                            <h3 className="text-2xl font-medium text-gray-900 font-arabic">{phase.title}</h3>
-                            <p className="text-pulse-500 font-medium font-arabic">{phase.duration}</p>
-                          </div>
-                        </div>
-                        <p className="text-gray-600 leading-relaxed mb-6 font-arabic">
-                          {phase.description}
-                        </p>
-                      </div>
-
                       <div className="lg:w-80">
                         <h4 className="text-sm font-medium text-gray-900 mb-4 flex items-center font-arabic">
                           <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
@@ -139,6 +124,21 @@ const ImplementationProcess = () => {
                             </div>
                           ))}
                         </div>
+                      </div>
+
+                      <div className="flex-1">
+                        <div className="flex items-center mb-4">
+                          <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ml-4 ${phase.color}`}>
+                            <phase.icon className="w-6 h-6" />
+                          </div>
+                          <div>
+                            <h3 className="text-2xl font-medium text-gray-900 font-arabic">{phase.title}</h3>
+                            <p className="text-pulse-500 font-medium font-arabic">{phase.duration}</p>
+                          </div>
+                        </div>
+                        <p className="text-gray-600 leading-relaxed mb-6 font-arabic">
+                          {phase.description}
+                        </p>
                       </div>
                     </div>
                   ) : (
