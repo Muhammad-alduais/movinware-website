@@ -132,8 +132,8 @@ const HowItWorks = () => {
               <StepCard
                 key={step.number}
                 number={step.number}
-                title={step.title}
-                description={step.description}
+                title={Array.isArray(step.title) ? step.title[0] : step.title}
+                description={Array.isArray(step.description) ? step.description[0] : step.description}
                 isActive={activeStep === index}
                 onClick={() => setActiveStep(index)}
               />
@@ -151,7 +151,7 @@ const HowItWorks = () => {
               >
                 <img
                   src={step.image}
-                  alt={step.title}
+                  alt={Array.isArray(step.title) ? step.title[0] : step.title}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-900/70 to-transparent">
