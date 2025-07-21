@@ -86,7 +86,7 @@ const Footer = () => {
 
             {/* Contact info */}
             <div>
-              <h3 className="text-lg font-semibold mb-6">{t('footer.contact')}</h3>
+              <h3 className="text-lg font-semibold mb-6 text-center">{t('footer.contact')}</h3>
               <ul className="space-y-4">
                 {contactInfo.map((contact, index) => (
                   <li key={index} className="flex items-center text-gray-300" dir="ltr">
