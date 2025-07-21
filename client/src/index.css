@@ -644,12 +644,16 @@
 
 .fadeIn {
   opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 0.8s ease forwards;
+  transform: translateY(15px);
+  animation: fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 @keyframes fadeIn {
-  to {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -668,10 +672,11 @@
   transform: translateY(-5px);
 }
 
-/* Parallax effect */
+/* Parallax effect - smoother transition */
 .parallax {
   transform: translateY(var(--parallax-y, 0));
-  transition: transform 0.1s ease-out;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
 }
 
 /* Interactive hover effects */
@@ -741,9 +746,9 @@
   background: linear-gradient(135deg, rgba(73, 66, 228, 0.8) 0%, rgba(73, 66, 228, 0.2) 100%);
 }
 
-/* Fade in animation */
+/* Fade in animation - smoother and longer duration */
 .animate-fade-in {
-  animation: fadeIn 0.8s ease forwards;
+  animation: fadeIn 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 /* Scrollbar utilities */

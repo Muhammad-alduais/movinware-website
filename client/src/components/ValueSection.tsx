@@ -33,7 +33,7 @@ const ValueSection = () => {
       observer.observe(sectionRef.current);
     }
 
-    // Optimized scroll handler using requestAnimationFrame
+    // Optimized scroll handler using requestAnimationFrame with smoother transitions
     const handleScroll = () => {
       if (!ticking.current) {
         lastScrollY.current = window.scrollY;
@@ -43,22 +43,29 @@ const ValueSection = () => {
           const viewportHeight = window.innerHeight;
           const totalScrollDistance = viewportHeight * 2;
 
-          // Calculate the scroll progress
+          // Calculate the scroll progress with smoother transitions
           let progress = 0;
           if (sectionRect.top <= 0) {
             progress = Math.min(1, Math.max(0, Math.abs(sectionRect.top) / totalScrollDistance));
           }
 
-          // Determine which card should be visible based on progress
-          if (progress >= 0.75) {
-            setActiveCardIndex(3);
-          } else if (progress >= 0.5) {
-            setActiveCardIndex(2);
-          } else if (progress >= 0.25) {
-            setActiveCardIndex(1);
-          } else {
-            setActiveCardIndex(0);
+          // Add smooth transition zones to prevent sudden jumps
+          let newActiveIndex = activeCardIndex;
+          if (progress >= 0.8) {
+            newActiveIndex = 3;
+          } else if (progress >= 0.55) {
+            newActiveIndex = 2;
+          } else if (progress >= 0.3) {
+            newActiveIndex = 1;
+          } else if (progress < 0.15) {
+            newActiveIndex = 0;
           }
+          
+          // Only update if the index actually changes to prevent unnecessary re-renders
+          if (newActiveIndex !== activeCardIndex) {
+            setActiveCardIndex(newActiveIndex);
+          }
+          
           ticking.current = false;
         });
         ticking.current = true;
