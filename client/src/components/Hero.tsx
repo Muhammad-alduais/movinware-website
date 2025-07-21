@@ -155,7 +155,7 @@ const Hero = () => {
               <div className="relative transition-all duration-500 ease-out overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl animate-fade-in" style={{
               animationDelay: "0.9s"
             }}>
-                <OptimizedImage ref={imageRef} src="/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png" alt="MovinWare ERP Dashboard" className="w-full h-auto object-cover transition-transform duration-500 ease-out" style={{
+                <OptimizedImage ref={imageRef} src="/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png" alt="MovinWare educational ERP dashboard interface showing student management, course scheduling, and analytics features" className="w-full h-auto object-cover transition-transform duration-500 ease-out" style={{
                 transformStyle: 'preserve-3d'
               }} priority={true} />
               </div>

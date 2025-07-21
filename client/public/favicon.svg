@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="favicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3b82f6;
+      }
+    </style>
+  </defs>
+  <g>
+    <polygon class="cls-1" points="19.2 0 4.3 31.2 0 22.1 10.5 0 19.2 0"/>
+    <polygon class="cls-1" points="32 11.6 22.2 30.8 21.5 31.0 18.9 25.1 19.6 25.0 26.4 11.3 32 11.6"/>
+    <polygon class="cls-1" points="26.0 6.6 13.8 31.6 12.9 32.0 9.6 24.2 10.5 24.1 18.9 6.4 26.0 6.6"/>
+  </g>
+</svg>

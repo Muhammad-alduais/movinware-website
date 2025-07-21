@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /src/
+Disallow: /server/
+Disallow: /node_modules/
 
-Sitemap: https://your-domain.replit.app/sitemap.xml
+Sitemap: https://aa5ae28a-61d5-4c27-88ee-cfd2b2b0e7cc-00-v6ptitjwab6t.spock.replit.dev/sitemap.xml
