@@ -292,63 +292,24 @@
     scroll-behavior: smooth;
   }
 
-  /* Modern Navigation styles */
-  .modern-nav-link {
-    @apply relative px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-600 rounded-xl transition-all duration-300;
-    @apply hover:bg-white hover:shadow-md hover:scale-105 active:scale-95;
+  /* Navigation styles */
+  .nav-link {
+    @apply text-gray-700 hover:text-pulse-600 font-medium transition-colors duration-200 relative;
   }
   
-  .modern-nav-link::before {
+  .nav-link:hover::after {
     content: '';
     position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(73, 66, 228, 0.1), rgba(147, 51, 234, 0.1));
-    border-radius: 0.75rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .modern-nav-link:hover::before {
-    opacity: 1;
-  }
-  
-  .modern-nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #4942E4, #9333EA);
-    border-radius: 1px;
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
-  }
-  
-  .modern-nav-link:hover::after {
-    width: 70%;
-  }
-  
-  .modern-mobile-nav-link {
-    @apply block w-full text-left text-gray-700 hover:text-purple-600 font-medium py-4 px-5 rounded-xl transition-all duration-300 relative;
-    @apply hover:bg-purple-50 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98];
-  }
-  
-  .modern-mobile-nav-link::before {
-    content: '';
-    position: absolute;
+    bottom: -4px;
     left: 0;
-    top: 50%;
-    width: 0;
-    height: 50%;
-    background: linear-gradient(135deg, #4942E4, #9333EA);
-    border-radius: 0 0.5rem 0.5rem 0;
-    transition: width 0.3s ease;
-    transform: translateY(-50%);
+    right: 0;
+    height: 2px;
+    background: currentColor;
+    border-radius: 1px;
   }
   
-  .modern-mobile-nav-link:hover::before {
-    width: 3px;
+  .mobile-nav-link {
+    @apply block w-full text-left text-gray-700 hover:text-pulse-600 hover:bg-gray-50 font-medium py-3 px-4 rounded-lg transition-all duration-200;
   }
 
   /* Custom scrollbar */
