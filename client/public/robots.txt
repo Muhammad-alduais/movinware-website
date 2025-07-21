@@ -4,4 +4,4 @@ Disallow: /src/
 Disallow: /server/
 Disallow: /node_modules/
 
-Sitemap: https://aa5ae28a-61d5-4c27-88ee-cfd2b2b0e7cc-00-v6ptitjwab6t.spock.replit.dev/sitemap.xml
+Sitemap: https://70e7ba25-8e4c-4b84-adaf-872281ed714a-00-2qxvpnn7s63m5.spock.replit.dev/sitemap.xml
