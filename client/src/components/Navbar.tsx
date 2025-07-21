@@ -102,7 +102,7 @@ const Navbar = () => {
             <LanguageSwitcher />
             <button 
               className={cn(
-                "relative z-50 p-2.5 rounded-xl transition-all duration-300 flex-shrink-0",
+                "relative z-[10001] p-2.5 rounded-xl transition-all duration-300 flex-shrink-0",
                 "bg-white/80 backdrop-blur-sm shadow-md hover:shadow-lg",
                 "border border-gray-200/50 hover:border-gray-300",
                 "hover:scale-105 active:scale-95",
@@ -125,13 +125,13 @@ const Navbar = () => {
 
       {/* Enhanced Mobile Navigation Overlay */}
       <div className={cn(
-        "fixed inset-0 z-40 lg:hidden transition-all duration-500 ease-out",
+        "fixed inset-0 z-[9999] lg:hidden transition-all duration-500 ease-out",
         isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
       )}>
         {/* Enhanced Backdrop with better blur */}
         <div 
           className={cn(
-            "absolute inset-0 bg-gradient-to-br from-black/30 to-black/50 backdrop-blur-md transition-all duration-500",
+            "fixed inset-0 bg-gradient-to-br from-black/30 to-black/50 backdrop-blur-md transition-all duration-500",
             isMenuOpen ? "opacity-100" : "opacity-0"
           )}
           onClick={closeMenu}
@@ -139,9 +139,9 @@ const Navbar = () => {
         
         {/* Modern Mobile Menu Panel */}
         <div className={cn(
-          "absolute top-0 h-full w-80 max-w-[85vw] transition-all duration-500 ease-out",
+          "fixed top-0 h-screen w-80 max-w-[85vw] transition-all duration-500 ease-out",
           "bg-white/95 backdrop-blur-xl shadow-2xl",
-          "border border-white/20",
+          "border border-white/20 z-[10000]",
           language === 'ar' ? 'left-0 right-auto' : 'right-0 left-auto',
           isMenuOpen 
             ? "translate-x-0 opacity-100" 

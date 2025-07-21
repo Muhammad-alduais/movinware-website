@@ -34,21 +34,21 @@ const Testimonials = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   
   const testimonials: TestimonialProps[] = [{
-    content: t('testimonials.testimonial1.content'),
-    author: t('testimonials.testimonial1.author'),
-    role: t('testimonials.testimonial1.role'),
+    content: String(t('testimonials.testimonial1.content')),
+    author: String(t('testimonials.testimonial1.author')),
+    role: String(t('testimonials.testimonial1.role')),
     gradient: "from-blue-700 via-indigo-800 to-purple-900",
     backgroundImage: "/background-section1.png"
   }, {
-    content: t('testimonials.testimonial2.content'),
-    author: t('testimonials.testimonial2.author'),
-    role: t('testimonials.testimonial2.role'),
+    content: String(t('testimonials.testimonial2.content')),
+    author: String(t('testimonials.testimonial2.author')),
+    role: String(t('testimonials.testimonial2.role')),
     gradient: "from-green-600 via-teal-700 to-blue-800",
     backgroundImage: "/background-section2.png"
   }, {
-    content: t('testimonials.testimonial3.content'),
-    author: t('testimonials.testimonial3.author'),
-    role: t('testimonials.testimonial3.role'),
+    content: String(t('testimonials.testimonial3.content')),
+    author: String(t('testimonials.testimonial3.author')),
+    role: String(t('testimonials.testimonial3.role')),
     gradient: "from-orange-600 via-red-500 to-purple-600",
     backgroundImage: "/background-section3.png"
   }];
