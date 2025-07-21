@@ -109,9 +109,9 @@ const ImplementationProcess = () => {
               <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-500">
                 <div className="p-8 lg:p-12">
                   {language === 'ar' ? (
-                    /* Arabic Layout - RTL version with swapped order */
+                    /* Arabic Layout - RTL version with correct mobile order */
                     <div className="flex flex-col lg:flex-row lg:items-center gap-8" dir="rtl">
-                      <div className="lg:w-80">
+                      <div className="lg:w-80 order-2 lg:order-1">
                         <h4 className="text-sm font-medium text-gray-900 mb-4 flex items-center font-cairo">
                           <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
                           {t('implementation.key_deliverables')}
@@ -126,7 +126,7 @@ const ImplementationProcess = () => {
                         </div>
                       </div>
 
-                      <div className="flex-1">
+                      <div className="flex-1 order-1 lg:order-2">
                         <div className="flex items-center mb-4">
                           <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ml-4 ${phase.color}`}>
                             <phase.icon className="w-6 h-6" />
