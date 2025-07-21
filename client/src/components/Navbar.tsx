@@ -51,7 +51,7 @@ const Navbar = () => {
         : "bg-transparent"
     )}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-16 lg:h-20 gap-4">
           {/* Logo */}
           <a 
             href="#" 
@@ -77,19 +77,21 @@ const Navbar = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8 rtl:space-x-reverse">
-            <a href="#" className="modern-nav-link" onClick={(e) => {
-              e.preventDefault();
-              scrollToTop();
-            }}>
-              {t('nav.home')}
-            </a>
-            <a href="#value" className="modern-nav-link">{t('nav.value')}</a>
-            <a href="#platform" className="modern-nav-link">{t('nav.platform')}</a>
-            <a href="#industries" className="modern-nav-link">{t('nav.industries')}</a>
-            <a href="#erp-solutions" className="modern-nav-link">{t('nav.erp')}</a>
-            <a href="#services" className="modern-nav-link">{t('nav.services')}</a>
-            <a href="#contact" className="modern-nav-link">{t('nav.contact')}</a>
+          <nav className="hidden lg:flex items-center space-x-2 xl:space-x-4 rtl:space-x-reverse flex-1 justify-center overflow-x-auto scrollbar-hide">
+            <div className="flex items-center space-x-2 xl:space-x-4 rtl:space-x-reverse min-w-max">
+              <a href="#" className="modern-nav-link whitespace-nowrap flex-shrink-0" onClick={(e) => {
+                e.preventDefault();
+                scrollToTop();
+              }}>
+                {t('nav.home')}
+              </a>
+              <a href="#value" className="modern-nav-link whitespace-nowrap flex-shrink-0">{t('nav.value')}</a>
+              <a href="#platform" className="modern-nav-link whitespace-nowrap flex-shrink-0">{t('nav.platform')}</a>
+              <a href="#industries" className="modern-nav-link whitespace-nowrap flex-shrink-0">{t('nav.industries')}</a>
+              <a href="#erp-solutions" className="modern-nav-link whitespace-nowrap flex-shrink-0">{t('nav.erp')}</a>
+              <a href="#services" className="modern-nav-link whitespace-nowrap flex-shrink-0">{t('nav.services')}</a>
+              <a href="#contact" className="modern-nav-link whitespace-nowrap flex-shrink-0">{t('nav.contact')}</a>
+            </div>
           </nav>
 
           {/* Desktop Actions */}
