@@ -521,6 +521,23 @@
     @apply relative text-gray-800 hover:text-pulse-500 py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-pulse-500 after:transition-all hover:after:w-full;
   }
 
+  /* Modern navigation styles */
+  .modern-nav-link {
+    @apply relative px-4 py-2 text-gray-700 hover:text-pulse-600 font-medium transition-all duration-300 rounded-lg hover:bg-white/60 hover:shadow-sm;
+    @apply after:absolute after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-pulse-500 after:to-purple-500 after:transition-all after:duration-300;
+    @apply hover:after:w-3/4 hover:scale-105;
+  }
+
+  .modern-mobile-nav-link {
+    @apply block w-full text-left py-4 px-4 text-gray-700 hover:text-pulse-600 font-medium rounded-xl transition-all duration-300;
+    @apply bg-white/60 hover:bg-white/80 backdrop-blur-sm;
+    @apply border border-gray-100/50 hover:border-blue-200;
+    @apply shadow-sm hover:shadow-md;
+    @apply hover:scale-[1.02] hover:-translate-y-0.5;
+    @apply relative overflow-hidden;
+    @apply before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-50 before:to-purple-50 before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100;
+  }
+
   /* Enhanced section header badge */
   .section-header-badge {
     @apply inline-flex items-center px-6 py-3 rounded-full text-sm font-semibold;
