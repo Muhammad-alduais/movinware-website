@@ -1,0 +1,35 @@
+ <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>MovinWare - Complete Educational Management Solutions for Modern Institutions</title>
+    <meta name="description" content="Transform your educational institution with MovinWare's comprehensive ERP solutions. AI-powered student management, automated workflows, and integrated systems for schools, universities, and training centers." />
+    <meta name="keywords" content="educational ERP, student management system, school management software, university administration, AI-powered education, educational technology, institution management" />
+    <meta name="author" content="MovinWare" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta property="og:title" content="MovinWare - Complete Educational Management Solutions for Modern Institutions" />
+    <meta property="og:description" content="Transform your educational institution with MovinWare's comprehensive ERP solutions. AI-powered student management, automated workflows, and integrated systems for schools, universities, and training centers." />
+    <meta property="og:image" content="/new-og-image.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MovinWare - Complete Educational Management Solutions for Modern Institutions" />
+    <meta name="twitter:description" content="Transform your educational institution with MovinWare's comprehensive ERP solutions. AI-powered student management, automated workflows, and integrated systems for schools, universities, and training centers." />
+    <meta name="twitter:image" content="/new-og-image.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "MovinWare",
+      "description": "Complete Educational Management Solutions for Modern Institutions",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "category": "Educational ERP Software"
+      },
