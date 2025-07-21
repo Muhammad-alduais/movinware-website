@@ -70,7 +70,7 @@ const DetailModal = ({
               <Icon className="w-8 h-8 text-white drop-shadow-sm" />
             </div>
             <div className="flex-1">
-              <h2 className={`text-3xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent ${language === 'ar' ? 'font-arabic' : 'font-brockmann'}`}>
+              <h2 className={`text-3xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
                 {title}
               </h2>
               {timeline && (
@@ -88,7 +88,7 @@ const DetailModal = ({
         <div className="space-y-10">
           {/* Description Section */}
           <div className="bg-gradient-to-br from-gray-50/50 to-blue-50/30 rounded-2xl p-8 border border-gray-100/50">
-            <p className={`text-gray-700 leading-relaxed text-lg font-medium ${language === 'ar' ? 'font-arabic' : 'font-inter'}`}>
+            <p className={`text-gray-700 leading-relaxed text-lg font-medium ${language === 'ar' ? 'font-tajawal' : 'font-inter'}`}>
               {description}
             </p>
           </div>
@@ -96,7 +96,7 @@ const DetailModal = ({
           {/* Capabilities Section */}
           {capabilities && capabilities.length > 0 && (
             <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-white/50 shadow-sm">
-              <h3 className={`text-2xl font-bold text-gray-900 mb-8 flex items-center ${language === 'ar' ? 'font-arabic' : 'font-brockmann'}`}>
+              <h3 className={`text-2xl font-bold text-gray-900 mb-8 flex items-center ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
                 <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mr-4 shadow-md">
                   <CheckCircle className="w-5 h-5 text-white" />
                 </div>
@@ -106,7 +106,7 @@ const DetailModal = ({
                 {capabilities.map((capability, index) => (
                   <div key={index} className="group flex items-start bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-gray-100/50 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
                     <div className="w-3 h-3 bg-gradient-to-br from-pulse-500 to-purple-600 rounded-full mr-4 mt-1 flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-300"></div>
-                    <span className={`text-gray-700 leading-relaxed font-medium ${language === 'ar' ? 'font-arabic' : 'font-inter'}`}>
+                    <span className={`text-gray-700 leading-relaxed font-medium ${language === 'ar' ? 'font-tajawal' : 'font-inter'}`}>
                       {capability}
                     </span>
                   </div>
@@ -118,7 +118,7 @@ const DetailModal = ({
           {/* Benefits Section */}
           {benefits && benefits.length > 0 && (
             <div className="bg-gradient-to-br from-green-50/50 to-emerald-50/30 rounded-2xl p-8 border border-green-100/50">
-              <h3 className={`text-2xl font-bold text-gray-900 mb-8 flex items-center ${language === 'ar' ? 'font-arabic' : 'font-brockmann'}`}>
+              <h3 className={`text-2xl font-bold text-gray-900 mb-8 flex items-center ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
                 <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-green-600 rounded-xl flex items-center justify-center mr-4 shadow-md">
                   <CheckCircle className="w-5 h-5 text-white" />
                 </div>
@@ -130,7 +130,7 @@ const DetailModal = ({
                     <div className="w-6 h-6 bg-gradient-to-br from-emerald-500 to-green-600 rounded-lg flex items-center justify-center mr-4 mt-1 flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-300">
                       <CheckCircle className="w-4 h-4 text-white" />
                     </div>
-                    <span className={`text-gray-700 leading-relaxed font-medium ${language === 'ar' ? 'font-arabic' : 'font-inter'}`}>
+                    <span className={`text-gray-700 leading-relaxed font-medium ${language === 'ar' ? 'font-tajawal' : 'font-inter'}`}>
                       {benefit}
                     </span>
                   </div>
@@ -142,7 +142,7 @@ const DetailModal = ({
           {/* Process Steps Section */}
           {processSteps && processSteps.length > 0 && (
             <div className="bg-gradient-to-br from-blue-50/50 to-indigo-50/30 rounded-2xl p-8 border border-blue-100/50">
-              <h3 className={`text-2xl font-bold text-gray-900 mb-8 flex items-center ${language === 'ar' ? 'font-arabic' : 'font-brockmann'}`}>
+              <h3 className={`text-2xl font-bold text-gray-900 mb-8 flex items-center ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
                 <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mr-4 shadow-md">
                   <ArrowRight className="w-5 h-5 text-white" />
                 </div>
@@ -156,10 +156,10 @@ const DetailModal = ({
                         <span className="text-white font-bold text-sm">{index + 1}</span>
                       </div>
                       <div className="flex-1">
-                        <h4 className={`font-bold text-gray-900 mb-3 text-lg ${language === 'ar' ? 'font-arabic' : 'font-brockmann'}`}>
+                        <h4 className={`font-bold text-gray-900 mb-3 text-lg ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
                           {step.title}
                         </h4>
-                        <p className={`text-gray-600 mb-4 leading-relaxed ${language === 'ar' ? 'font-arabic' : 'font-inter'}`}>
+                        <p className={`text-gray-600 mb-4 leading-relaxed ${language === 'ar' ? 'font-tajawal' : 'font-inter'}`}>
                           {step.description}
                         </p>
                         {step.deliverables && (

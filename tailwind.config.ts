@@ -77,7 +77,10 @@ export default {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
         'brockmann': ['Brockmann', 'Inter', 'sans-serif'],
         'inter': ['Inter', 'system-ui', 'sans-serif'],
-        'arabic': ['GraphikArabic', 'Tajawal', 'Arial', 'sans-serif'],
+        'arabic': ['Tajawal', 'Arial', 'sans-serif'],
+        'arabic-heading': ['Cairo', 'Arial', 'sans-serif'],
+        'cairo': ['Cairo', 'Arial', 'sans-serif'],
+        'tajawal': ['Tajawal', 'Arial', 'sans-serif'],
       },
       boxShadow: {
         'elegant': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',

@@ -112,7 +112,7 @@ const ImplementationProcess = () => {
                     /* Arabic Layout - RTL version with swapped order */
                     <div className="flex flex-col lg:flex-row lg:items-center gap-8" dir="rtl">
                       <div className="lg:w-80">
-                        <h4 className="text-sm font-medium text-gray-900 mb-4 flex items-center font-arabic">
+                        <h4 className="text-sm font-medium text-gray-900 mb-4 flex items-center font-cairo">
                           <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
                           {t('implementation.key_deliverables')}
                         </h4>
@@ -132,11 +132,11 @@ const ImplementationProcess = () => {
                             <phase.icon className="w-6 h-6" />
                           </div>
                           <div>
-                            <h3 className="text-2xl font-medium text-gray-900 font-arabic">{phase.title}</h3>
-                            <p className="text-pulse-500 font-medium font-arabic">{phase.duration}</p>
+                            <h3 className="text-2xl font-medium text-gray-900 font-cairo">{phase.title}</h3>
+                            <p className="text-pulse-500 font-medium font-tajawal">{phase.duration}</p>
                           </div>
                         </div>
-                        <p className="text-gray-600 leading-relaxed mb-6 font-arabic">
+                        <p className="text-gray-600 leading-relaxed mb-6 font-tajawal">
                           {phase.description}
                         </p>
                       </div>
@@ -185,10 +185,10 @@ const ImplementationProcess = () => {
           animationDelay: "0.8s"
         }}>
             <h3 className={`text-2xl font-light text-gray-900 mb-4 ${
-              language === 'ar' ? 'font-arabic' : ''
+              language === 'ar' ? 'font-cairo' : ''
             }`}>{t('implementation.why_works')}</h3>
             <p className={`text-gray-600 ${
-              language === 'ar' ? 'font-arabic' : ''
+              language === 'ar' ? 'font-tajawal' : ''
             }`}>{t('implementation.why_works.subtitle')}</p>
           </div>
           
@@ -210,18 +210,18 @@ const ImplementationProcess = () => {
             label: t('implementation.stats.support.label'),
             desc: t('implementation.stats.support.desc')
           }].map((stat, index) => <div key={index} className={`text-center bg-gray-50 rounded-3xl p-6 border border-gray-100 opacity-0 animate-fade-scale hover:animate-gentle-float ${
-            language === 'ar' ? 'font-arabic' : ''
+            language === 'ar' ? 'font-tajawal' : ''
           }`} style={{
             animationDelay: `${0.9 + 0.1 * index}s`
           }}>
                 <div className={`text-3xl font-light text-pulse-500 mb-2 ${
-                  language === 'ar' ? 'font-arabic' : ''
+                  language === 'ar' ? 'font-cairo' : ''
                 }`}>{stat.metric}</div>
                 <div className={`font-medium text-gray-900 mb-1 ${
-                  language === 'ar' ? 'font-arabic' : ''
+                  language === 'ar' ? 'font-cairo' : ''
                 }`}>{stat.label}</div>
                 <div className={`text-xs text-gray-600 ${
-                  language === 'ar' ? 'font-arabic' : ''
+                  language === 'ar' ? 'font-tajawal' : ''
                 }`}>{stat.desc}</div>
               </div>)}
           </div>
