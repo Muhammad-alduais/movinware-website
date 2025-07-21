@@ -89,7 +89,7 @@ const Footer = () => {
               <h3 className="text-lg font-semibold mb-6">{t('footer.contact')}</h3>
               <ul className="space-y-4">
                 {contactInfo.map((contact, index) => (
-                  <li key={index} className="flex items-center text-gray-300">
+                  <li key={index} className="flex items-center text-gray-300" dir="ltr">
                     <contact.icon className="w-4 h-4 mr-3 text-pulse-500" />
                     <span className="text-sm">{contact.text}</span>
                   </li>
@@ -103,7 +103,7 @@ const Footer = () => {
         <div className="border-t border-gray-800">
           <div className="max-w-6xl mx-auto px-6 py-6">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <div className="text-sm text-gray-400">
+              <div className="text-sm text-gray-400" dir="ltr">
                 {t('footer.copyright')}
               </div>
               <div className="text-sm text-gray-400">

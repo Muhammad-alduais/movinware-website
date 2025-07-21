@@ -458,7 +458,7 @@ const translations = {
     'footer.quick_links': 'Quick Links',
     'footer.contact': 'Contact',
     'footer.copyright': '© 2025 MovinWare. All rights reserved.',
-    'footer.built_by': 'Built entirely by Muhammad Al-Duais',
+    'footer.built_by': 'Developed entirely by Eng. Muhammad Ameen Al-Duais',
     
     // Common
     'common.learn_more': 'Learn More',
@@ -925,8 +925,8 @@ const translations = {
     'footer.description': 'حلول تخطيط موارد المؤسسات المدعومة بالذكاء الاصطناعي مصممة للأعمال الحديثة. قم بتبسيط العمليات وزيادة الكفاءة وضمان مستقبل أعمالك مع الأتمتة الذكية.',
     'footer.quick_links': 'روابط سريعة',
     'footer.contact': 'تواصل معنا',
-    'footer.copyright': '© 2025 MovinWare. جميع الحقوق محفوظة.',
-    'footer.built_by': 'تم بناؤه بالكامل بواسطة محمد الدعيس',
+    'footer.copyright': '© 2025 MovinWare. All rights reserved.',
+    'footer.built_by': 'تم تطويرة بالكامل بواسطة م. محمد امين الدعيس',
     
     // Common
     'common.learn_more': 'اعرف المزيد',
