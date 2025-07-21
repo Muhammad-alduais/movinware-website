@@ -77,21 +77,19 @@ const Navbar = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-2 xl:space-x-4 rtl:space-x-reverse flex-1 justify-center overflow-x-auto scrollbar-hide">
-            <div className="flex items-center space-x-2 xl:space-x-4 rtl:space-x-reverse min-w-max">
-              <a href="#" className="modern-nav-link whitespace-nowrap flex-shrink-0" onClick={(e) => {
-                e.preventDefault();
-                scrollToTop();
-              }}>
-                {t('nav.home')}
-              </a>
-              <a href="#value" className="modern-nav-link whitespace-nowrap flex-shrink-0">{t('nav.value')}</a>
-              <a href="#platform" className="modern-nav-link whitespace-nowrap flex-shrink-0">{t('nav.platform')}</a>
-              <a href="#industries" className="modern-nav-link whitespace-nowrap flex-shrink-0">{t('nav.industries')}</a>
-              <a href="#erp-solutions" className="modern-nav-link whitespace-nowrap flex-shrink-0">{t('nav.erp')}</a>
-              <a href="#services" className="modern-nav-link whitespace-nowrap flex-shrink-0">{t('nav.services')}</a>
-              <a href="#contact" className="modern-nav-link whitespace-nowrap flex-shrink-0">{t('nav.contact')}</a>
-            </div>
+          <nav className="hidden lg:flex items-center space-x-1 xl:space-x-2 rtl:space-x-reverse flex-1 justify-center">
+            <a href="#" className="modern-nav-link text-sm xl:text-base" onClick={(e) => {
+              e.preventDefault();
+              scrollToTop();
+            }}>
+              {t('nav.home')}
+            </a>
+            <a href="#value" className="modern-nav-link text-sm xl:text-base">{t('nav.value')}</a>
+            <a href="#platform" className="modern-nav-link text-sm xl:text-base">{t('nav.platform')}</a>
+            <a href="#industries" className="modern-nav-link text-sm xl:text-base">{t('nav.industries')}</a>
+            <a href="#erp-solutions" className="modern-nav-link text-sm xl:text-base">{t('nav.erp')}</a>
+            <a href="#services" className="modern-nav-link text-sm xl:text-base">{t('nav.services')}</a>
+            <a href="#contact" className="modern-nav-link text-sm xl:text-base">{t('nav.contact')}</a>
           </nav>
 
           {/* Desktop Actions */}
@@ -99,11 +97,9 @@ const Navbar = () => {
             <LanguageSwitcher />
           </div>
 
-          {/* Mobile menu button with improved design */}
+          {/* Mobile/Tablet Actions - Always show language switcher */}
           <div className="flex items-center space-x-3 rtl:space-x-reverse lg:hidden">
-            <div className="hidden sm:block">
-              <LanguageSwitcher />
-            </div>
+            <LanguageSwitcher />
             <button 
               className={cn(
                 "relative z-50 p-2.5 rounded-xl transition-all duration-300 flex-shrink-0",
@@ -233,10 +229,7 @@ const Navbar = () => {
             </nav>
             
             {/* Enhanced Mobile Menu Footer */}
-            <div className="p-6 bg-gradient-to-r from-gray-50/50 to-pulse-50/30 border-t border-gray-100/50 backdrop-blur-sm space-y-4">
-              <div className="block sm:hidden">
-                <LanguageSwitcher />
-              </div>
+            <div className="p-6 bg-gradient-to-r from-gray-50/50 to-pulse-50/30 border-t border-gray-100/50 backdrop-blur-sm">
               <div className={`text-xs text-gray-500 text-center ${language === 'ar' ? 'font-arabic' : 'font-inter'}`}>
                 © 2025 MovinWare. All rights reserved.
               </div>

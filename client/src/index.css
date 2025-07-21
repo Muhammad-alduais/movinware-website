@@ -745,3 +745,26 @@
 .animate-fade-in {
   animation: fadeIn 0.8s ease forwards;
 }
+
+/* Scrollbar utilities */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive navbar improvements */
+@media (max-width: 1280px) {
+  .modern-nav-link {
+    @apply px-2 py-2 text-sm;
+  }
+}
+
+@media (max-width: 1024px) {
+  .modern-nav-link {
+    @apply px-1.5 py-2 text-xs;
+  }
+}
