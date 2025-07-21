@@ -72,6 +72,23 @@ const translations = {
     'capabilities.stats.sync': 'Data Sync',
     'capabilities.stats.sync_desc': 'Instant updates across devices',
     
+    // Platform Capabilities Features Dialog Content
+    'features.core_full_description': 'Comprehensive business modules covering all aspects of your operations, designed to streamline processes and boost productivity across your entire organization. Our core modules provide the foundation for digital transformation with integrated workflows, automated processes, and real-time data synchronization across all business functions.',
+    'features.core_capabilities': ['Advanced Accounting & Financial Reporting', 'Comprehensive Human Resources Management', 'Sales CRM with Pipeline Automation', 'Smart Inventory & Supply Chain Control', 'Project Management & Resource Planning', 'Document Management & Workflow Automation', 'Multi-location Operations Support', 'Real-time Business Intelligence Dashboard'],
+    'features.core_benefits': ['Integrated workflow automation reduces manual tasks by 70%', 'Real-time data synchronization across all departments', 'Comprehensive reporting and analytics dashboard', 'Multi-location support with centralized control'],
+    
+    'features.ai_full_description': 'Intelligent automation and insights powered by advanced AI technology that learns from your business patterns to provide actionable recommendations. Our AI features continuously evolve with your business, identifying opportunities for optimization and automating complex decision-making processes to drive growth and efficiency.',
+    'features.ai_capabilities': ['Machine Learning Predictive Analytics', 'Intelligent Process Automation Workflows', 'Natural Language Report Generation', 'AI-Powered Decision Recommendation Engine', 'Smart Data Pattern Recognition', 'Automated Anomaly Detection & Alerts', 'Intelligent Customer Behavior Analysis', 'Voice-to-Data Input Processing'],
+    'features.ai_benefits': ['Predictive analytics improve decision-making accuracy by 85%', 'Automated workflows reduce processing time by 60%', 'AI-powered insights drive revenue growth', 'Continuous learning adapts to your business evolution'],
+    
+    'features.integration_full_description': 'Seamless connectivity with your existing tools and systems, ensuring data flows smoothly across your entire technology stack without disruption. Our integration hub supports both modern APIs and legacy systems, providing a unified data ecosystem that eliminates silos and enables comprehensive business intelligence.',
+    'features.integration_capabilities': ['Enterprise API Gateway Management', 'Real-time Data Synchronization Engine', 'Legacy System Migration Tools', 'Third-party Platform Connectors', 'Custom Integration Development', 'Webhook & Event-driven Architecture', 'Data Mapping & Transformation Tools', 'Security & Authentication Management'],
+    'features.integration_benefits': ['Connect 500+ third-party applications instantly', 'Eliminate data silos with unified integration', 'Legacy system support ensures smooth migration', 'Real-time synchronization keeps data current'],
+    
+    'features.mobile_full_description': 'Access your business data anywhere, anytime, on any device with our cloud-native platform that ensures maximum uptime and security. Built with modern cloud architecture, our platform provides seamless mobile experiences with robust offline capabilities and enterprise-grade security that scales with your business needs.',
+    'features.mobile_capabilities': ['Progressive Web Application (PWA)', 'Native iOS & Android Applications', 'Offline-first Data Synchronization', 'Multi-device Real-time Collaboration', 'Cloud Infrastructure Auto-scaling', 'Enterprise-grade Security & Encryption', 'Automated Backup & Disaster Recovery', 'Global CDN for Optimal Performance'],
+    'features.mobile_benefits': ['99.9% uptime SLA with automatic failover', 'Offline functionality ensures continuous productivity', 'Enterprise-grade security protects your data', 'Global CDN provides optimal performance worldwide'],
+    
     // Industries
     'industries.section': 'Industries',
     'industries.title': 'Tailored for\nevery sector',
@@ -795,6 +812,23 @@ const translations = {
     'features.mobile_cloud': 'منصة الهاتف المحمول والسحابة',
     'features.anywhere_access': 'الوصول من أي مكان',
     'features.mobile_description': 'الوصول إلى بيانات أعمالك من أي مكان مع ضمان وقت تشغيل 99.9% وقدرات بدون اتصال.',
+    
+    // Platform Capabilities Dialog Content
+    'features.core_full_description': 'وحدات الأعمال الشاملة التي تغطي جميع جوانب عملياتك، مصممة لتبسيط العمليات وزيادة الإنتاجية في جميع أنحاء مؤسستك. توفر وحداتنا الأساسية الأساس للتحول الرقمي مع سير العمل المتكامل والعمليات الآلية ومزامنة البيانات في الوقت الفعلي عبر جميع وظائف الأعمال.',
+    'features.core_capabilities': ['التقارير المالية والمحاسبة المتقدمة', 'إدارة الموارد البشرية الشاملة', 'مبيعات إدارة علاقات العملاء مع أتمتة خط الأنابيب', 'التحكم الذكي في المخزون وسلسلة التوريد', 'إدارة المشاريع وتخطيط الموارد', 'إدارة المستندات وأتمتة سير العمل', 'دعم العمليات متعددة المواقع', 'لوحة معلومات ذكاء الأعمال في الوقت الفعلي'],
+    'features.core_benefits': ['أتمتة سير العمل المتكاملة تقلل المهام اليدوية بنسبة 70%', 'مزامنة البيانات في الوقت الفعلي عبر جميع الأقسام', 'لوحة معلومات شاملة للتقارير والتحليلات', 'دعم متعدد المواقع مع التحكم المركزي'],
+    
+    'features.ai_full_description': 'الأتمتة الذكية والرؤى المدعومة بتقنية الذكاء الاصطناعي المتقدمة التي تتعلم من أنماط أعمالك لتقديم توصيات قابلة للتنفيذ. تتطور ميزات الذكاء الاصطناعي لدينا باستمرار مع أعمالك، وتحدد فرص التحسين وتؤتمت عمليات صنع القرار المعقدة لدفع النمو والكفاءة.',
+    'features.ai_capabilities': ['تحليلات تنبؤية للتعلم الآلي', 'سير عمل أتمتة العمليات الذكية', 'إنشاء تقارير باللغة الطبيعية', 'محرك توصيات القرارات المدعوم بالذكاء الاصطناعي', 'التعرف الذكي على أنماط البيانات', 'اكتشاف الشذوذ الآلي والتنبيهات', 'تحليل سلوك العملاء الذكي', 'معالجة إدخال الصوت إلى البيانات'],
+    'features.ai_benefits': ['التحليلات التنبؤية تحسن دقة اتخاذ القرار بنسبة 85%', 'سير العمل الآلي يقلل وقت المعالجة بنسبة 60%', 'الرؤى المدعومة بالذكاء الاصطناعي تدفع نمو الإيرادات', 'التعلم المستمر يتكيف مع تطور أعمالك'],
+    
+    'features.integration_full_description': 'اتصال سلس مع أدواتك وأنظمتك الحالية، مما يضمن تدفق البيانات بسلاسة عبر مجموعة التكنولوجيا الكاملة دون انقطاع. يدعم مركز التكامل لدينا كلاً من واجهات برمجة التطبيقات الحديثة والأنظمة القديمة، مما يوفر نظاماً بيئياً موحداً للبيانات يلغي الصوامع ويمكّن ذكاء الأعمال الشامل.',
+    'features.integration_capabilities': ['إدارة بوابة واجهة برمجة التطبيقات للمؤسسات', 'محرك مزامنة البيانات في الوقت الفعلي', 'أدوات ترحيل الأنظمة القديمة', 'موصلات منصة الطرف الثالث', 'تطوير التكامل المخصص', 'Webhook وبنية مدفوعة بالأحداث', 'أدوات تخطيط وتحويل البيانات', 'إدارة الأمان والمصادقة'],
+    'features.integration_benefits': ['ربط أكثر من 500 تطبيق طرف ثالث فوراً', 'إلغاء صوامع البيانات مع التكامل الموحد', 'دعم الأنظمة القديمة يضمن الترحيل السلس', 'المزامنة في الوقت الفعلي تحافظ على حداثة البيانات'],
+    
+    'features.mobile_full_description': 'الوصول إلى بيانات أعمالك في أي مكان وزمان وعلى أي جهاز مع منصتنا الأصلية السحابية التي تضمن أقصى وقت تشغيل وأمان. مبنية بهندسة سحابية حديثة، توفر منصتنا تجارب هاتف محمول سلسة مع قدرات قوية بدون اتصال وأمان على مستوى المؤسسة يتوسع مع احتياجات أعمالك.',
+    'features.mobile_capabilities': ['تطبيق ويب تقدمي (PWA)', 'تطبيقات iOS و Android الأصلية', 'مزامنة البيانات بدون اتصال أولاً', 'تعاون في الوقت الفعلي متعدد الأجهزة', 'التوسع التلقائي للبنية التحتية السحابية', 'الأمان والتشفير على مستوى المؤسسة', 'النسخ الاحتياطي التلقائي واستعادة الكوارث', 'CDN عالمي للأداء الأمثل'],
+    'features.mobile_benefits': ['اتفاقية مستوى الخدمة 99.9% لوقت التشغيل مع التبديل التلقائي', 'وظائف بدون اتصال تضمن الإنتاجية المستمرة', 'الأمان على مستوى المؤسسة يحمي بياناتك', 'CDN عالمي يوفر أداءً مثلى في جميع أنحاء العالم'],
 
     
     // Service Types

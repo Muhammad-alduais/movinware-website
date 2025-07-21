@@ -12,34 +12,34 @@ const PlatformCapabilities = () => {
     icon: Cpu,
     title: t('features.core_modules'),
     description: t('features.core_description'),
-    capabilities: ["Advanced Accounting & Financial Reporting", "Comprehensive Human Resources Management", "Sales CRM with Pipeline Automation", "Smart Inventory & Supply Chain Control", "Project Management & Resource Planning", "Document Management & Workflow Automation", "Multi-location Operations Support", "Real-time Business Intelligence Dashboard"],
-    timeline: t('features.core_foundation'),
-    fullDescription: "Comprehensive business modules covering all aspects of your operations, designed to streamline processes and boost productivity across your entire organization. Our core modules provide the foundation for digital transformation with integrated workflows, automated processes, and real-time data synchronization across all business functions.",
-    benefits: ["Integrated workflow automation reduces manual tasks by 70%", "Real-time data synchronization across all departments", "Comprehensive reporting and analytics dashboard", "Multi-location support with centralized control"]
+    capabilities: t('features.core_capabilities') as string[],
+    timeline: t('features.core_foundation') as string,
+    fullDescription: t('features.core_full_description') as string,
+    benefits: t('features.core_benefits') as string[]
   }, {
     icon: Zap,
     title: t('features.ai_features'),
     description: t('features.ai_description'),
-    capabilities: ["Machine Learning Predictive Analytics", "Intelligent Process Automation Workflows", "Natural Language Report Generation", "AI-Powered Decision Recommendation Engine", "Smart Data Pattern Recognition", "Automated Anomaly Detection & Alerts", "Intelligent Customer Behavior Analysis", "Voice-to-Data Input Processing"],
-    timeline: t('features.smart_enhancement'),
-    fullDescription: "Intelligent automation and insights powered by advanced AI technology that learns from your business patterns to provide actionable recommendations. Our AI features continuously evolve with your business, identifying opportunities for optimization and automating complex decision-making processes to drive growth and efficiency.",
-    benefits: ["Predictive analytics improve decision-making accuracy by 85%", "Automated workflows reduce processing time by 60%", "AI-powered insights drive revenue growth", "Continuous learning adapts to your business evolution"]
+    capabilities: t('features.ai_capabilities') as string[],
+    timeline: t('features.smart_enhancement') as string,
+    fullDescription: t('features.ai_full_description') as string,
+    benefits: t('features.ai_benefits') as string[]
   }, {
     icon: Link,
     title: t('features.integration_hub'),
     description: t('features.integration_description'),
-    capabilities: ["Enterprise API Gateway Management", "Real-time Data Synchronization Engine", "Legacy System Migration Tools", "Third-party Platform Connectors", "Custom Integration Development", "Webhook & Event-driven Architecture", "Data Mapping & Transformation Tools", "Security & Authentication Management"],
-    timeline: t('features.seamless_connection'),
-    fullDescription: "Seamless connectivity with your existing tools and systems, ensuring data flows smoothly across your entire technology stack without disruption. Our integration hub supports both modern APIs and legacy systems, providing a unified data ecosystem that eliminates silos and enables comprehensive business intelligence.",
-    benefits: ["Connect 500+ third-party applications instantly", "Eliminate data silos with unified integration", "Legacy system support ensures smooth migration", "Real-time synchronization keeps data current"]
+    capabilities: t('features.integration_capabilities') as string[],
+    timeline: t('features.seamless_connection') as string,
+    fullDescription: t('features.integration_full_description') as string,
+    benefits: t('features.integration_benefits') as string[]
   }, {
     icon: Smartphone,
     title: t('features.mobile_cloud'),
     description: t('features.mobile_description'),
-    capabilities: ["Progressive Web Application (PWA)", "Native iOS & Android Applications", "Offline-first Data Synchronization", "Multi-device Real-time Collaboration", "Cloud Infrastructure Auto-scaling", "Enterprise-grade Security & Encryption", "Automated Backup & Disaster Recovery", "Global CDN for Optimal Performance"],
-    timeline: t('features.anywhere_access'),
-    fullDescription: "Access your business data anywhere, anytime, on any device with our cloud-native platform that ensures maximum uptime and security. Built with modern cloud architecture, our platform provides seamless mobile experiences with robust offline capabilities and enterprise-grade security that scales with your business needs.",
-    benefits: ["99.9% uptime SLA with automatic failover", "Offline functionality ensures continuous productivity", "Enterprise-grade security protects your data", "Global CDN provides optimal performance worldwide"]
+    capabilities: t('features.mobile_capabilities') as string[],
+    timeline: t('features.anywhere_access') as string,
+    fullDescription: t('features.mobile_full_description') as string,
+    benefits: t('features.mobile_benefits') as string[]
   }];
   const headerBg = {
     backgroundImage: 'url("/Header-background.webp")',
@@ -67,7 +67,7 @@ const PlatformCapabilities = () => {
 
       <div className="py-20 max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
-          {capabilities.map((capability, index) => <PreviewCard key={index} icon={capability.icon} title={capability.title} description={capability.description} timeline={capability.timeline} onLearnMore={() => setSelectedCapability(capability)} index={index} />)}
+          {capabilities.map((capability, index) => <PreviewCard key={index} icon={capability.icon} title={capability.title as string} description={capability.description as string} timeline={capability.timeline} onLearnMore={() => setSelectedCapability(capability)} index={index} />)}
         </div>
 
         <div className="opacity-0 animate-fade-scale" style={{
