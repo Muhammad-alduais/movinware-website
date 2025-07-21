@@ -7,6 +7,8 @@ interface OptimizedImageProps extends React.ImgHTMLAttributes<HTMLImageElement> 
   priority?: boolean;
   placeholder?: boolean;
   fallbackSrc?: string;
+  webpSrc?: string;
+  avifSrc?: string;
 }
 
 export const OptimizedImage = forwardRef<HTMLImageElement, OptimizedImageProps>(({
@@ -15,6 +17,8 @@ export const OptimizedImage = forwardRef<HTMLImageElement, OptimizedImageProps>(
   priority = false,
   placeholder = true,
   fallbackSrc,
+  webpSrc,
+  avifSrc,
   className,
   ...props
 }, ref) => {
@@ -54,7 +58,28 @@ export const OptimizedImage = forwardRef<HTMLImageElement, OptimizedImageProps>(
     }
   };
 
-  const imageSrc = hasError && fallbackSrc ? fallbackSrc : src;
+  // Function to get the best supported image format
+  const getBestImageSrc = (): string => {
+    if (hasError && fallbackSrc) return fallbackSrc;
+    // Check for modern format support
+    if (avifSrc && supportsAvif()) return avifSrc;
+    if (webpSrc && supportsWebp()) return webpSrc;
+    return src;
+  };
+
+  // Simple WebP support detection
+  const supportsWebp = (): boolean => {
+    const canvas = document.createElement('canvas');
+    return canvas.toDataURL('image/webp').indexOf('webp') !== -1;
+  };
+
+  // Simple AVIF support detection
+  const supportsAvif = (): boolean => {
+    const canvas = document.createElement('canvas');
+    return canvas.toDataURL('image/avif').indexOf('avif') !== -1;
+  };
+
+  const imageSrc = getBestImageSrc();
 
   return (
     <div ref={imgRef} className={cn("relative overflow-hidden", className)}>

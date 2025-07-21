@@ -45,6 +45,7 @@ const DetailsSection = () => {
             {/* Card Header with background image instead of gradient */}
             <OptimizedBackground
               src="/background-section3.png"
+              webpSrc="/background-section3.webp"
               className="relative h-48 sm:h-64 p-6 sm:p-8 flex items-end"
               style={{ backgroundPosition: "center" }}
             >

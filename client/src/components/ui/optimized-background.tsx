@@ -8,6 +8,8 @@ interface OptimizedBackgroundProps {
   priority?: boolean;
   placeholder?: boolean;
   style?: React.CSSProperties;
+  webpSrc?: string;
+  avifSrc?: string;
 }
 
 export const OptimizedBackground: React.FC<OptimizedBackgroundProps> = ({
@@ -17,6 +19,8 @@ export const OptimizedBackground: React.FC<OptimizedBackgroundProps> = ({
   priority = false,
   placeholder = true,
   style,
+  webpSrc,
+  avifSrc,
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isInView, setIsInView] = useState(priority);
@@ -42,13 +46,34 @@ export const OptimizedBackground: React.FC<OptimizedBackgroundProps> = ({
     return () => observer.disconnect();
   }, [priority]);
 
+  // Function to get the best supported image format
+  const getBestImageSrc = (): string => {
+    // Check for modern format support
+    if (avifSrc && supportsAvif()) return avifSrc;
+    if (webpSrc && supportsWebp()) return webpSrc;
+    return src;
+  };
+
+  // Simple WebP support detection
+  const supportsWebp = (): boolean => {
+    const canvas = document.createElement('canvas');
+    return canvas.toDataURL('image/webp').indexOf('webp') !== -1;
+  };
+
+  // Simple AVIF support detection
+  const supportsAvif = (): boolean => {
+    const canvas = document.createElement('canvas');
+    return canvas.toDataURL('image/avif').indexOf('avif') !== -1;
+  };
+
   useEffect(() => {
     if (!isInView) return;
 
+    const bestSrc = getBestImageSrc();
     const img = new Image();
     img.onload = () => setIsLoaded(true);
-    img.src = src;
-  }, [isInView, src]);
+    img.src = bestSrc;
+  }, [isInView, src, webpSrc, avifSrc]);
 
   return (
     <div
@@ -57,7 +82,7 @@ export const OptimizedBackground: React.FC<OptimizedBackgroundProps> = ({
       style={{
         ...style,
         ...(isLoaded && {
-          backgroundImage: `url('${src}')`,
+          backgroundImage: `url('${getBestImageSrc()}')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',

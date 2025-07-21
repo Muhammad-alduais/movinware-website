@@ -112,10 +112,14 @@ const ValueSection = () => {
             transform: `translateY(${isFirstCardVisible ? '90px' : '200px'}) scale(0.9)`,
             opacity: isFirstCardVisible ? 0.9 : 0
           }}>
-              <OptimizedBackground src="/background-section1.png" className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80" style={{
-              backgroundPosition: "top center",
-              backgroundBlendMode: "overlay"
-            }} />
+              <OptimizedBackground 
+                src="/background-section1.png" 
+                webpSrc="/background-section1.webp"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80" 
+                style={{
+                  backgroundPosition: "top center",
+                  backgroundBlendMode: "overlay"
+                }} />
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
@@ -129,7 +133,7 @@ const ValueSection = () => {
                     {t('value.ai.title')}
                   </h3>
                   <ul className="text-white/90 space-y-2">
-                    {(Array.isArray(t('value.ai.features')) ? t('value.ai.features') : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
+                    {(Array.isArray(t('value.ai.features')) ? t('value.ai.features') as string[] : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
                   </ul>
                 </div>
               </div>
@@ -143,10 +147,14 @@ const ValueSection = () => {
             opacity: isSecondCardVisible ? 1 : 0,
             pointerEvents: isSecondCardVisible ? 'auto' : 'none'
           }}>
-              <OptimizedBackground src="/background-section2.png" className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80" style={{
-              backgroundPosition: "center",
-              backgroundBlendMode: "overlay"
-            }} />
+              <OptimizedBackground 
+                src="/background-section2.png" 
+                webpSrc="/background-section2.webp"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80" 
+                style={{
+                  backgroundPosition: "center",
+                  backgroundBlendMode: "overlay"
+                }} />
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
@@ -160,7 +168,7 @@ const ValueSection = () => {
                     {t('value.speed.title')}
                   </h3>
                   <ul className="text-white/90 space-y-2">
-                    {(Array.isArray(t('value.speed.features')) ? t('value.speed.features') : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
+                    {(Array.isArray(t('value.speed.features')) ? t('value.speed.features') as string[] : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
                   </ul>
                 </div>
               </div>
@@ -174,10 +182,14 @@ const ValueSection = () => {
             opacity: isThirdCardVisible ? 1 : 0,
             pointerEvents: isThirdCardVisible ? 'auto' : 'none'
           }}>
-              <OptimizedBackground src="/new-update1-background-section3.png" className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80" style={{
-              backgroundPosition: "bottom center",
-              backgroundBlendMode: "overlay"
-            }} />
+              <OptimizedBackground 
+                src="/new-update1-background-section3.png" 
+                webpSrc="/new-update1-background-section3.webp"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80" 
+                style={{
+                  backgroundPosition: "bottom center",
+                  backgroundBlendMode: "overlay"
+                }} />
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
@@ -191,7 +203,7 @@ const ValueSection = () => {
                     {t('value.culture.title')}
                   </h3>
                   <ul className="text-white/90 space-y-2">
-                    {(Array.isArray(t('value.culture.features')) ? t('value.culture.features') : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
+                    {(Array.isArray(t('value.culture.features')) ? t('value.culture.features') as string[] : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
                   </ul>
                 </div>
               </div>
@@ -205,10 +217,14 @@ const ValueSection = () => {
             opacity: isFourthCardVisible ? 1 : 0,
             pointerEvents: isFourthCardVisible ? 'auto' : 'none'
           }}>
-              <OptimizedBackground src="/background-section1.png" className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80" style={{
-              backgroundPosition: "center",
-              backgroundBlendMode: "overlay"
-            }} />
+              <OptimizedBackground 
+                src="/background-section1.png" 
+                webpSrc="/background-section1.webp"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80" 
+                style={{
+                  backgroundPosition: "center",
+                  backgroundBlendMode: "overlay"
+                }} />
               
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
@@ -222,7 +238,7 @@ const ValueSection = () => {
                     {t('value.adoption.title')}
                   </h3>
                   <ul className="text-white/90 space-y-2">
-                    {(Array.isArray(t('value.adoption.features')) ? t('value.adoption.features') : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
+                    {(Array.isArray(t('value.adoption.features')) ? t('value.adoption.features') as string[] : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
                   </ul>
                 </div>
               </div>

@@ -119,6 +119,7 @@ const HumanoidSection = () => {
             >
               <OptimizedBackground
                 src="/background-section1.png"
+                webpSrc="/background-section1.webp"
                 className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{ backgroundPosition: "top center", backgroundBlendMode: "overlay" }}
               />
@@ -151,6 +152,7 @@ const HumanoidSection = () => {
             >
               <OptimizedBackground
                 src="/background-section2.png"
+                webpSrc="/background-section2.webp"
                 className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{ backgroundPosition: "center", backgroundBlendMode: "overlay" }}
               />
@@ -183,6 +185,7 @@ const HumanoidSection = () => {
             >
               <OptimizedBackground
                 src="/background-section3.png"
+                webpSrc="/background-section3.webp"
                 className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{ backgroundPosition: "bottom center", backgroundBlendMode: "overlay" }}
               />
