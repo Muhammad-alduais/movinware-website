@@ -245,6 +245,7 @@ This message was sent via the MovinWare contact form on ${new Date().toLocaleDat
                   {t('contact.form.message')} <span className="text-red-500">*</span>
                 </label>
                 <textarea rows={4} name="message" value={formData.message} onChange={handleInputChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pulse-500 focus:border-transparent transition-all duration-200" placeholder="Tell us about your project..." required></textarea>
+                <textarea rows={4} name="message" value={formData.message} onChange={handleInputChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pulse-500 focus:border-transparent transition-all duration-200" placeholder={t('contact.form.message_placeholder')} required></textarea>
               </div>
               
               <button type="submit" disabled={isSubmitting} className={`w-full flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-200 ${isSubmitting ? 'bg-gray-400 cursor-not-allowed' : submitStatus === 'success' ? 'bg-green-500 hover:bg-green-600' : submitStatus === 'error' ? 'bg-red-500 hover:bg-red-600' : 'bg-pulse-500 hover:bg-pulse-600'} text-white`}>
