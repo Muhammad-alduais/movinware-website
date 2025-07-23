@@ -1,14 +1,15 @@
 import React from "react";
-import { Twitter, Linkedin, Github, Mail, Phone, MapPin } from "lucide-react";
+import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { useLanguage } from "../contexts/LanguageContext";
 
 const Footer = () => {
   const { t } = useLanguage();
   
   const socialLinks = [
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Github, href: "#", label: "GitHub" }
+    { icon: FaFacebook, href: "#", label: "Facebook" },
+    { icon: FaInstagram, href: "#", label: "Instagram" },
+    { icon: Linkedin, href: "#", label: "LinkedIn" }
   ];
 
   const quickLinks = [
@@ -90,7 +91,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center text-gray-300">
                   <Phone className="w-4 h-4 mr-3 text-pulse-500 flex-shrink-0" />
-                  <span className="text-sm">+966 561820949</span>
+                  <span className="text-sm" dir="ltr">+966 561820949</span>
                 </div>
                 <div className="flex items-center text-gray-300">
                   <MapPin className="w-4 h-4 mr-3 text-pulse-500 flex-shrink-0" />
