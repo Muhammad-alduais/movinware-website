@@ -35,8 +35,8 @@ const Footer = () => {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
             {/* Brand section */}
             <div className="lg:col-span-2">
-              <div className="flex items-center mb-6" dir="ltr">
-                <div className="w-8 h-8 text-white mr-3">
+              <div className="flex items-center space-x-3 mb-6" dir="ltr">
+                <div className="w-8 h-8 text-white">
                   <svg viewBox="0 0 494.95 492.9" fill="currentColor" className="w-full h-full">
                     <g>
                       <polygon points="297.32 0 67.34 482.87 0 341.74 162.63 0 297.32 0"/>
@@ -45,7 +45,7 @@ const Footer = () => {
                     </g>
                   </svg>
                 </div>
-                <span className="text-2xl font-bold font-glacial text-white">MovinWare</span>
+                <span className="text-2xl font-bold font-glacial text-white flex items-center">MovinWare</span>
               </div>
               <p className="text-gray-300 leading-relaxed mb-8 max-w-md">
                 {t('footer.description')}

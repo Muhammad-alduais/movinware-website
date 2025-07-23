@@ -55,7 +55,7 @@ const Navbar = () => {
           {/* Logo */}
           <a 
             href="#" 
-            className="flex items-center hover:opacity-80 transition-all duration-300 hover:scale-105 flex-shrink-0"
+            className="flex items-center space-x-2 lg:space-x-3 hover:opacity-80 transition-all duration-300 hover:scale-105 flex-shrink-0"
             onClick={(e) => {
               e.preventDefault();
               scrollToTop();
@@ -63,7 +63,7 @@ const Navbar = () => {
             aria-label="MovinWare"
             dir="ltr"
           >
-            <div className="w-7 h-7 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-pulse-500 flex-shrink-0 mr-2 lg:mr-3">
+            <div className="w-7 h-7 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-pulse-500 flex-shrink-0">
               <svg viewBox="0 0 494.95 492.9" fill="currentColor" className="w-full h-full drop-shadow-sm">
                 <g>
                   <polygon points="297.32 0 67.34 482.87 0 341.74 162.63 0 297.32 0" />
@@ -72,7 +72,7 @@ const Navbar = () => {
                 </g>
               </svg>
             </div>
-            <div className="text-lg sm:text-xl lg:text-2xl font-bold font-glacial text-gray-900 drop-shadow-sm">
+            <div className="text-lg sm:text-xl lg:text-2xl font-bold font-glacial text-gray-900 drop-shadow-sm flex items-center">
               MovinWare
             </div>
           </a>
