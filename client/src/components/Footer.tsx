@@ -13,8 +13,10 @@ const Footer = () => {
   ];
 
   const quickLinks = [
+    { name: t('nav.value'), href: "#value" },
     { name: t('nav.platform'), href: "#platform" },
     { name: t('nav.industries'), href: "#industries" },
+    { name: t('nav.erp'), href: "#erp-solutions" },
     { name: t('nav.services'), href: "#services" },
     { name: t('nav.contact'), href: "#contact" }
   ];
@@ -43,14 +45,14 @@ const Footer = () => {
                     </g>
                   </svg>
                 </div>
-                <span className="text-2xl font-bold text-white">MovinWare</span>
+                <span className="text-2xl font-bold font-glacial text-white">MovinWare</span>
               </div>
               <p className="text-gray-300 leading-relaxed mb-8 max-w-md">
                 {t('footer.description')}
               </p>
               
               {/* Social links */}
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 rtl:space-x-reverse">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}

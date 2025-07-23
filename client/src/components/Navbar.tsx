@@ -71,7 +71,7 @@ const Navbar = () => {
                 </g>
               </svg>
             </div>
-            <div className={`text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 ${language === 'ar' ? 'font-cairo' : 'font-brockmann'} drop-shadow-sm`}>
+            <div className="text-lg sm:text-xl lg:text-2xl font-bold font-glacial text-gray-900 drop-shadow-sm">
               MovinWare
             </div>
           </a>

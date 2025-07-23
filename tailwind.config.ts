@@ -76,6 +76,7 @@ export default {
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
         'brockmann': ['Brockmann', 'Inter', 'sans-serif'],
+        'glacial': ['Glacial Indifference', 'Inter', 'sans-serif'],
         'inter': ['Inter', 'system-ui', 'sans-serif'],
         'arabic': ['Tajawal', 'Arial', 'sans-serif'],
         'arabic-heading': ['Cairo', 'Arial', 'sans-serif'],

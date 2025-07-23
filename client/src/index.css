@@ -2,6 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700;800&display=swap');
 
+/* Glacial Indifference Font */
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('https://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762c.eot');
+  src: url('https://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762c.eot?#iefix') format('embedded-opentype'),
+       url('https://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762c.woff2') format('woff2'),
+       url('https://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762c.woff') format('woff'),
+       url('https://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762c.ttf') format('truetype'),
+       url('https://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762c.svg#Glacial Indifference') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* GraphikArabic Font */
 @font-face {
   font-family: 'GraphikArabic';
