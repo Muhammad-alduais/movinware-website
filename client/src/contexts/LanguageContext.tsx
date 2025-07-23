@@ -28,7 +28,7 @@ const translations = {
     'hero.cta': 'Start Your Journey',
     
     // Value Section
-    'value.section': 'Value',
+    'value.section': 'What we offer',
     'value.title': 'We don\'t just build software',
     'value.subtitle': 'We build the future of your business',
     'value.ai.title': 'Smart automation that learns your business',
@@ -495,7 +495,7 @@ const translations = {
     'hero.cta': 'ابدأ رحلتك',
     
     // Value Section
-    'value.section': 'قيمة شاملة',
+    'value.section': 'ماذا نقدم',
     'value.title': 'نحن لا نصنع البرمجيات فقط',
     'value.subtitle': 'نحن نبني مستقبل أعمالك',
     'value.ai.title': 'أتمتة ذكية تتعلم من أعمالك',
