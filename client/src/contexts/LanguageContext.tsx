@@ -700,6 +700,8 @@ const translations = {
     'contact.form.inquiry': 'نوع الاستفسار',
     'contact.form.message': 'الرسالة',
     'contact.form.send': 'إرسال الرسالة',
+    'contact.form.success_title': 'تم تسليم الرسالة بنجاح!',
+    'contact.form.success_description': 'لقد تلقينا رسالتك وسنرد خلال 24 ساعة.',
     'contact.form.message_placeholder': 'أخبرنا عن مشروعك...',
     'contact.info.title': 'معلومات الاتصال',
     'contact.inquiry.general': 'استفسار عام',
