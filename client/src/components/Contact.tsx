@@ -266,10 +266,10 @@ This message was sent via the MovinWare contact form on ${new Date().toLocaleDat
               {submitStatus === 'success' && <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
                   <div className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                    <p className="text-green-800 font-medium">Message delivered successfully!</p>
+                    <p className="text-green-800 font-medium">{t('contact.form.success_title')}</p>
                   </div>
                   <p className="text-green-700 text-sm mt-1">
-                    We've received your message and will respond within 24 hours.
+                    {t('contact.form.success_description')}
                   </p>
                 </div>}
               
