@@ -244,7 +244,6 @@ This message was sent via the MovinWare contact form on ${new Date().toLocaleDat
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   {t('contact.form.message')} <span className="text-red-500">*</span>
                 </label>
-                <textarea rows={4} name="message" value={formData.message} onChange={handleInputChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pulse-500 focus:border-transparent transition-all duration-200" placeholder="Tell us about your project..." required></textarea>
                 <textarea rows={4} name="message" value={formData.message} onChange={handleInputChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pulse-500 focus:border-transparent transition-all duration-200" placeholder={t('contact.form.message_placeholder')} required></textarea>
               </div>
               
