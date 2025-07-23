@@ -739,7 +739,7 @@ const translations = {
     
     // Implementation Process
     'implementation.section': 'عملية التنفيذ',
-    'implementation.title': 'من المفهوم إلى\nالتشغيل المباشر في 11 أسبوع',
+    'implementation.title': 'من تحليل المفاهيم إلى\nالتشغيل المباشر في 11 اسبوع',
     'implementation.subtitle': 'منهجيتنا المثبتة تضمن تنفيذاً ناجحاً مع أقل قدر من التعطيل لأعمالك',
     'implementation.timeline': 'الجدول الزمني للتنفيذ',
     'implementation.why_works': 'لماذا تعمل عمليتنا',
