@@ -764,7 +764,7 @@ const translations = {
     'implementation.phases.deployment.title': 'النشر والتدريب',
     'implementation.phases.deployment.duration': 'الأسبوع 10-11',
     'implementation.phases.deployment.description': 'دعم الانطلاق مع تدريب المستخدمين الشامل ومراقبة النظام والدعم الفوري.',
-    'implementation.phases.deployment.deliverables': ['النظام المباشر', 'المستخدمون المدربون', 'وثائق الدعم'],
+    'implementation.phases.deployment.deliverables': ['النظام المباشر', 'تدريب المستخدمين', 'وثائق الدعم'],
     
     'implementation.phases.optimization.title': 'التحسين والدعم',
     'implementation.phases.optimization.duration': 'مستمر',
