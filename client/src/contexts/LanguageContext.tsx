@@ -364,18 +364,18 @@ const translations = {
     
 
     
-    // Testimonials Section
-    'testimonials.section': 'Testimonials',
-    'testimonials.title': 'What others say',
-    'testimonials.testimonial1.content': 'MovinWare transformed our production operations, streamlining workflows while our team focuses on strategic growth. 40% increase in efficiency within two months.',
-    'testimonials.testimonial1.author': 'Sarah Chen',
-    'testimonials.testimonial1.role': 'VP of Operations, Axion Manufacturing',
-    'testimonials.testimonial2.content': 'Implementing MovinWare in our logistics centers reduced operational costs by 35% while improving accuracy. The AI-powered insights are game-changing.',
-    'testimonials.testimonial2.author': 'Michael Rodriguez',
-    'testimonials.testimonial2.role': 'Director of Logistics, GlobalShip',
-    'testimonials.testimonial3.content': 'As a mid-size business, we never thought advanced ERP would be accessible to us. MovinWare changed that with its intuitive design and affordable pricing.',
-    'testimonials.testimonial3.author': 'Jason Lee',
-    'testimonials.testimonial3.role': 'CEO, Innovative Solutions Inc.',
+    // Testimonials Section - REMOVED (saved in Testimonials_BACKUP.md)
+    // 'testimonials.section': 'Testimonials',
+    // 'testimonials.title': 'What others say',
+    // 'testimonials.testimonial1.content': 'MovinWare transformed our production operations, streamlining workflows while our team focuses on strategic growth. 40% increase in efficiency within two months.',
+    // 'testimonials.testimonial1.author': 'Sarah Chen',
+    // 'testimonials.testimonial1.role': 'VP of Operations, Axion Manufacturing',
+    // 'testimonials.testimonial2.content': 'Implementing MovinWare in our logistics centers reduced operational costs by 35% while improving accuracy. The AI-powered insights are game-changing.',
+    // 'testimonials.testimonial2.author': 'Michael Rodriguez',
+    // 'testimonials.testimonial2.role': 'Director of Logistics, GlobalShip',
+    // 'testimonials.testimonial3.content': 'As a mid-size business, we never thought advanced ERP would be accessible to us. MovinWare changed that with its intuitive design and affordable pricing.',
+    // 'testimonials.testimonial3.author': 'Jason Lee',
+    // 'testimonials.testimonial3.role': 'CEO, Innovative Solutions Inc.',
     
     // Implementation Process
     'implementation.section': 'Implementation Process',
@@ -724,18 +724,18 @@ const translations = {
     'services.methodology': 'منهجية خدماتنا',
     'services.methodology.subtitle': 'نهج منظم يضمن جودة التسليم ورضا العملاء في كل مرحلة',
     
-    // Testimonials Section
-    'testimonials.section': 'الشهادات',
-    'testimonials.title': 'ما يقوله الآخرون',
-    'testimonials.testimonial1.content': 'حولت MovinWare عمليات الإنتاج لدينا، وسهلت سير العمل بينما يركز فريقنا على النمو الاستراتيجي. زيادة 40% في الكفاءة خلال شهرين.',
-    'testimonials.testimonial1.author': 'سارة تشين',
-    'testimonials.testimonial1.role': 'نائب الرئيس للعمليات، شركة أكسيون للتصنيع',
-    'testimonials.testimonial2.content': 'تطبيق MovinWare في مراكز اللوجستيات لدينا قلل التكاليف التشغيلية بنسبة 35% مع تحسين الدقة. الرؤى المدعومة بالذكاء الاصطناعي تُغير قواعد اللعبة.',
-    'testimonials.testimonial2.author': 'مايكل رودريغيز',
-    'testimonials.testimonial2.role': 'مدير اللوجستيات، GlobalShip',
-    'testimonials.testimonial3.content': 'كشركة متوسطة الحجم، لم نفكر أبداً أن نظام تخطيط الموارد المتقدم سيكون في متناولنا. MovinWare غيرت ذلك بتصميمها البديهي والتسعير المعقول.',
-    'testimonials.testimonial3.author': 'جيسون لي',
-    'testimonials.testimonial3.role': 'الرئيس التنفيذي، شركة الحلول المبتكرة',
+    // Testimonials Section - REMOVED (saved in Testimonials_BACKUP.md)
+    // 'testimonials.section': 'الشهادات',
+    // 'testimonials.title': 'ما يقوله الآخرون',
+    // 'testimonials.testimonial1.content': 'حولت MovinWare عمليات الإنتاج لدينا، وسهلت سير العمل بينما يركز فريقنا على النمو الاستراتيجي. زيادة 40% في الكفاءة خلال شهرين.',
+    // 'testimonials.testimonial1.author': 'سارة تشين',
+    // 'testimonials.testimonial1.role': 'نائب الرئيس للعمليات، شركة أكسيون للتصنيع',
+    // 'testimonials.testimonials2.content': 'تطبيق MovinWare في مراكز اللوجستيات لدينا قلل التكاليف التشغيلية بنسبة 35% مع تحسين الدقة. الرؤى المدعومة بالذكاء الاصطناعي تُغير قواعد اللعبة.',
+    // 'testimonials.testimonial2.author': 'مايكل رودريغيز',
+    // 'testimonials.testimonial2.role': 'مدير اللوجستيات، GlobalShip',
+    // 'testimonials.testimonial3.content': 'كشركة متوسطة الحجم، لم نفكر أبداً أن نظام تخطيط الموارد المتقدم سيكون في متناولنا. MovinWare غيرت ذلك بتصميمها البديهي والتسعير المعقول.',
+    // 'testimonials.testimonial3.author': 'جيسون لي',
+    // 'testimonials.testimonial3.role': 'الرئيس التنفيذي، شركة الحلول المبتكرة',
     
     // Implementation Process
     'implementation.section': 'عملية التنفيذ',
