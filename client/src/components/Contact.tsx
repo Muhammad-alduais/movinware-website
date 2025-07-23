@@ -302,7 +302,7 @@ This message was sent via the MovinWare contact form on ${new Date().toLocaleDat
                     </div>
                     <div>
                       <p className="font-medium text-gray-900">{info.title}</p>
-                      <p className="text-gray-600">{info.value}</p>
+                      <p className="text-gray-600" dir={info.value.includes('+966') ? 'ltr' : undefined}>{info.value}</p>
                     </div>
                   </a>)}
               </div>

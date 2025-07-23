@@ -94,7 +94,7 @@ const ImplementationProcess = () => {
                   <div className="w-12 h-12 bg-pulse-500 rounded-full flex items-center justify-center text-white font-medium mb-3">
                     <Clock className="w-5 h-5" />
                   </div>
-                  <div className="text-sm font-medium text-gray-900">Week {item.week}</div>
+                  <div className="text-sm font-medium text-gray-900">{language === 'ar' ? 'الأسبوع' : 'Week'} {item.week}</div>
                   <div className="text-xs text-gray-600">{item.phase}</div>
                   {index < timeline.length - 1 && <div className="hidden md:block absolute left-full top-6 w-full h-px bg-gray-200"></div>}
                 </div>)}
