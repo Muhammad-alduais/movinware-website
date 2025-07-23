@@ -11,7 +11,7 @@ const translations = {
   en: {
     // Navigation
     'nav.home': 'Home',
-    'nav.value': 'Value',
+    'nav.value': 'What we offer',
     'nav.platform': 'Platform',
     'nav.industries': 'Industries',
     'nav.erp': 'Solutions',
