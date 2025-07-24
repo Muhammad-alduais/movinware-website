@@ -63,20 +63,22 @@ const DetailModal = ({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto border-0 shadow-2xl bg-white/95 backdrop-blur-xl">
-        <DialogHeader className="pb-6 border-b border-gradient-to-r from-gray-100 to-gray-50">
-          <DialogTitle className="flex items-center gap-6 text-2xl mb-0">
-            <div className="w-16 h-16 bg-gradient-to-br from-pulse-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
-              <Icon className="w-8 h-8 text-white drop-shadow-sm" />
+      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto border-0 bg-white shadow-lg">
+
+        
+        <DialogHeader className="pb-4 border-b border-gray-200">
+          <DialogTitle className="flex items-center gap-4 text-xl mb-0">
+            <div className="w-12 h-12 bg-pulse-500 rounded-lg flex items-center justify-center">
+              <Icon className="w-6 h-6 text-white" />
             </div>
             <div className="flex-1">
-              <h2 className={`text-3xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
+              <h2 className={`text-2xl font-semibold text-gray-900 ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
                 {title}
               </h2>
               {timeline && (
-                <div className="flex items-center gap-2 mt-3">
-                  <div className="w-2 h-2 bg-pulse-500 rounded-full animate-pulse"></div>
-                  <span className="text-sm text-pulse-600 font-semibold bg-gradient-to-r from-pulse-50 to-blue-50 px-4 py-2 rounded-full border border-pulse-200/30 shadow-sm">
+                <div className="flex items-center gap-2 mt-2">
+                  <div className="w-2 h-2 bg-pulse-500 rounded-full"></div>
+                  <span className="text-sm text-pulse-600 font-medium">
                     {timeline}
                   </span>
                 </div>
@@ -85,28 +87,26 @@ const DetailModal = ({
           </DialogTitle>
         </DialogHeader>
         
-        <div className="space-y-10">
+        <div className="space-y-6">
           {/* Description Section */}
-          <div className="bg-gradient-to-br from-gray-50/50 to-blue-50/30 rounded-2xl p-8 border border-gray-100/50">
-            <p className={`text-gray-700 leading-relaxed text-lg font-medium ${language === 'ar' ? 'font-tajawal' : 'font-inter'}`}>
+          <div className="bg-gray-50 rounded-lg p-6">
+            <p className={`text-gray-700 leading-relaxed ${language === 'ar' ? 'font-tajawal' : 'font-inter'}`}>
               {description}
             </p>
           </div>
           
           {/* Capabilities Section */}
           {capabilities && capabilities.length > 0 && (
-            <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-white/50 shadow-sm">
-              <h3 className={`text-2xl font-bold text-gray-900 mb-8 flex items-center ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
-                <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mr-4 shadow-md">
-                  <CheckCircle className="w-5 h-5 text-white" />
-                </div>
+            <div className="bg-white rounded-lg p-6 border border-gray-200">
+              <h3 className={`text-lg font-semibold text-gray-900 mb-4 flex items-center ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
+                <CheckCircle className="w-5 h-5 text-green-600 mr-2" />
                 {t('modal.key_capabilities')}
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {capabilities.map((capability, index) => (
-                  <div key={index} className="group flex items-start bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-gray-100/50 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                    <div className="w-3 h-3 bg-gradient-to-br from-pulse-500 to-purple-600 rounded-full mr-4 mt-1 flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-300"></div>
-                    <span className={`text-gray-700 leading-relaxed font-medium ${language === 'ar' ? 'font-tajawal' : 'font-inter'}`}>
+                  <div key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-pulse-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    <span className={`text-gray-700 ${language === 'ar' ? 'font-tajawal' : 'font-inter'}`}>
                       {capability}
                     </span>
                   </div>
@@ -117,20 +117,16 @@ const DetailModal = ({
 
           {/* Benefits Section */}
           {benefits && benefits.length > 0 && (
-            <div className="bg-gradient-to-br from-green-50/50 to-emerald-50/30 rounded-2xl p-8 border border-green-100/50">
-              <h3 className={`text-2xl font-bold text-gray-900 mb-8 flex items-center ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
-                <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-green-600 rounded-xl flex items-center justify-center mr-4 shadow-md">
-                  <CheckCircle className="w-5 h-5 text-white" />
-                </div>
+            <div className="bg-green-50 rounded-lg p-6 border border-green-200">
+              <h3 className={`text-lg font-semibold text-gray-900 mb-4 flex items-center ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
+                <CheckCircle className="w-5 h-5 text-green-600 mr-2" />
                 {t('modal.key_benefits')}
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-start group">
-                    <div className="w-6 h-6 bg-gradient-to-br from-emerald-500 to-green-600 rounded-lg flex items-center justify-center mr-4 mt-1 flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-300">
-                      <CheckCircle className="w-4 h-4 text-white" />
-                    </div>
-                    <span className={`text-gray-700 leading-relaxed font-medium ${language === 'ar' ? 'font-tajawal' : 'font-inter'}`}>
+                  <div key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-green-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    <span className={`text-gray-700 ${language === 'ar' ? 'font-tajawal' : 'font-inter'}`}>
                       {benefit}
                     </span>
                   </div>
@@ -141,36 +137,34 @@ const DetailModal = ({
 
           {/* Process Steps Section */}
           {processSteps && processSteps.length > 0 && (
-            <div className="bg-gradient-to-br from-blue-50/50 to-indigo-50/30 rounded-2xl p-8 border border-blue-100/50">
-              <h3 className={`text-2xl font-bold text-gray-900 mb-8 flex items-center ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mr-4 shadow-md">
-                  <ArrowRight className="w-5 h-5 text-white" />
-                </div>
+            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <h3 className={`text-lg font-semibold text-gray-900 mb-4 flex items-center ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
+                <ArrowRight className="w-5 h-5 text-blue-600 mr-2" />
                 {t('modal.process_overview')}
               </h3>
-              <div className="space-y-8">
+              <div className="space-y-4">
                 {processSteps.map((step, index) => (
-                  <div key={index} className="relative bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-white/50 shadow-sm hover:shadow-md transition-all duration-300">
-                    <div className="flex items-start gap-4">
-                      <div className="w-8 h-8 bg-gradient-to-br from-pulse-500 to-purple-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                        <span className="text-white font-bold text-sm">{index + 1}</span>
+                  <div key={index} className="bg-white rounded-lg p-4 border border-gray-200">
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <span className="text-white font-semibold text-sm">{index + 1}</span>
                       </div>
                       <div className="flex-1">
-                        <h4 className={`font-bold text-gray-900 mb-3 text-lg ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
+                        <h4 className={`font-semibold text-gray-900 mb-2 ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
                           {step.title}
                         </h4>
-                        <p className={`text-gray-600 mb-4 leading-relaxed ${language === 'ar' ? 'font-tajawal' : 'font-inter'}`}>
+                        <p className={`text-gray-600 mb-3 text-sm ${language === 'ar' ? 'font-tajawal' : 'font-inter'}`}>
                           {step.description}
                         </p>
                         {step.deliverables && (
-                          <div className="bg-gray-50/80 rounded-lg p-4 space-y-2">
-                            <h5 className={`text-sm font-semibold text-gray-700 mb-2 ${language === 'ar' ? 'font-arabic' : 'font-inter'}`}>
-                              Deliverables:
+                          <div className="bg-gray-50 rounded p-3 space-y-1">
+                            <h5 className={`text-xs font-semibold text-gray-700 mb-2 ${language === 'ar' ? 'font-tajawal' : 'font-inter'}`}>
+                              {t('modal.deliverables')}:
                             </h5>
                             {step.deliverables.map((deliverable, deliverableIndex) => (
-                              <div key={deliverableIndex} className="flex items-center text-sm text-gray-600">
-                                <div className="w-2 h-2 bg-pulse-400 rounded-full mr-3 flex-shrink-0"></div>
-                                <span className={language === 'ar' ? 'font-arabic' : 'font-inter'}>
+                              <div key={deliverableIndex} className="flex items-center text-xs text-gray-600">
+                                <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 flex-shrink-0"></div>
+                                <span className={language === 'ar' ? 'font-tajawal' : 'font-inter'}>
                                   {deliverable}
                                 </span>
                               </div>
