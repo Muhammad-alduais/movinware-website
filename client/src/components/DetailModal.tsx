@@ -1,6 +1,6 @@
 
 import React from "react";
-import { X, CheckCircle, ArrowRight, Users } from "lucide-react";
+import { X, CheckCircle, ArrowRight, Users, Target } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -222,9 +222,9 @@ const DetailModal = ({
           {/* Clients Section */}
           {clients && (
             <div className="bg-gradient-to-br from-amber-50/50 to-orange-50/30 rounded-2xl p-8 border border-amber-100/50">
-              <h4 className={`text-xl font-bold text-gray-900 mb-4 flex items-center ${language === 'ar' ? 'font-arabic' : 'font-brockmann'}`}>
-                <div className="w-6 h-6 bg-gradient-to-br from-pulse-500 to-purple-600 rounded-lg flex items-center justify-center mr-3 shadow-sm">
-                  <Users className="w-4 h-4 text-white" />
+              <h4 className={`text-xl font-bold text-gray-900 mb-4 flex items-center ${language === 'ar' ? 'font-cairo' : 'font-brockmann'}`}>
+                <div className={`w-6 h-6 bg-gradient-to-br from-pulse-500 to-purple-600 rounded-lg flex items-center justify-center shadow-sm ${language === 'ar' ? 'ml-4' : 'mr-4'}`}>
+                  <Target className="w-4 h-4 text-white" />
                 </div>
                 {t('modal.perfect_for')}
               </h4>
