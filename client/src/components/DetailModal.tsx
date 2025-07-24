@@ -105,7 +105,7 @@ const DetailModal = ({
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {capabilities.map((capability, index) => (
                   <div key={index} className="flex items-start">
-                    <div className="w-2 h-2 bg-pulse-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    <div className={`w-2 h-2 bg-pulse-500 rounded-full mt-2 flex-shrink-0 ${language === 'ar' ? 'ml-4' : 'mr-3'}`}></div>
                     <span className={`text-gray-700 ${language === 'ar' ? 'font-tajawal' : 'font-inter'}`}>
                       {capability}
                     </span>
@@ -125,7 +125,7 @@ const DetailModal = ({
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-start">
-                    <div className="w-2 h-2 bg-green-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    <div className={`w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0 ${language === 'ar' ? 'ml-4' : 'mr-3'}`}></div>
                     <span className={`text-gray-700 ${language === 'ar' ? 'font-tajawal' : 'font-inter'}`}>
                       {benefit}
                     </span>
@@ -163,7 +163,7 @@ const DetailModal = ({
                             </h5>
                             {step.deliverables.map((deliverable, deliverableIndex) => (
                               <div key={deliverableIndex} className="flex items-center text-xs text-gray-600">
-                                <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 flex-shrink-0"></div>
+                                <div className={`w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0 ${language === 'ar' ? 'ml-3' : 'mr-2'}`}></div>
                                 <span className={language === 'ar' ? 'font-tajawal' : 'font-inter'}>
                                   {deliverable}
                                 </span>
