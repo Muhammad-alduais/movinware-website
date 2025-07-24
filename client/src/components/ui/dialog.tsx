@@ -47,13 +47,12 @@ const DialogContent = React.forwardRef<
         {...props}
       >
         {children}
-        <DialogPrimitive.Close className={cn(
-          "absolute top-3 p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300",
-          isArabic ? "left-3" : "right-3"
-        )}>
-          <X className="h-4 w-4 text-gray-600" />
-          <span className="sr-only">Close</span>
-        </DialogPrimitive.Close>
+        <div className="sticky top-0 z-50 flex justify-end p-3 -mb-3">
+          <DialogPrimitive.Close className="p-2 rounded-lg bg-white hover:bg-gray-50 border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-pulse-500">
+            <X className="h-4 w-4 text-gray-600" />
+            <span className="sr-only">Close</span>
+          </DialogPrimitive.Close>
+        </div>
       </DialogPrimitive.Content>
     </DialogPortal>
   );
