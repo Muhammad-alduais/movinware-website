@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
             {/* Brand section */}
             <div className="lg:col-span-2">
-              <div className={`flex items-start gap-4 mb-6 ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
+              <div className={`flex items-start gap-4 mb-6 ${language === 'ar' ? 'flex-row-reverse justify-end' : ''}`}>
                 {/* Logo and Company Name Group */}
                 <div className="flex items-baseline gap-2" dir="ltr">
                   <div className="w-8 h-8 text-white flex-shrink-0 flex items-end">
@@ -50,12 +50,12 @@ const Footer = () => {
                   <span className="text-2xl font-bold font-glacial text-white leading-none">MovinWare</span>
                 </div>
               </div>
-              <p className={`text-gray-300 leading-relaxed mb-8 max-w-md ${language === 'ar' ? 'font-arabic text-right' : ''}`}>
+              <p className={`text-gray-300 leading-relaxed mb-8 max-w-md ${language === 'ar' ? 'font-arabic text-right ml-auto' : ''}`}>
                 {t('footer.description')}
               </p>
               
               {/* Social links */}
-              <div className="flex space-x-4 rtl:space-x-reverse">
+              <div className={`flex space-x-4 rtl:space-x-reverse ${language === 'ar' ? 'justify-end' : ''}`}>
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
