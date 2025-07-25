@@ -71,7 +71,7 @@ const Footer = () => {
               </p>
               
               {/* Social links */}
-              <div className={`flex space-x-4 rtl:space-x-reverse ${language === 'ar' ? 'justify-end' : ''}`}>
+              <div className={`flex space-x-4 rtl:space-x-reverse ${language === 'ar' ? 'justify-start' : ''}`}>
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
