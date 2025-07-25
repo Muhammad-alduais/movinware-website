@@ -53,7 +53,7 @@ const Footer = () => {
                 language === 'ar' 
                   ? 'font-arabic text-right' 
                   : 'font-inter text-left'
-              }`}>
+              }`} dir={language === 'ar' ? 'rtl' : 'ltr'}>
                 {t('footer.description')}
               </p>
               
