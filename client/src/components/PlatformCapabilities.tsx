@@ -83,7 +83,7 @@ const PlatformCapabilities = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {[{
-              metric: "500+",
+              metric: "",
               label: t('capabilities.stats.api'),
               desc: t('capabilities.stats.api_desc')
             }, {
