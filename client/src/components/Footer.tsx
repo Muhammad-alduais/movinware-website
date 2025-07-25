@@ -64,7 +64,9 @@ const Footer = () => {
                 language === 'ar' 
                   ? 'font-arabic text-right' 
                   : 'font-inter text-left'
-              }`} dir={language === 'ar' ? 'rtl' : 'ltr'}>
+              }`} 
+              style={language === 'ar' ? { textAlign: 'right' } : { textAlign: 'left' }}
+              dir={language === 'ar' ? 'rtl' : 'ltr'}>
                 {safeT('footer.description', 'AI-powered ERP solutions designed for modern businesses.')}
               </p>
               
