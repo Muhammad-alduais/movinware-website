@@ -79,7 +79,7 @@ const Industries = () => {
             <span className="font-semibold">{t('industries.section')}</span>
           </div>
           <h2 className="section-header-title animate-header-glow">
-            {t('industries.title').split('\n').map((line, index) => (
+            {(t('industries.title') as string).split('\n').map((line: string, index: number) => (
               <span key={index}>
                 {line}
                 {index === 0 && <br />}
@@ -94,32 +94,7 @@ const Industries = () => {
 
       <div className="py-20 max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
-          {industries.map((industry, index) => <PreviewCard key={index} icon={industry.icon} title={industry.title} description={industry.description} timeline={industry.timeline} onLearnMore={() => setSelectedIndustry(industry)} index={index} />)}
-        </div>
-
-        <div className="opacity-0 animate-fade-scale" style={{
-        animationDelay: "0.4s"
-      }}>
-          <div className="bg-white rounded-3xl p-12 border border-gray-200 shadow-sm">
-            <div className="text-center mb-12">
-              <h3 className="text-2xl font-light text-gray-900 mb-4">{t('industries.trusted')}</h3>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                {t('industries.trusted.subtitle')}
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {companySizes.map((size, index) => <div key={index} className="text-center bg-gray-50 rounded-2xl p-8 hover:bg-gray-100 transition-colors duration-300">
-                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mx-auto mb-4 shadow-sm">
-                    <size.icon className="w-6 h-6 text-pulse-500" />
-                  </div>
-                  <div className="text-3xl font-light text-pulse-500 mb-2">{size.count}</div>
-                  <div className="font-medium text-gray-900 mb-2">{size.title}</div>
-                  <div className="text-sm text-gray-600 mb-2">{size.description}</div>
-                  <div className="text-xs text-gray-500">{size.details}</div>
-                </div>)}
-            </div>
-          </div>
+          {industries.map((industry, index) => <PreviewCard key={index} icon={industry.icon} title={industry.title as string} description={industry.description as string} timeline={industry.timeline as string} onLearnMore={() => setSelectedIndustry(industry)} index={index} />)}
         </div>
 
         <div className="mt-20 text-center opacity-0 animate-slide-up" style={{
