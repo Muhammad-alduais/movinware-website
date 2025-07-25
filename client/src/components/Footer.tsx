@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
             {/* Brand section */}
             <div className="lg:col-span-2">
-              <div className="flex items-baseline gap-3 mb-6" dir="ltr">
+              <div className="flex items-baseline gap-2 mb-6" dir="ltr">
                 <div className="w-8 h-8 text-white flex-shrink-0 flex items-end">
                   <svg viewBox="0 0 494.95 492.9" fill="currentColor" className="w-full h-full">
                     <g>

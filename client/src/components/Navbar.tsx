@@ -55,7 +55,7 @@ const Navbar = () => {
           {/* Logo */}
           <a 
             href="#" 
-            className="flex items-baseline gap-2 lg:gap-3 hover:opacity-80 transition-all duration-300 hover:scale-105 flex-shrink-0"
+            className="flex items-baseline gap-1.5 lg:gap-2 hover:opacity-80 transition-all duration-300 hover:scale-105 flex-shrink-0"
             onClick={(e) => {
               e.preventDefault();
               scrollToTop();
