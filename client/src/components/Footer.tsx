@@ -49,7 +49,11 @@ const Footer = () => {
                   <span className="text-2xl font-bold font-glacial text-white leading-none">MovinWare</span>
                 </div>
               </div>
-              <p className="text-gray-300 leading-relaxed mb-8 max-w-md font-arabic ml-auto text-right">
+              <p className={`text-gray-300 leading-relaxed mb-8 max-w-md ${
+                language === 'ar' 
+                  ? 'font-arabic text-right' 
+                  : 'font-inter text-left'
+              }`}>
                 {t('footer.description')}
               </p>
               
