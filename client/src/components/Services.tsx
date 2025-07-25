@@ -71,7 +71,7 @@ const Services = () => {
             <span className="font-semibold">{t('services.section')}</span>
           </div>
           <h2 className="section-header-title animate-header-glow">
-            {t('services.title').split('\n').map((line, index) => (
+            {(t('services.title') as string).split('\n').map((line: string, index: number) => (
               <span key={index}>
                 {line}
                 {index === 0 && <br />}
@@ -86,7 +86,7 @@ const Services = () => {
 
       <div className="py-20 max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
-          {services.map((service, index) => <PreviewCard key={index} icon={service.icon} title={service.title} description={service.description} timeline={service.timeline} onLearnMore={() => setSelectedService(service)} index={index} />)}
+          {services.map((service, index) => <PreviewCard key={index} icon={service.icon} title={service.title as string} description={service.description as string} timeline={service.timeline as string} onLearnMore={() => setSelectedService(service)} index={index} />)}
         </div>
 
         <div className="opacity-0 animate-fade-scale" style={{
@@ -125,30 +125,6 @@ const Services = () => {
                   {index < 4 && <div className="hidden md:block absolute left-full top-6 w-full h-px bg-gray-200 transform -translate-y-1/2 z-0"></div>}
                 </div>)}
             </div>
-          </div>
-        </div>
-
-        <div className="mt-20 opacity-0 animate-slide-up" style={{
-        animationDelay: "0.6s"
-      }}>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[{
-            metric: t('services.stats.professionals.metric'),
-            label: t('services.stats.professionals.label'),
-            desc: t('services.stats.professionals.desc')
-          }, {
-            metric: t('services.stats.projects.metric'),
-            label: t('services.stats.projects.label'),
-            desc: t('services.stats.projects.desc')
-          }, {
-            metric: t('services.stats.satisfaction.metric'),
-            label: t('services.stats.satisfaction.label'),
-            desc: t('services.stats.satisfaction.desc')
-          }].map((stat, index) => <div key={index} className="text-center bg-white rounded-3xl p-8 border border-gray-200">
-                <div className="text-3xl font-light text-pulse-500 mb-2">{stat.metric}</div>
-                <div className="font-medium text-gray-900 mb-1">{stat.label}</div>
-                <div className="text-sm text-gray-600">{stat.desc}</div>
-              </div>)}
           </div>
         </div>
 

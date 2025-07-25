@@ -354,19 +354,6 @@ const translations = {
     'services.methodology.steps.support': 'Support',
     'services.methodology.steps.support.desc': 'Ongoing maintenance & optimization',
     
-    // Statistics
-    'services.stats.professionals.metric': '50+',
-    'services.stats.professionals.label': 'Certified Professionals',
-    'services.stats.professionals.desc': 'Expert consultants and developers',
-    'services.stats.projects.metric': '',
-    'services.stats.projects.label': 'Successful Projects',
-    'services.stats.projects.desc': 'Across various industries',
-    'services.stats.satisfaction.metric': '99%',
-    'services.stats.satisfaction.label': 'Client Satisfaction',
-    'services.stats.satisfaction.desc': 'Based on project completion surveys',
-    
-
-    
     // Testimonials Section - REMOVED (saved in Testimonials_BACKUP.md)
     // 'testimonials.section': 'Testimonials',
     // 'testimonials.title': 'What others say',
@@ -917,19 +904,6 @@ const translations = {
     'services.methodology.steps.delivery.desc': 'ضمان الجودة والتسليم',
     'services.methodology.steps.support': 'الدعم',
     'services.methodology.steps.support.desc': 'الصيانة والتحسين المستمر',
-    
-    // Statistics
-    'services.stats.professionals.metric': '+50',
-    'services.stats.professionals.label': 'محترف معتمد',
-    'services.stats.professionals.desc': 'استشاريون ومطورون خبراء',
-    'services.stats.projects.metric': '',
-    'services.stats.projects.label': 'مشروع ناجح',
-    'services.stats.projects.desc': 'عبر صناعات متنوعة',
-    'services.stats.satisfaction.metric': '99%',
-    'services.stats.satisfaction.label': 'رضا العملاء',
-    'services.stats.satisfaction.desc': 'بناءً على استطلاعات إكمال المشاريع',
-    
-
     
     // Footer
     'footer.description': 'حلول ERP مدعومة بالذكاء الاصطناعي، مصممة خصيصًا لتلبية احتياجات الأعمال الحديثة.\nبسّط عملياتك، وحقق أقصى كفاءة، واستعد لمستقبل أكثر ذكاءً من خلال الأتمتة المتقدمة.',
