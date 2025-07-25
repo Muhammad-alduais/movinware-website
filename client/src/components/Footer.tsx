@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { useLanguage } from "../contexts/LanguageContext";
 
 const Footer = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   
   const socialLinks = [
     { icon: FaFacebook, href: "#", label: "Facebook" },
@@ -35,19 +35,22 @@ const Footer = () => {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
             {/* Brand section */}
             <div className="lg:col-span-2">
-              <div className="flex items-baseline gap-2 mb-6" dir="ltr">
-                <div className="w-8 h-8 text-white flex-shrink-0 flex items-end">
-                  <svg viewBox="0 0 494.95 492.9" fill="currentColor" className="w-full h-full">
-                    <g>
-                      <polygon points="297.32 0 67.34 482.87 0 341.74 162.63 0 297.32 0"/>
-                      <polygon points="494.95 178.76 343.02 476.88 332.83 480.38 294.08 387.79 304.42 386.86 408.85 174.5 494.95 178.76"/>
-                      <polygon points="402.47 102.46 213.4 488.21 200.41 492.9 148.94 374.77 162.18 373.37 291.99 98.66 402.47 102.46"/>
-                    </g>
-                  </svg>
+              <div className={`flex items-start gap-4 mb-6 ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
+                {/* Logo and Company Name Group */}
+                <div className="flex items-baseline gap-2" dir="ltr">
+                  <div className="w-8 h-8 text-white flex-shrink-0 flex items-end">
+                    <svg viewBox="0 0 494.95 492.9" fill="currentColor" className="w-full h-full">
+                      <g>
+                        <polygon points="297.32 0 67.34 482.87 0 341.74 162.63 0 297.32 0"/>
+                        <polygon points="494.95 178.76 343.02 476.88 332.83 480.38 294.08 387.79 304.42 386.86 408.85 174.5 494.95 178.76"/>
+                        <polygon points="402.47 102.46 213.4 488.21 200.41 492.9 148.94 374.77 162.18 373.37 291.99 98.66 402.47 102.46"/>
+                      </g>
+                    </svg>
+                  </div>
+                  <span className="text-2xl font-bold font-glacial text-white leading-none">MovinWare</span>
                 </div>
-                <span className="text-2xl font-bold font-glacial text-white leading-none">MovinWare</span>
               </div>
-              <p className="text-gray-300 leading-relaxed mb-8 max-w-md">
+              <p className={`text-gray-300 leading-relaxed mb-8 max-w-md ${language === 'ar' ? 'font-arabic text-right' : ''}`}>
                 {t('footer.description')}
               </p>
               
