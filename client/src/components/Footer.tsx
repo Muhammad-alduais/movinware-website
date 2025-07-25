@@ -28,7 +28,6 @@ const Footer = () => {
       {/* Decorative background elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-pulse-500/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl"></div>
-      
       <div className="relative z-10">
         {/* Main footer content */}
         <div className="max-w-6xl mx-auto px-6 py-16">
@@ -50,7 +49,7 @@ const Footer = () => {
                   <span className="text-2xl font-bold font-glacial text-white leading-none">MovinWare</span>
                 </div>
               </div>
-              <p className={`text-gray-300 leading-relaxed mb-8 max-w-md ${language === 'ar' ? 'font-arabic text-right ml-auto' : ''}`}>
+              <p className="text-gray-300 leading-relaxed mb-8 max-w-md font-arabic ml-auto text-right">
                 {t('footer.description')}
               </p>
               
