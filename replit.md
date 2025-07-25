@@ -10,6 +10,12 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+**January 25, 2025 - Logo Alignment and Translation Updates Completed**
+- Updated logo and company name alignment in navbar and footer to use baseline alignment
+- Changed from items-center to items-end with leading-none for proper text baseline positioning
+- Company name now aligns to bottom of logo while logo maintains its vertical position
+- Applied consistent gap spacing and flex-shrink-0 for optimal layout control
+
 **January 25, 2025 - Translation Updates and Migration Completion**
 - Successfully completed migration from Replit Agent to standard Replit environment
 - Updated 10 Arabic translation items as requested by user with corresponding English translations
