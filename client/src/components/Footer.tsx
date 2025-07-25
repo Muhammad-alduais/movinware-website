@@ -35,8 +35,8 @@ const Footer = () => {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
             {/* Brand section */}
             <div className="lg:col-span-2">
-              <div className="flex items-end gap-3 mb-6" dir="ltr">
-                <div className="w-8 h-8 text-white flex-shrink-0">
+              <div className="flex items-baseline gap-3 mb-6" dir="ltr">
+                <div className="w-8 h-8 text-white flex-shrink-0 flex items-end">
                   <svg viewBox="0 0 494.95 492.9" fill="currentColor" className="w-full h-full">
                     <g>
                       <polygon points="297.32 0 67.34 482.87 0 341.74 162.63 0 297.32 0"/>
