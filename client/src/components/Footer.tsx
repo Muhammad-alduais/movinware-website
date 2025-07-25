@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto px-6 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
             {/* Brand section */}
-            <div className="lg:col-span-2">
+            <div className={`lg:col-span-2 ${language === 'ar' ? 'text-right' : 'text-left'}`}>
               <div className={`flex items-start gap-4 mb-6 ${language === 'ar' ? 'flex-row-reverse justify-end' : ''}`}>
                 {/* Logo and Company Name Group */}
                 <div className="flex items-baseline gap-2" dir="ltr">
