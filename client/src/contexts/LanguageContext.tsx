@@ -24,7 +24,7 @@ const translations = {
     // Hero Section
     'hero.chip': 'Enterprise Resource Planning Solutions',
     'hero.title': 'Smart Operations.\nSeamless Transformation',
-    'hero.subtitle': 'AI-powered ERP system designed specifically for your workflow. Streamline operations, boost efficiency, and future-proof your business with MovinWare\'s intelligent solutions.',
+    'hero.subtitle': 'Intelligent ERP system powered by AI, specifically designed to align with the nature of your business.\nWith MovinWare solutions, you can simplify operations, enhance efficiency, and ensure sustainable growth for your business.',
     'hero.cta': 'Start Your Journey',
     
     // Value Section
@@ -34,13 +34,13 @@ const translations = {
     'value.ai.title': 'Smart automation that learns your business',
     'value.ai.badge': 'AI Features',
     'value.ai.features': ['Predictive Analytics', 'Decision Automation', 'Intelligent Workflows', 'Advanced Analytics'],
-    'value.speed.title': 'From setup to results in record time',
+    'value.speed.title': 'From setup to launch in record time',
     'value.speed.badge': 'Unmatched Speed',
     'value.speed.features': ['Rapid Deployment', 'Immediate ROI', 'Instant Benefits', 'Proven Methodology'],
-    'value.culture.title': 'Built for Middle Eastern businesses',
+    'value.culture.title': 'Fully Arabic ERP solutions',
     'value.culture.badge': 'Cultural Fit',
     'value.culture.features': ['Bilingual Support', 'Native RTL Interfaces', 'Local Compliance', 'Cultural Alignment'],
-    'value.adoption.title': 'Simple, intuitive, and user-friendly',
+    'value.adoption.title': 'Simple, flexible, and user-friendly',
     'value.adoption.badge': 'Easy Adoption',
     'value.adoption.features': ['Intuitive Design', 'Simplified Training', 'User-Friendly Interface', 'Ongoing Support'],
     
@@ -205,7 +205,7 @@ const translations = {
     'erp.sales.capabilities': ['Lead Tracking & Opportunity Management', 'Advanced Sales Pipeline & Forecasting', 'Customer 360-degree View & Analytics', 'Automated Marketing Campaign Management', 'Quote & Proposal Generation', 'Customer Support & Ticket Management', 'Sales Team Performance Analytics', 'Mobile CRM & Field Sales Tools'],
     'erp.sales.fullDescription': 'End-to-end sales and customer relationship management with AI-powered insights and automation for maximum conversion rates. Our CRM platform provides complete customer visibility, automated sales processes, and intelligent insights that help you close more deals and build stronger customer relationships.',
     
-    'erp.inventory.title': 'Inventory Management',
+    'erp.inventory.title': 'Warehouse Management',
     'erp.inventory.description': 'Smart inventory optimization with real-time tracking.',
     'erp.inventory.timeline': 'Smart Inventory',
     'erp.inventory.capabilities': ['AI-powered Stock Optimization & Forecasting', 'Barcode & RFID Scanning Integration', 'Automated Reordering & Supplier Alerts', 'Multi-location & Multi-warehouse Tracking', 'Batch & Serial Number Management', 'Cycle Counting & Physical Inventory', 'Warehouse Layout & Pick Path Optimization', 'Supplier Performance & Vendor Management'],
@@ -385,7 +385,7 @@ const translations = {
     'implementation.title': 'From concept to\ngo-live in 11 weeks',
     'implementation.subtitle': 'Our proven methodology ensures successful implementation with minimal disruption to your business',
     'implementation.timeline': 'Implementation Timeline',
-    'implementation.why_works': 'Why our process works',
+    'implementation.why_works': 'Secret to our effective methodology?',
     'implementation.why_works.subtitle': 'Proven results from our implementation methodology',
     
     // Implementation Phases
@@ -458,7 +458,7 @@ const translations = {
     'features.mobile_description': 'Access your business data anywhere with 99.9% uptime guarantee and offline capabilities.',
     
     // Footer
-    'footer.description': 'AI-powered ERP solutions designed for modern businesses. Streamline operations, boost efficiency, and future-proof your business with intelligent automation.',
+    'footer.description': 'AI-powered ERP solutions specifically designed to meet the needs of modern businesses.\nStreamline your operations, achieve maximum efficiency, and prepare for a smarter future through advanced automation.',
     'footer.quick_links': 'Quick Links',
     'footer.contact': 'Contact',
     'footer.copyright': '© 2025 MovinWare. All rights reserved.',
@@ -495,7 +495,7 @@ const translations = {
     // Hero Section
     'hero.chip': 'حلول تخطيط موارد المؤسسات',
     'hero.title': 'عمليات ذكية.\nتحول سلس',
-    'hero.subtitle': 'نظام تخطيط موارد المؤسسات المدعوم بالذكاء الاصطناعي مصمم خصيصاً لسير عملك. قم بتبسيط العمليات وزيادة الكفاءة وضمان مستقبل أعمالك مع حلول MovinWare الذكية.',
+    'hero.subtitle': 'نظام ERP ذكي مدعوم بالذكاء الاصطناعي، مصمم خصيصًا ليتوافق مع طبيعة عملك.\nبفضل حلول MovinWare، يمكنك تبسيط العمليات، تعزيز الكفاءة، وضمان نمو مستدام لأعمالك.',
     'hero.cta': 'ابدأ رحلتك',
     
     // Value Section
@@ -505,13 +505,13 @@ const translations = {
     'value.ai.title': 'أتمتة ذكية تتعلم من أعمالك',
     'value.ai.badge': 'ميزات الذكاء الاصطناعي',
     'value.ai.features': ['التنبؤ التلقائي', 'أتمتة القرارات', 'سير عمل ذكي', 'تحليلات متقدمة'],
-    'value.speed.title': 'من التهيئة إلى النتائج في وقت قياسي',
+    'value.speed.title': 'من التهيئة إلى الانطلاق في وقت قياسي',
     'value.speed.badge': 'سرعة لا مثيل لها',
     'value.speed.features': ['نشر سريع', 'عائد فوري على الاستثمار', 'فوائد فورية', 'منهجية مثبتة'],
-    'value.culture.title': 'مصمم لأعمال منطقة الشرق الأوسط',
+    'value.culture.title': 'حلول ERP عربية بالكامل',
     'value.culture.badge': 'التوافق الثقافي',
     'value.culture.features': ['دعم ثنائي اللغة', 'واجهات أصلية من اليمين لليسار', 'الامتثال المحلي', 'التوافق الثقافي'],
-    'value.adoption.title': 'بسيط وبديهي وسهل الاستخدام',
+    'value.adoption.title': 'بسيط ومرن وسهل الاستخدام',
     'value.adoption.badge': 'اعتماد سهل',
     'value.adoption.features': ['تصميم بديهي', 'تدريب مبسط', 'واجهة سهلة الاستخدام', 'دعم مستمر'],
     
@@ -659,7 +659,7 @@ const translations = {
     'erp.sales.capabilities': ['تتبع العملاء المحتملين وإدارة الفرص', 'خط أنابيب المبيعات المتقدم والتنبؤ', 'رؤية شاملة للعملاء 360 درجة والتحليلات', 'إدارة حملات التسويق الآلية', 'إنشاء عروض الأسعار والاقتراحات', 'دعم العملاء وإدارة التذاكر', 'تحليلات أداء فريق المبيعات', 'إدارة علاقات العملاء المحمولة وأدوات المبيعات الميدانية'],
     'erp.sales.fullDescription': 'إدارة شاملة للمبيعات وعلاقات العملاء مع رؤى مدعومة بالذكاء الاصطناعي وأتمتة لأقصى معدلات التحويل. توفر منصة إدارة علاقات العملاء الخاصة بنا رؤية كاملة للعملاء وعمليات مبيعات آلية ورؤى ذكية تساعدك في إغلاق المزيد من الصفقات وبناء علاقات أقوى مع العملاء.',
     
-    'erp.inventory.title': 'إدارة المخزون',
+    'erp.inventory.title': 'إدارة المخازن',
     'erp.inventory.description': 'تحسين المخزون الذكي مع التتبع في الوقت الفعلي.',
     'erp.inventory.timeline': 'المخزون الذكي',
     'erp.inventory.capabilities': ['تحسين المخزون والتنبؤ المدعوم بالذكاء الاصطناعي', 'تكامل مسح الباركود وRFID', 'إعادة الطلب الآلي وتنبيهات المورد', 'تتبع متعدد المواقع والمستودعات', 'إدارة الدفعات والأرقام التسلسلية', 'العد الدوري والجرد المادي', 'تخطيط المستودع وتحسين مسار الانتقاء', 'أداء المورد وإدارة البائعين'],
@@ -751,7 +751,7 @@ const translations = {
     'implementation.title': 'من تحليل المفاهيم إلى\nالتشغيل المباشر في 11 اسبوع',
     'implementation.subtitle': 'منهجيتنا المثبتة تضمن تنفيذاً ناجحاً مع أقل قدر من التعطيل لأعمالك',
     'implementation.timeline': 'الجدول الزمني للتنفيذ',
-    'implementation.why_works': 'لماذا تعمل عمليتنا',
+    'implementation.why_works': 'سر فعالية منهجنا؟',
     'implementation.why_works.subtitle': 'نتائج مثبتة من منهجية التنفيذ الخاصة بنا',
     
     // Implementation Phases
@@ -777,8 +777,8 @@ const translations = {
     
     'implementation.phases.optimization.title': 'التحسين والدعم',
     'implementation.phases.optimization.duration': 'مستمر',
-    'implementation.phases.optimization.description': 'التحسين المستمر ومراقبة الأداء وتحسينات الميزات والدعم المخصص.',
-    'implementation.phases.optimization.deliverables': ['تقارير الأداء', 'تحديثات الميزات', 'دعم 24/7'],
+    'implementation.phases.optimization.description': 'التحسين المستمر ومراقبة الأداء والدعم المخصص.',
+    'implementation.phases.optimization.deliverables': ['تقارير الأداء', 'تحديث الميزات', 'دعم 24/7'],
     
     // Timeline
     'implementation.timeline.weeks.1-2': '1-2',
@@ -803,7 +803,7 @@ const translations = {
     'implementation.stats.downtime.label': 'وقت تعطل',
     'implementation.stats.downtime.desc': 'عملية انتقال سلسة',
     'implementation.stats.adoption.metric': '98%',
-    'implementation.stats.adoption.label': 'اعتماد المستخدمين',
+    'implementation.stats.adoption.label': 'تبني المستخدمين',
     'implementation.stats.adoption.desc': 'خلال الشهر الأول',
     'implementation.stats.support.metric': '24/7',
     'implementation.stats.support.label': 'دعم',
@@ -932,7 +932,7 @@ const translations = {
 
     
     // Footer
-    'footer.description': 'حلول تخطيط موارد المؤسسات المدعومة بالذكاء الاصطناعي مصممة للأعمال الحديثة. قم بتبسيط العمليات وزيادة الكفاءة وضمان مستقبل أعمالك مع الأتمتة الذكية.',
+    'footer.description': 'حلول ERP مدعومة بالذكاء الاصطناعي، مصممة خصيصًا لتلبية احتياجات الأعمال الحديثة.\nبسّط عملياتك، وحقق أقصى كفاءة، واستعد لمستقبل أكثر ذكاءً من خلال الأتمتة المتقدمة.',
     'footer.quick_links': 'روابط سريعة',
     'footer.contact': 'تواصل معنا',
     'footer.copyright': '© 2025 MovinWare. All rights reserved.',
