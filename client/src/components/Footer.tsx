@@ -88,15 +88,15 @@ const Footer = () => {
               <h3 className="text-lg font-semibold mb-6">{t('footer.contact')}</h3>
               <div className="space-y-3">
                 <div className="flex items-center text-gray-300">
-                  <Mail className="w-4 h-4 mr-3 text-pulse-500 flex-shrink-0" />
+                  <Mail className="w-4 h-4 mr-3 rtl:ml-3 rtl:mr-0 text-pulse-500 flex-shrink-0" />
                   <span className="text-sm">info@movinware.com</span>
                 </div>
                 <div className="flex items-center text-gray-300">
-                  <Phone className="w-4 h-4 mr-3 text-pulse-500 flex-shrink-0" />
+                  <Phone className="w-4 h-4 mr-3 rtl:ml-3 rtl:mr-0 text-pulse-500 flex-shrink-0" />
                   <span className="text-sm" dir="ltr">+966 561820949</span>
                 </div>
                 <div className="flex items-center text-gray-300">
-                  <MapPin className="w-4 h-4 mr-3 text-pulse-500 flex-shrink-0" />
+                  <MapPin className="w-4 h-4 mr-3 rtl:ml-3 rtl:mr-0 text-pulse-500 flex-shrink-0" />
                   <span className="text-sm">Online</span>
                 </div>
               </div>

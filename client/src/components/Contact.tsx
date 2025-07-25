@@ -249,23 +249,23 @@ This message was sent via the MovinWare contact form on ${new Date().toLocaleDat
               
               <button type="submit" disabled={isSubmitting} className={`w-full flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-200 ${isSubmitting ? 'bg-gray-400 cursor-not-allowed' : submitStatus === 'success' ? 'bg-green-500 hover:bg-green-600' : submitStatus === 'error' ? 'bg-red-500 hover:bg-red-600' : 'bg-pulse-500 hover:bg-pulse-600'} text-white`}>
                 {isSubmitting ? <>
-                    <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
+                    <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2 rtl:ml-2 rtl:mr-0"></div>
                     {t('contact.form.sending')}
                   </> : submitStatus === 'success' ? <>
-                    <CheckCircle className="w-4 h-4 mr-2" />
+                    <CheckCircle className="w-4 h-4 mr-2 rtl:ml-2 rtl:mr-0" />
                     {t('contact.form.message_sent')}
                   </> : submitStatus === 'error' ? <>
-                    <AlertCircle className="w-4 h-4 mr-2" />
+                    <AlertCircle className="w-4 h-4 mr-2 rtl:ml-2 rtl:mr-0" />
                     Try Again
                   </> : <>
-                    <Send className="w-4 h-4 mr-2" />
+                    <Send className="w-4 h-4 mr-2 rtl:ml-2 rtl:mr-0" />
                     {t('contact.form.send')}
                   </>}
               </button>
               
               {submitStatus === 'success' && <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
                   <div className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2 rtl:ml-2 rtl:mr-0" />
                     <p className="text-green-800 font-medium">{t('contact.form.success_title')}</p>
                   </div>
                   <p className="text-green-700 text-sm mt-1">
@@ -275,7 +275,7 @@ This message was sent via the MovinWare contact form on ${new Date().toLocaleDat
               
               {submitStatus === 'error' && <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
                   <div className="flex items-center">
-                    <AlertCircle className="w-5 h-5 text-red-500 mr-2" />
+                    <AlertCircle className="w-5 h-5 text-red-500 mr-2 rtl:ml-2 rtl:mr-0" />
                     <p className="text-red-800 font-medium">Failed to send message</p>
                   </div>
                   <p className="text-red-700 text-sm mt-1">
@@ -297,7 +297,7 @@ This message was sent via the MovinWare contact form on ${new Date().toLocaleDat
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">{t('contact.info.title')}</h3>
               <div className="space-y-4">
                 {contactInfo.map((info, index) => <a key={index} href={info.link} className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200">
-                    <div className="flex items-center justify-center w-10 h-10 bg-pulse-100 rounded-lg mr-4">
+                    <div className="flex items-center justify-center w-10 h-10 bg-pulse-100 rounded-lg mr-4 rtl:ml-4 rtl:mr-0">
                       <info.icon className="w-5 h-5 text-pulse-500" />
                     </div>
                     <div>

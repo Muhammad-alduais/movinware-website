@@ -113,13 +113,13 @@ const ImplementationProcess = () => {
                     <div className="flex flex-col lg:flex-row lg:items-center gap-8" dir="rtl">
                       <div className="lg:w-80 order-2 lg:order-1">
                         <h4 className="text-sm font-medium text-gray-900 mb-4 flex items-center font-cairo">
-                          <CheckCircle className="w-4 h-4 text-green-500 ml-2" />
+                          <CheckCircle className="w-4 h-4 text-green-500 ml-3" />
                           {t('implementation.key_deliverables')}
                         </h4>
                         <div className="space-y-3">
                           {phase.deliverables.map((deliverable, deliverableIndex) => (
                             <div key={deliverableIndex} className="flex items-center text-sm text-gray-600">
-                              <div className="w-2 h-2 bg-pulse-500 rounded-full ml-3"></div>
+                              <div className="w-2 h-2 bg-pulse-500 rounded-full ml-4"></div>
                               <span className="font-arabic">{deliverable}</span>
                             </div>
                           ))}
@@ -128,7 +128,7 @@ const ImplementationProcess = () => {
 
                       <div className="flex-1 order-1 lg:order-2">
                         <div className="flex items-center mb-4">
-                          <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ml-4 ${phase.color}`}>
+                          <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ml-5 ${phase.color}`}>
                             <phase.icon className="w-6 h-6" />
                           </div>
                           <div>

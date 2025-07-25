@@ -35,7 +35,7 @@ const PreviewCard = ({
       style={{ animationDelay: `${0.1 * index}s` }}
     >
       <div className="flex items-start mb-6">
-        <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mr-4 group-hover:bg-pulse-50 transition-all duration-500">
+        <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mr-4 rtl:ml-4 rtl:mr-0 group-hover:bg-pulse-50 transition-all duration-500">
           <Icon className="w-7 h-7 text-gray-600 group-hover:text-pulse-500 transition-all duration-500" />
         </div>
         <div className="flex-1 min-w-0">
@@ -53,7 +53,7 @@ const PreviewCard = ({
       
       <button 
         onClick={onLearnMore}
-        className="flex items-center text-pulse-500 font-medium text-sm group-hover:text-pulse-600 transition-colors duration-300 hover:gap-3 gap-2"
+        className="flex items-center text-pulse-500 font-medium text-sm group-hover:text-pulse-600 transition-colors duration-300 hover:gap-3 gap-2 rtl:gap-3"
       >
         {t('common.learn_more')}
         <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180" />
