@@ -12,13 +12,24 @@ const Footer = () => {
     { icon: Linkedin, href: "#", label: "LinkedIn" }
   ];
 
+  // Safe translation function with fallbacks
+  const safeT = (key: string, fallback: string = key) => {
+    try {
+      const result = t(key);
+      return typeof result === 'string' ? result : fallback;
+    } catch (error) {
+      console.error(`Translation error for key: ${key}`, error);
+      return fallback;
+    }
+  };
+
   const quickLinks = [
-    { name: t('nav.value'), href: "#value" },
-    { name: t('nav.platform'), href: "#platform" },
-    { name: t('nav.industries'), href: "#industries" },
-    { name: t('nav.erp'), href: "#erp-solutions" },
-    { name: t('nav.services'), href: "#services" },
-    { name: t('nav.contact'), href: "#contact" }
+    { name: safeT('nav.value', 'What we offer'), href: "#value" },
+    { name: safeT('nav.platform', 'Platform'), href: "#platform" },
+    { name: safeT('nav.industries', 'Industries'), href: "#industries" },
+    { name: safeT('nav.erp', 'Solutions'), href: "#erp-solutions" },
+    { name: safeT('nav.services', 'Services'), href: "#services" },
+    { name: safeT('nav.contact', 'Contact'), href: "#contact" }
   ];
 
 
@@ -54,7 +65,7 @@ const Footer = () => {
                   ? 'font-arabic text-right' 
                   : 'font-inter text-left'
               }`} dir={language === 'ar' ? 'rtl' : 'ltr'}>
-                {t('footer.description')}
+                {safeT('footer.description', 'AI-powered ERP solutions designed for modern businesses.')}
               </p>
               
               {/* Social links */}
@@ -74,7 +85,7 @@ const Footer = () => {
 
             {/* Quick links */}
             <div>
-              <h3 className="text-lg font-semibold mb-6">{t('footer.quick_links')}</h3>
+              <h3 className="text-lg font-semibold mb-6">{safeT('footer.quick_links', 'Quick Links')}</h3>
               <ul className="space-y-4">
                 {quickLinks.map((link, index) => (
                   <li key={index}>
@@ -91,7 +102,7 @@ const Footer = () => {
 
             {/* Contact info */}
             <div>
-              <h3 className="text-lg font-semibold mb-6">{t('footer.contact')}</h3>
+              <h3 className="text-lg font-semibold mb-6">{safeT('footer.contact', 'Contact')}</h3>
               <div className="space-y-3">
                 <div className="flex items-center text-gray-300">
                   <Mail className="w-4 h-4 mr-3 rtl:ml-3 rtl:mr-0 text-pulse-500 flex-shrink-0" />
@@ -115,10 +126,10 @@ const Footer = () => {
           <div className="max-w-6xl mx-auto px-6 py-6">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="text-sm text-gray-400" dir="ltr">
-                {t('footer.copyright')}
+                {safeT('footer.copyright', '© 2025 MovinWare. All rights reserved.')}
               </div>
               <div className="text-sm text-gray-400">
-                {t('footer.built_by')}
+                {safeT('footer.built_by', 'Developed by MovinWare Team')}
               </div>
             </div>
           </div>

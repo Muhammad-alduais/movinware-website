@@ -936,20 +936,36 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
   const isRTL = language === 'ar';
 
   const t = (key: string): any => {
-    const translation = translations[language as keyof typeof translations];
-    if (!translation) return key;
-    
-    const result = translation[key as keyof typeof translation];
-    if (typeof result === 'string') {
-      return result;
+    try {
+      const translation = translations[language as keyof typeof translations];
+      if (!translation) {
+        console.warn(`No translation found for language: ${language}`);
+        return key;
+      }
+      
+      const result = translation[key as keyof typeof translation];
+      if (typeof result === 'string') {
+        return result;
+      }
+      
+      // Handle arrays - return as is for mapping
+      if (Array.isArray(result)) {
+        return result;
+      }
+      
+      // If translation not found, return key or try English fallback
+      if (result === undefined && language !== 'en') {
+        const englishTranslation = translations.en[key as keyof typeof translations.en];
+        if (englishTranslation !== undefined) {
+          return englishTranslation;
+        }
+      }
+      
+      return key;
+    } catch (error) {
+      console.error(`Translation error for key ${key}:`, error);
+      return key;
     }
-    
-    // Handle arrays - return as is for mapping
-    if (Array.isArray(result)) {
-      return result;
-    }
-    
-    return key;
   };
 
   useEffect(() => {
