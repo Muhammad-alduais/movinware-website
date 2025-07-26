@@ -1,45 +1,47 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { Search, Palette, Code, Rocket, TrendingUp, Clock, CheckCircle, Users } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 const ImplementationProcess = () => {
   const { t, language } = useLanguage();
-  const phases = [{
+  
+  const phases = useMemo(() => [{
     icon: Search,
     title: t('implementation.phases.discovery.title') as string,
     duration: t('implementation.phases.discovery.duration') as string,
     description: t('implementation.phases.discovery.description') as string,
-    deliverables: t('implementation.phases.discovery.deliverables') as string[],
+    deliverables: Array.isArray(t('implementation.phases.discovery.deliverables')) ? t('implementation.phases.discovery.deliverables') as string[] : [],
     color: "bg-blue-50 text-blue-600"
   }, {
     icon: Palette,
     title: t('implementation.phases.design.title') as string,
     duration: t('implementation.phases.design.duration') as string,
     description: t('implementation.phases.design.description') as string,
-    deliverables: t('implementation.phases.design.deliverables') as string[],
+    deliverables: Array.isArray(t('implementation.phases.design.deliverables')) ? t('implementation.phases.design.deliverables') as string[] : [],
     color: "bg-purple-50 text-purple-600"
   }, {
     icon: Code,
     title: t('implementation.phases.development.title') as string,
     duration: t('implementation.phases.development.duration') as string,
     description: t('implementation.phases.development.description') as string,
-    deliverables: t('implementation.phases.development.deliverables') as string[],
+    deliverables: Array.isArray(t('implementation.phases.development.deliverables')) ? t('implementation.phases.development.deliverables') as string[] : [],
     color: "bg-green-50 text-green-600"
   }, {
     icon: Rocket,
     title: t('implementation.phases.deployment.title') as string,
     duration: t('implementation.phases.deployment.duration') as string,
     description: t('implementation.phases.deployment.description') as string,
-    deliverables: t('implementation.phases.deployment.deliverables') as string[],
+    deliverables: Array.isArray(t('implementation.phases.deployment.deliverables')) ? t('implementation.phases.deployment.deliverables') as string[] : [],
     color: "bg-orange-50 text-orange-600"
   }, {
     icon: TrendingUp,
     title: t('implementation.phases.optimization.title') as string,
     duration: t('implementation.phases.optimization.duration') as string,
     description: t('implementation.phases.optimization.description') as string,
-    deliverables: t('implementation.phases.optimization.deliverables') as string[],
+    deliverables: Array.isArray(t('implementation.phases.optimization.deliverables')) ? t('implementation.phases.optimization.deliverables') as string[] : [],
     color: "bg-pulse-50 text-pulse-600"
-  }];
-  const timeline = [{
+  }], [t]);
+  
+  const timeline = useMemo(() => [{
     week: t('implementation.timeline.weeks.1-2'),
     phase: t('implementation.timeline.phases.discovery')
   }, {
@@ -54,7 +56,7 @@ const ImplementationProcess = () => {
   }, {
     week: t('implementation.timeline.weeks.12+'),
     phase: t('implementation.timeline.phases.support')
-  }];
+  }], [t]);
   const headerBg = {
     backgroundImage: 'url("/Header-background.webp")',
     backgroundPosition: 'center 30%'

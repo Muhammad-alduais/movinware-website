@@ -1,61 +1,74 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { Settings, Building2, Brain, Palette, Database, Headphones } from "lucide-react";
 import DetailModal from "./DetailModal";
 import PreviewCard from "./PreviewCard";
 import { useLanguage } from "../contexts/LanguageContext";
+
+interface ServiceItem {
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+  description: string;
+  capabilities: string[];
+  timeline: string;
+  fullDescription: string;
+  benefits: string[];
+  processSteps?: string[];
+}
+
 const Services = () => {
   const { t } = useLanguage();
-  const [selectedService, setSelectedService] = useState<any>(null);
-  const services = [{
+  const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
+  
+  const services = useMemo(() => [{
     icon: Settings,
-    title: t('services.erp.title'),
-    description: t('services.erp.description'),
-    capabilities: t('services.erp.capabilities'),
-    timeline: t('services.erp.timeline'),
-    fullDescription: t('services.erp.fullDescription'),
-    benefits: t('services.erp.benefits'),
-    processSteps: t('services.erp.processSteps')
+    title: t('services.erp.title') as string,
+    description: t('services.erp.description') as string,
+    capabilities: Array.isArray(t('services.erp.capabilities')) ? t('services.erp.capabilities') as string[] : [],
+    timeline: t('services.erp.timeline') as string,
+    fullDescription: t('services.erp.fullDescription') as string,
+    benefits: Array.isArray(t('services.erp.benefits')) ? t('services.erp.benefits') as string[] : [],
+    processSteps: Array.isArray(t('services.erp.processSteps')) ? t('services.erp.processSteps') as string[] : []
   }, {
     icon: Building2,
-    title: t('services.industry.title'),
-    description: t('services.industry.description'),
-    capabilities: t('services.industry.capabilities'),
-    timeline: t('services.industry.timeline'),
-    fullDescription: t('services.industry.fullDescription'),
-    benefits: t('services.industry.benefits')
+    title: t('services.industry.title') as string,
+    description: t('services.industry.description') as string,
+    capabilities: Array.isArray(t('services.industry.capabilities')) ? t('services.industry.capabilities') as string[] : [],
+    timeline: t('services.industry.timeline') as string,
+    fullDescription: t('services.industry.fullDescription') as string,
+    benefits: Array.isArray(t('services.industry.benefits')) ? t('services.industry.benefits') as string[] : []
   }, {
     icon: Brain,
-    title: t('services.ai.title'),
-    description: t('services.ai.description'),
-    capabilities: t('services.ai.capabilities'),
-    timeline: t('services.ai.timeline'),
-    fullDescription: t('services.ai.fullDescription'),
-    benefits: t('services.ai.benefits')
+    title: t('services.ai.title') as string,
+    description: t('services.ai.description') as string,
+    capabilities: Array.isArray(t('services.ai.capabilities')) ? t('services.ai.capabilities') as string[] : [],
+    timeline: t('services.ai.timeline') as string,
+    fullDescription: t('services.ai.fullDescription') as string,
+    benefits: Array.isArray(t('services.ai.benefits')) ? t('services.ai.benefits') as string[] : []
   }, {
     icon: Palette,
-    title: t('services.ux.title'),
-    description: t('services.ux.description'),
-    capabilities: t('services.ux.capabilities'),
-    timeline: t('services.ux.timeline'),
-    fullDescription: t('services.ux.fullDescription'),
-    benefits: t('services.ux.benefits')
+    title: t('services.ux.title') as string,
+    description: t('services.ux.description') as string,
+    capabilities: Array.isArray(t('services.ux.capabilities')) ? t('services.ux.capabilities') as string[] : [],
+    timeline: t('services.ux.timeline') as string,
+    fullDescription: t('services.ux.fullDescription') as string,
+    benefits: Array.isArray(t('services.ux.benefits')) ? t('services.ux.benefits') as string[] : []
   }, {
     icon: Database,
-    title: t('services.data.title'),
-    description: t('services.data.description'),
-    capabilities: t('services.data.capabilities'),
-    timeline: t('services.data.timeline'),
-    fullDescription: t('services.data.fullDescription'),
-    benefits: t('services.data.benefits')
+    title: t('services.data.title') as string,
+    description: t('services.data.description') as string,
+    capabilities: Array.isArray(t('services.data.capabilities')) ? t('services.data.capabilities') as string[] : [],
+    timeline: t('services.data.timeline') as string,
+    fullDescription: t('services.data.fullDescription') as string,
+    benefits: Array.isArray(t('services.data.benefits')) ? t('services.data.benefits') as string[] : []
   }, {
     icon: Headphones,
-    title: t('services.support.title'),
-    description: t('services.support.description'),
-    capabilities: t('services.support.capabilities'),
-    timeline: t('services.support.timeline'),
-    fullDescription: t('services.support.fullDescription'),
-    benefits: t('services.support.benefits')
-  }];
+    title: t('services.support.title') as string,
+    description: t('services.support.description') as string,
+    capabilities: Array.isArray(t('services.support.capabilities')) ? t('services.support.capabilities') as string[] : [],
+    timeline: t('services.support.timeline') as string,
+    fullDescription: t('services.support.fullDescription') as string,
+    benefits: Array.isArray(t('services.support.benefits')) ? t('services.support.benefits') as string[] : []
+  }], [t]);
   const headerBg = {
     backgroundImage: 'url("/Header-background.webp")',
     backgroundPosition: 'center 30%'

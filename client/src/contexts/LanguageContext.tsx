@@ -939,7 +939,9 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
     try {
       const translation = translations[language as keyof typeof translations];
       if (!translation) {
-        console.warn(`No translation found for language: ${language}`);
+        if (import.meta.env.DEV) {
+          console.warn(`No translation found for language: ${language}`);
+        }
         return key;
       }
       
@@ -961,10 +963,22 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
         }
       }
       
+      // Return empty array for known array keys to prevent errors
+      if (result === undefined) {
+        const arrayKeys = ['features', 'deliverables', 'capabilities', 'benefits', 'processSteps'];
+        const isArrayKey = arrayKeys.some(arrayKey => key.includes(arrayKey));
+        return isArrayKey ? [] : key;
+      }
+      
       return key;
     } catch (error) {
-      console.error(`Translation error for key ${key}:`, error);
-      return key;
+      if (import.meta.env.DEV) {
+        console.error(`Translation error for key ${key}:`, error);
+      }
+      // Return empty array for known array keys to prevent errors
+      const arrayKeys = ['features', 'deliverables', 'capabilities', 'benefits', 'processSteps'];
+      const isArrayKey = arrayKeys.some(arrayKey => key.includes(arrayKey));
+      return isArrayKey ? [] : key;
     }
   };
 

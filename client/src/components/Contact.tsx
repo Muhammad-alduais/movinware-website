@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { Mail, Phone, MapPin, MessageCircle, Calendar, Users, Send, CheckCircle, AlertCircle } from "lucide-react";
 import emailjs from '@emailjs/browser';
 import { toast } from "sonner";
@@ -25,38 +25,40 @@ const Contact = () => {
 
   // Check if EmailJS is properly configured
   const isEmailJSConfigured = EMAILJS_SERVICE_ID && EMAILJS_TEMPLATE_ID && EMAILJS_PUBLIC_KEY && EMAILJS_PUBLIC_KEY !== "your_public_key" && EMAILJS_PUBLIC_KEY.length > 0;
-  const contactInfo = [{
+  
+  const contactInfo = useMemo(() => [{
     icon: Mail,
-    title: t('contact.info.email'),
+    title: t('contact.info.email') as string,
     value: "info@movinware.com",
     link: "mailto:info@movinware.com"
   }, {
     icon: Phone,
-    title: t('contact.info.phone'),
+    title: t('contact.info.phone') as string,
     value: "+966 561820949",
     link: "tel:+966561820949"
   }, {
     icon: MapPin,
-    title: t('contact.info.location'),
-    value: t('contact.info.location_value'),
+    title: t('contact.info.location') as string,
+    value: t('contact.info.location_value') as string,
     link: "#"
-  }];
-  const quickActions = [{
+  }], [t]);
+  
+  const quickActions = useMemo(() => [{
     icon: Users,
-    title: t('contact.actions.expert'),
-    description: t('contact.actions.expert_desc'),
+    title: t('contact.actions.expert') as string,
+    description: t('contact.actions.expert_desc') as string,
     action: () => window.open("https://calendly.com/movinware", "_blank")
   }, {
     icon: Calendar,
-    title: t('contact.actions.consultation'),
-    description: t('contact.actions.consultation_desc'),
+    title: t('contact.actions.consultation') as string,
+    description: t('contact.actions.consultation_desc') as string,
     action: () => window.open("https://calendly.com/movinware/consultation", "_blank")
   }, {
     icon: MessageCircle,
-    title: t('contact.actions.whatsapp'),
-    description: t('contact.actions.whatsapp_desc'),
+    title: t('contact.actions.whatsapp') as string,
+    description: t('contact.actions.whatsapp_desc') as string,
     action: () => window.open("https://wa.me/971412345678", "_blank")
-  }];
+  }], [t]);
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const {
       name,

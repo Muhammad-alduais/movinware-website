@@ -18,7 +18,10 @@ const Footer = () => {
       const result = t(key);
       return typeof result === 'string' ? result : fallback;
     } catch (error) {
-      console.error(`Translation error for key: ${key}`, error);
+      // Silent fallback in production
+      if (import.meta.env.DEV) {
+        console.error(`Translation error for key: ${key}`, error);
+      }
       return fallback;
     }
   };

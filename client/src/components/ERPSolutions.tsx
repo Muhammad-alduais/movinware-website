@@ -6,7 +6,15 @@ const ERPSolutions = () => {
   const {
     t
   } = useLanguage();
-  const [selectedSolution, setSelectedSolution] = useState<any>(null);
+  const [selectedSolution, setSelectedSolution] = useState<{
+    icon: React.ComponentType<{ className?: string }>;
+    title: string | string[];
+    description: string | string[];
+    capabilities?: string | string[];
+    timeline?: string | string[];
+    fullDescription?: string | string[];
+    benefits?: string | string[];
+  } | null>(null);
   const solutions = [{
     icon: Calculator,
     title: t('erp.accounting.title'),

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useMemo, useCallback } from "react";
 import { OptimizedBackground } from "./ui";
 import { useLanguage } from "../contexts/LanguageContext";
 const ValueSection = () => {
@@ -140,7 +140,9 @@ const ValueSection = () => {
                     {t('value.ai.title')}
                   </h3>
                   <ul className="text-white/90 space-y-2">
-                    {(Array.isArray(t('value.ai.features')) ? t('value.ai.features') as string[] : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
+                    {Array.isArray(t('value.ai.features')) ? (t('value.ai.features') as string[]).map((feature: string, index: number) => (
+                      <li key={index}>• {feature}</li>
+                    )) : []}
                   </ul>
                 </div>
               </div>
@@ -175,7 +177,9 @@ const ValueSection = () => {
                     {t('value.speed.title')}
                   </h3>
                   <ul className="text-white/90 space-y-2">
-                    {(Array.isArray(t('value.speed.features')) ? t('value.speed.features') as string[] : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
+                    {Array.isArray(t('value.speed.features')) ? (t('value.speed.features') as string[]).map((feature: string, index: number) => (
+                      <li key={index}>• {feature}</li>
+                    )) : []}
                   </ul>
                 </div>
               </div>
@@ -210,7 +214,9 @@ const ValueSection = () => {
                     {t('value.culture.title')}
                   </h3>
                   <ul className="text-white/90 space-y-2">
-                    {(Array.isArray(t('value.culture.features')) ? t('value.culture.features') as string[] : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
+                    {Array.isArray(t('value.culture.features')) ? (t('value.culture.features') as string[]).map((feature: string, index: number) => (
+                      <li key={index}>• {feature}</li>
+                    )) : []}
                   </ul>
                 </div>
               </div>
@@ -245,7 +251,9 @@ const ValueSection = () => {
                     {t('value.adoption.title')}
                   </h3>
                   <ul className="text-white/90 space-y-2">
-                    {(Array.isArray(t('value.adoption.features')) ? t('value.adoption.features') as string[] : []).map((feature: string, index: number) => <li key={index}>• {feature}</li>)}
+                    {Array.isArray(t('value.adoption.features')) ? (t('value.adoption.features') as string[]).map((feature: string, index: number) => (
+                      <li key={index}>• {feature}</li>
+                    )) : []}
                   </ul>
                 </div>
               </div>

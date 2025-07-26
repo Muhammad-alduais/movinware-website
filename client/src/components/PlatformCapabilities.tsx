@@ -7,7 +7,15 @@ const PlatformCapabilities = () => {
   const {
     t
   } = useLanguage();
-  const [selectedCapability, setSelectedCapability] = useState<any>(null);
+  const [selectedCapability, setSelectedCapability] = useState<{
+    icon: React.ComponentType<{ className?: string }>;
+    title: string | string[];
+    description: string | string[];
+    capabilities?: string | string[];
+    timeline?: string | string[];
+    fullDescription?: string | string[];
+    benefits?: string | string[];
+  } | null>(null);
   const capabilities = [{
     icon: Cpu,
     title: t('features.core_modules'),

@@ -7,7 +7,7 @@ import { useLanguage } from "../contexts/LanguageContext";
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
-  const [lottieData, setLottieData] = useState<any>(null);
+  const [lottieData, setLottieData] = useState<object | null>(null);
   const [isMobile, setIsMobile] = useState(false);
   const {
     t,
@@ -34,10 +34,14 @@ const Hero = () => {
           setLottieData(data);
         } else {
           // If JSON doesn't exist, we'll skip the animation
-          console.log("Lottie JSON file not found, using fallback image");
+          if (import.meta.env.DEV) {
+            console.log("Lottie JSON file not found, using fallback image");
+          }
         }
       } catch (error) {
-        console.log("Could not load Lottie animation, using fallback image:", error);
+        if (import.meta.env.DEV) {
+          console.log("Could not load Lottie animation, using fallback image:", error);
+        }
         // We'll just use the fallback image instead
       }
     };

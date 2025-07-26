@@ -7,7 +7,16 @@ const Industries = () => {
   const {
     t
   } = useLanguage();
-  const [selectedIndustry, setSelectedIndustry] = useState<any>(null);
+  const [selectedIndustry, setSelectedIndustry] = useState<{
+    icon: React.ComponentType<{ className?: string }>;
+    title: string | string[];
+    description: string | string[];
+    capabilities?: string | string[];
+    timeline?: string | string[];
+    fullDescription?: string | string[];
+    benefits?: string | string[];
+    clients?: string | string[];
+  } | null>(null);
   const industries = [{
     icon: GraduationCap,
     title: t('industries.education.title'),
