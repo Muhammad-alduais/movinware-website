@@ -85,12 +85,72 @@ const Navbar = () => {
             }}>
               {t('nav.home')}
             </a>
-            <a href="#value" className="modern-nav-link text-sm xl:text-base">{t('nav.value')}</a>
-            <a href="#platform" className="modern-nav-link text-sm xl:text-base">{t('nav.platform')}</a>
-            <a href="#industries" className="modern-nav-link text-sm xl:text-base">{t('nav.industries')}</a>
-            <a href="#erp-solutions" className="modern-nav-link text-sm xl:text-base">{t('nav.erp')}</a>
-            <a href="#services" className="modern-nav-link text-sm xl:text-base">{t('nav.services')}</a>
-            <a href="#contact" className="modern-nav-link text-sm xl:text-base">{t('nav.contact')}</a>
+            <a href="#value" className="modern-nav-link text-sm xl:text-base" onClick={(e) => {
+              e.preventDefault();
+              const element = document.getElementById('value');
+              if (element) {
+                const offset = 80;
+                window.scrollTo({
+                  top: element.offsetTop - offset,
+                  behavior: 'smooth'
+                });
+              }
+            }}>{t('nav.value')}</a>
+            <a href="#platform" className="modern-nav-link text-sm xl:text-base" onClick={(e) => {
+              e.preventDefault();
+              const element = document.getElementById('platform');
+              if (element) {
+                const offset = 80;
+                window.scrollTo({
+                  top: element.offsetTop - offset,
+                  behavior: 'smooth'
+                });
+              }
+            }}>{t('nav.platform')}</a>
+            <a href="#industries" className="modern-nav-link text-sm xl:text-base" onClick={(e) => {
+              e.preventDefault();
+              const element = document.getElementById('industries');
+              if (element) {
+                const offset = 80;
+                window.scrollTo({
+                  top: element.offsetTop - offset,
+                  behavior: 'smooth'
+                });
+              }
+            }}>{t('nav.industries')}</a>
+            <a href="#erp-solutions" className="modern-nav-link text-sm xl:text-base" onClick={(e) => {
+              e.preventDefault();
+              const element = document.getElementById('erp-solutions');
+              if (element) {
+                const offset = 80;
+                window.scrollTo({
+                  top: element.offsetTop - offset,
+                  behavior: 'smooth'
+                });
+              }
+            }}>{t('nav.erp')}</a>
+            <a href="#services" className="modern-nav-link text-sm xl:text-base" onClick={(e) => {
+              e.preventDefault();
+              const element = document.getElementById('services');
+              if (element) {
+                const offset = 80;
+                window.scrollTo({
+                  top: element.offsetTop - offset,
+                  behavior: 'smooth'
+                });
+              }
+            }}>{t('nav.services')}</a>
+            <a href="#contact" className="modern-nav-link text-sm xl:text-base" onClick={(e) => {
+              e.preventDefault();
+              const element = document.getElementById('contact');
+              if (element) {
+                const offset = 80;
+                window.scrollTo({
+                  top: element.offsetTop - offset,
+                  behavior: 'smooth'
+                });
+              }
+            }}>{t('nav.contact')}</a>
           </nav>
 
           {/* Desktop Actions */}
@@ -196,32 +256,98 @@ const Navbar = () => {
                     <span>{t('nav.home')}</span>
                   </div>
                 </a>
-                <a href="#value" className={`modern-mobile-nav-link ${language === 'ar' ? 'font-arabic' : 'font-inter'}`} onClick={closeMenu}>
+                <a href="#value" className={`modern-mobile-nav-link ${language === 'ar' ? 'font-arabic' : 'font-inter'}`} onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.getElementById('value');
+                  if (element) {
+                    const offset = window.innerWidth < 768 ? 100 : 80;
+                    window.scrollTo({
+                      top: element.offsetTop - offset,
+                      behavior: 'smooth'
+                    });
+                  }
+                  closeMenu();
+                }}>
                   <div className="flex items-center">
                     <span>{t('nav.value')}</span>
                   </div>
                 </a>
-                <a href="#platform" className={`modern-mobile-nav-link ${language === 'ar' ? 'font-arabic' : 'font-inter'}`} onClick={closeMenu}>
+                <a href="#platform" className={`modern-mobile-nav-link ${language === 'ar' ? 'font-arabic' : 'font-inter'}`} onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.getElementById('platform');
+                  if (element) {
+                    const offset = window.innerWidth < 768 ? 100 : 80;
+                    window.scrollTo({
+                      top: element.offsetTop - offset,
+                      behavior: 'smooth'
+                    });
+                  }
+                  closeMenu();
+                }}>
                   <div className="flex items-center">
                     <span>{t('nav.platform')}</span>
                   </div>
                 </a>
-                <a href="#industries" className={`modern-mobile-nav-link ${language === 'ar' ? 'font-arabic' : 'font-inter'}`} onClick={closeMenu}>
+                <a href="#industries" className={`modern-mobile-nav-link ${language === 'ar' ? 'font-arabic' : 'font-inter'}`} onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.getElementById('industries');
+                  if (element) {
+                    const offset = window.innerWidth < 768 ? 100 : 80;
+                    window.scrollTo({
+                      top: element.offsetTop - offset,
+                      behavior: 'smooth'
+                    });
+                  }
+                  closeMenu();
+                }}>
                   <div className="flex items-center">
                     <span>{t('nav.industries')}</span>
                   </div>
                 </a>
-                <a href="#erp-solutions" className={`modern-mobile-nav-link ${language === 'ar' ? 'font-arabic' : 'font-inter'}`} onClick={closeMenu}>
+                <a href="#erp-solutions" className={`modern-mobile-nav-link ${language === 'ar' ? 'font-arabic' : 'font-inter'}`} onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.getElementById('erp-solutions');
+                  if (element) {
+                    const offset = window.innerWidth < 768 ? 100 : 80;
+                    window.scrollTo({
+                      top: element.offsetTop - offset,
+                      behavior: 'smooth'
+                    });
+                  }
+                  closeMenu();
+                }}>
                   <div className="flex items-center">
                     <span>{t('nav.erp')}</span>
                   </div>
                 </a>
-                <a href="#services" className={`modern-mobile-nav-link ${language === 'ar' ? 'font-arabic' : 'font-inter'}`} onClick={closeMenu}>
+                <a href="#services" className={`modern-mobile-nav-link ${language === 'ar' ? 'font-arabic' : 'font-inter'}`} onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.getElementById('services');
+                  if (element) {
+                    const offset = window.innerWidth < 768 ? 100 : 80;
+                    window.scrollTo({
+                      top: element.offsetTop - offset,
+                      behavior: 'smooth'
+                    });
+                  }
+                  closeMenu();
+                }}>
                   <div className="flex items-center">
                     <span>{t('nav.services')}</span>
                   </div>
                 </a>
-                <a href="#contact" className={`modern-mobile-nav-link ${language === 'ar' ? 'font-arabic' : 'font-inter'}`} onClick={closeMenu}>
+                <a href="#contact" className={`modern-mobile-nav-link ${language === 'ar' ? 'font-arabic' : 'font-inter'}`} onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.getElementById('contact');
+                  if (element) {
+                    const offset = window.innerWidth < 768 ? 100 : 80;
+                    window.scrollTo({
+                      top: element.offsetTop - offset,
+                      behavior: 'smooth'
+                    });
+                  }
+                  closeMenu();
+                }}>
                   <div className="flex items-center">
                     <span>{t('nav.contact')}</span>
                   </div>
