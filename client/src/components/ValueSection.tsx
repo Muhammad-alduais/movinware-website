@@ -88,10 +88,10 @@ const ValueSection = () => {
   const isSecondCardVisible = activeCardIndex >= 1;
   const isThirdCardVisible = activeCardIndex >= 2;
   const isFourthCardVisible = activeCardIndex >= 3;
-  return <div ref={sectionRef} className="relative" style={{
+  return <div ref={sectionRef} className="relative" id="value" style={{
     height: '400vh'
   }}>
-      <section className="w-full h-screen py-10 md:py-16 sticky top-0 overflow-hidden bg-white" id="value">
+      <section className="w-full h-screen py-10 md:py-16 sticky top-0 overflow-hidden bg-white">
         <div className="container px-6 lg:px-8 mx-auto h-full flex flex-col">
           <div className="mb-2 md:mb-3">
             <div className="flex items-center gap-4 mb-2 md:mb-2 pt-8 sm:pt-6 md:pt-4">

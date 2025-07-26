@@ -89,9 +89,12 @@ const Navbar = () => {
               e.preventDefault();
               const element = document.getElementById('value');
               if (element) {
+                const rect = element.getBoundingClientRect();
                 const offset = 80;
+                const targetPosition = window.scrollY + rect.top - offset;
+                
                 window.scrollTo({
-                  top: element.offsetTop - offset,
+                  top: Math.max(0, targetPosition),
                   behavior: 'smooth'
                 });
               }
@@ -260,9 +263,12 @@ const Navbar = () => {
                   e.preventDefault();
                   const element = document.getElementById('value');
                   if (element) {
+                    const rect = element.getBoundingClientRect();
                     const offset = window.innerWidth < 768 ? 100 : 80;
+                    const targetPosition = window.scrollY + rect.top - offset;
+                    
                     window.scrollTo({
-                      top: element.offsetTop - offset,
+                      top: Math.max(0, targetPosition),
                       behavior: 'smooth'
                     });
                   }
