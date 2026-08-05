@@ -128,3 +128,7 @@ movinware-website/
 ## License
 
 [MIT](https://opensource.org/license/mit) — © MovinWare.
+
+## Developer
+
+**Eng. Muhammad Ameen Al-Duais**
