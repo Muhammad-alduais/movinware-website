@@ -38,7 +38,7 @@ const ImplementationProcess = () => {
     duration: t('implementation.phases.optimization.duration') as string,
     description: t('implementation.phases.optimization.description') as string,
     deliverables: Array.isArray(t('implementation.phases.optimization.deliverables')) ? t('implementation.phases.optimization.deliverables') as string[] : [],
-    color: "bg-pulse-50 text-pulse-600"
+    color: "bg-pulse-100 text-pulse-600"
   }], [t]);
   
   const timeline = useMemo(() => [{
@@ -58,7 +58,7 @@ const ImplementationProcess = () => {
     phase: t('implementation.timeline.phases.support')
   }], [t]);
   const headerBg = {
-    backgroundImage: 'url("/Header-background.webp")',
+    backgroundImage: 'url("/new-Header-background.webp")',
     backgroundPosition: 'center 30%'
   };
   return <section className="bg-white" id="implementation">
@@ -91,14 +91,33 @@ const ImplementationProcess = () => {
       }}>
           <div className="bg-gray-50 rounded-3xl p-8 border border-gray-100">
             <h3 className={`text-xl font-medium text-gray-900 mb-8 text-center ${language === 'ar' ? 'font-arabic' : ''}`}>{t('implementation.timeline_title')}</h3>
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              {timeline.map((item, index) => <div key={index} className="flex flex-col items-center text-center relative">
-                  <div className="w-12 h-12 bg-pulse-500 rounded-full flex items-center justify-center text-white font-medium mb-3">
-                    <Clock className="w-5 h-5" />
+            <div className="hidden md:block">
+              <div className="relative">
+                <div className="absolute left-[10%] right-[10%] top-6 h-0.5 bg-gradient-to-r from-pulse-200 via-pulse-400 to-pulse-200"></div>
+                <div className="flex justify-between">
+                  {timeline.map((item, index) => <div key={index} className="flex-1 flex flex-col items-center text-center">
+                      <div className="w-12 h-12 bg-pulse-500 rounded-full flex items-center justify-center text-white font-medium mb-3 relative z-10">
+                        <Clock className="w-5 h-5" />
+                      </div>
+                      <div className="text-sm font-medium text-gray-900">{language === 'ar' ? 'الأسبوع' : 'Week'} {item.week}</div>
+                      <div className="text-xs text-gray-600">{item.phase}</div>
+                    </div>)}
+                </div>
+              </div>
+            </div>
+
+            <div className="md:hidden flex flex-col">
+              {timeline.map((item, index) => <div key={index} className="flex items-start gap-4">
+                  <div className="flex flex-col items-center shrink-0">
+                    <div className="w-12 h-12 bg-pulse-500 rounded-full flex items-center justify-center text-white font-medium relative z-10">
+                      <Clock className="w-5 h-5" />
+                    </div>
+                    {index < timeline.length - 1 && <div className="w-px flex-1 bg-gray-200 my-1"></div>}
                   </div>
-                  <div className="text-sm font-medium text-gray-900">{language === 'ar' ? 'الأسبوع' : 'Week'} {item.week}</div>
-                  <div className="text-xs text-gray-600">{item.phase}</div>
-                  {index < timeline.length - 1 && <div className="hidden md:block absolute left-full top-6 w-full h-px bg-gray-200"></div>}
+                  <div className="pb-8 pt-1">
+                    <div className="text-sm font-medium text-gray-900 text-start">{language === 'ar' ? 'الأسبوع' : 'Week'} {item.week}</div>
+                    <div className="text-xs text-gray-600 text-start">{item.phase}</div>
+                  </div>
                 </div>)}
             </div>
           </div>
@@ -227,12 +246,6 @@ const ImplementationProcess = () => {
                 }`}>{stat.desc}</div>
               </div>)}
           </div>
-        </div>
-
-        <div className="mt-20 text-center opacity-0 animate-slide-up" style={{
-        animationDelay: "1.3s"
-      }}>
-          
         </div>
       </div>
     </section>;

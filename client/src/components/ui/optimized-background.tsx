@@ -1,6 +1,25 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 
+// Detect image format support once, not on every render
+const supportsWebp = (() => {
+  try {
+    const canvas = document.createElement('canvas');
+    return canvas.toDataURL('image/webp').indexOf('webp') !== -1;
+  } catch {
+    return false;
+  }
+})();
+
+const supportsAvif = (() => {
+  try {
+    const canvas = document.createElement('canvas');
+    return canvas.toDataURL('image/avif').indexOf('avif') !== -1;
+  } catch {
+    return false;
+  }
+})();
+
 interface OptimizedBackgroundProps {
   src: string;
   className?: string;
@@ -49,21 +68,9 @@ export const OptimizedBackground: React.FC<OptimizedBackgroundProps> = ({
   // Function to get the best supported image format
   const getBestImageSrc = (): string => {
     // Check for modern format support
-    if (avifSrc && supportsAvif()) return avifSrc;
-    if (webpSrc && supportsWebp()) return webpSrc;
+    if (avifSrc && supportsAvif) return avifSrc;
+    if (webpSrc && supportsWebp) return webpSrc;
     return src;
-  };
-
-  // Simple WebP support detection
-  const supportsWebp = (): boolean => {
-    const canvas = document.createElement('canvas');
-    return canvas.toDataURL('image/webp').indexOf('webp') !== -1;
-  };
-
-  // Simple AVIF support detection
-  const supportsAvif = (): boolean => {
-    const canvas = document.createElement('canvas');
-    return canvas.toDataURL('image/avif').indexOf('avif') !== -1;
   };
 
   useEffect(() => {

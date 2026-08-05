@@ -214,7 +214,7 @@ const Navbar = () => {
               : "translate-x-full opacity-0"
         )}>
           {/* Enhanced Mobile Menu Header */}
-          <div className="flex items-center justify-between p-6 bg-gradient-to-r from-pulse-50/50 to-purple-50/50 border-b border-gray-100/50 backdrop-blur-sm">
+          <div className="flex items-center justify-between p-6 bg-gradient-to-r from-pulse-100/50 to-purple-50/50 border-b border-gray-100/50 backdrop-blur-sm">
             <div className="flex items-center space-x-3 rtl:space-x-reverse">
               <div className="w-6 h-6 text-pulse-500">
                 <svg viewBox="0 0 494.95 492.9" fill="currentColor" className="w-full h-full">
@@ -362,9 +362,9 @@ const Navbar = () => {
             </nav>
             
             {/* Enhanced Mobile Menu Footer */}
-            <div className="p-6 bg-gradient-to-r from-gray-50/50 to-pulse-50/30 border-t border-gray-100/50 backdrop-blur-sm">
+            <div className="p-6 bg-gradient-to-r from-gray-50/50 to-pulse-100/30 border-t border-gray-100/50 backdrop-blur-sm">
               <div className={`text-xs text-gray-500 text-center ${language === 'ar' ? 'font-arabic' : 'font-inter'}`}>
-                © 2025 MovinWare. All rights reserved.
+                {t('footer.copyright')}
               </div>
             </div>
           </div>

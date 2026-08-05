@@ -76,7 +76,7 @@ const ERPSolutions = () => {
     desc: t('erp.integration.stats.workflows.desc')
   }];
   const headerBg = {
-    backgroundImage: 'url("/Header-background.webp")',
+    backgroundImage: 'url("/new-Header-background.webp")',
     backgroundPosition: 'center 30%'
   };
   return <section className="bg-white" id="erp-solutions">
@@ -89,9 +89,13 @@ const ERPSolutions = () => {
             
             <span className="font-semibold">{t('erp.section')}</span>
           </div>
-          <h2 className="section-header-title animate-header-glow" dangerouslySetInnerHTML={{
-          __html: t('erp.title')
-        }}>
+          <h2 className="section-header-title animate-header-glow">
+            {(t('erp.title') as string).split('\n').map((line: string, index: number) => (
+              <span key={index}>
+                {line}
+                {index === 0 && <br />}
+              </span>
+            ))}
           </h2>
           <p className="section-header-subtitle">
             {t('erp.subtitle')}
@@ -106,13 +110,13 @@ const ERPSolutions = () => {
         }}>
               <div className="bg-white rounded-3xl p-8 border border-gray-200 hover:border-gray-300 transition-all duration-500 hover:shadow-xl h-full flex flex-col">
                 <div className="flex items-start mb-6">
-                  <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mr-4 group-hover:bg-pulse-50 transition-all duration-500">
+                  <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mr-4 rtl:ml-4 rtl:mr-0 group-hover:bg-pulse-100 transition-all duration-500">
                     <solution.icon className="w-7 h-7 text-gray-600 group-hover:text-pulse-500 transition-all duration-500" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="text-xl font-medium text-gray-900 mb-2 pr-2">{solution.title}</h3>
                     <div className="mb-3">
-                      <span className="text-xs text-pulse-500 font-medium bg-pulse-50 px-3 py-1 rounded-full inline-block">
+                      <span className="text-xs text-pulse-500 font-medium bg-pulse-100 px-3 py-1 rounded-full inline-block">
                         {solution.timeline}
                       </span>
                     </div>
@@ -148,12 +152,6 @@ const ERPSolutions = () => {
                 </div>)}
             </div>
           </div>
-        </div>
-
-        <div className="mt-20 text-center opacity-0 animate-slide-up" style={{
-        animationDelay: "0.6s"
-      }}>
-          
         </div>
       </div>
       

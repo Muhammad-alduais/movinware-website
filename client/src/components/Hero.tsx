@@ -1,13 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
-import LottieAnimation from "./LottieAnimation";
 import { OptimizedImage, OptimizedBackground } from "./ui";
 import { useLanguage } from "../contexts/LanguageContext";
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
-  const [lottieData, setLottieData] = useState<object | null>(null);
   const [isMobile, setIsMobile] = useState(false);
   const {
     t,
@@ -23,46 +20,33 @@ const Hero = () => {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
   useEffect(() => {
-    // Try to load the Lottie animation, but fall back gracefully if it fails
-    const loadLottieAnimation = async () => {
-      try {
-        // For .lottie files, we need to use a different approach
-        // Let's try loading it as a regular JSON file first
-        const response = await fetch('/loop-header.json');
-        if (response.ok) {
-          const data = await response.json();
-          setLottieData(data);
-        } else {
-          // If JSON doesn't exist, we'll skip the animation
-          if (import.meta.env.DEV) {
-            console.log("Lottie JSON file not found, using fallback image");
-          }
-        }
-      } catch (error) {
-        if (import.meta.env.DEV) {
-          console.log("Could not load Lottie animation, using fallback image:", error);
-        }
-        // We'll just use the fallback image instead
-      }
-    };
-    loadLottieAnimation();
-  }, []);
-  useEffect(() => {
     // Skip effect on mobile
     if (isMobile) return;
+    let frame = 0;
     const handleMouseMove = (e: MouseEvent) => {
       if (!containerRef.current || !imageRef.current) return;
-      const {
-        left,
-        top,
-        width,
-        height
-      } = containerRef.current.getBoundingClientRect();
-      const x = (e.clientX - left) / width - 0.5;
-      const y = (e.clientY - top) / height - 0.5;
-      imageRef.current.style.transform = `perspective(1000px) rotateY(${x * 2.5}deg) rotateX(${-y * 2.5}deg) scale3d(1.02, 1.02, 1.02)`;
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        const container = containerRef.current;
+        const image = imageRef.current;
+        if (!container || !image) return;
+        const {
+          left,
+          top,
+          width,
+          height
+        } = container.getBoundingClientRect();
+        const x = (e.clientX - left) / width - 0.5;
+        const y = (e.clientY - top) / height - 0.5;
+        image.style.transform = `perspective(1000px) rotateY(${x * 2.5}deg) rotateX(${-y * 2.5}deg) scale3d(1.02, 1.02, 1.02)`;
+      });
     };
     const handleMouseLeave = () => {
+      if (frame) {
+        cancelAnimationFrame(frame);
+        frame = 0;
+      }
       if (!imageRef.current) return;
       imageRef.current.style.transform = `perspective(1000px) rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1)`;
     };
@@ -81,24 +65,31 @@ const Hero = () => {
   useEffect(() => {
     // Skip parallax on mobile
     if (isMobile) return;
+    let frame = 0;
     const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const elements = document.querySelectorAll('.parallax');
-      elements.forEach(el => {
-        const element = el as HTMLElement;
-        const speed = parseFloat(element.dataset.speed || '0.1');
-        const yPos = -scrollY * speed;
-        element.style.setProperty('--parallax-y', `${yPos}px`);
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        const scrollY = window.scrollY;
+        const elements = document.querySelectorAll('.parallax');
+        elements.forEach(el => {
+          const element = el as HTMLElement;
+          const speed = parseFloat(element.dataset.speed || '0.1');
+          const yPos = -scrollY * speed;
+          element.style.setProperty('--parallax-y', `${yPos}px`);
+        });
       });
     };
     window.addEventListener('scroll', handleScroll, {
       passive: true
     });
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (frame) cancelAnimationFrame(frame);
+    };
   }, [isMobile]);
   return <OptimizedBackground 
-    src="/new-Header-background.png" 
-    webpSrc="/new-Header-background.webp"
+    src="/new-Header-background.webp" 
     className="overflow-hidden relative" 
     priority={true} 
     style={{
@@ -123,7 +114,7 @@ const Hero = () => {
               {String(t('hero.title')).split('\n').map((line: string, index: number) => (
                 <span key={index}>
                   {line}
-                  {index === 0 && <br className="hidden sm:inline" />}
+                  {index === 0 && <br />}
                 </span>
               ))}
             </h1>
@@ -155,20 +146,14 @@ const Hero = () => {
           </div>
           
           <div className="w-full lg:w-1/2 relative mt-6 lg:mt-0">
-            {lottieData ? <div className="relative z-10 animate-fade-in" style={{
-            animationDelay: "0.9s"
-          }}>
-                <LottieAnimation animationPath={lottieData} className="w-full h-auto max-w-lg mx-auto" loop={true} autoplay={true} />
-              </div> : <>
-              <div className="absolute inset-0 bg-dark-900 rounded-2xl sm:rounded-3xl -z-10 shadow-xl"></div>
+              <div className="absolute inset-0 bg-gray-900 rounded-2xl sm:rounded-3xl -z-10 shadow-xl"></div>
               <div className="relative transition-all duration-500 ease-out overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl animate-fade-in" style={{
               animationDelay: "0.9s"
             }}>
-                <OptimizedImage ref={imageRef} src="/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png" alt="MovinWare educational ERP dashboard interface showing student management, course scheduling, and analytics features" className="w-full h-auto object-cover transition-transform duration-500 ease-out" style={{
+                <OptimizedImage ref={imageRef} src="/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.webp" alt="MovinWare educational ERP dashboard interface showing student management, course scheduling, and analytics features" className="w-full h-auto object-cover transition-transform duration-500 ease-out" style={{
                 transformStyle: 'preserve-3d'
               }} priority={true} />
               </div>
-              </>}
           </div>
         </div>
       </div>

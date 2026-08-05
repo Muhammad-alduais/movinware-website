@@ -76,7 +76,24 @@ export function serveStatic(app: Express) {
     );
   }
 
-  app.use(express.static(distPath));
+  app.use(
+    express.static(distPath, {
+      setHeaders(res, filePath) {
+        const normalized = filePath.replace(/\\/g, "/");
+        if (normalized.endsWith("/index.html") || normalized.endsWith("_redirects")) {
+          res.setHeader("Cache-Control", "no-cache");
+          return;
+        }
+        // Hashed build assets can be cached forever
+        if (normalized.includes("/assets/")) {
+          res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+          return;
+        }
+        // Static media, fonts, and images: cache for a week
+        res.setHeader("Cache-Control", "public, max-age=604800");
+      },
+    }),
+  );
 
   // fall through to index.html if the file doesn't exist
   app.use("*", (_req, res) => {

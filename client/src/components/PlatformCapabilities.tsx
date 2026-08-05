@@ -50,7 +50,7 @@ const PlatformCapabilities = () => {
     benefits: t('features.mobile_benefits') as string[]
   }];
   const headerBg = {
-    backgroundImage: 'url("/Header-background.webp")',
+    backgroundImage: 'url("/new-Header-background.webp")',
     backgroundPosition: 'center 30%'
   };
   return <section className="bg-white" id="platform">
@@ -63,9 +63,13 @@ const PlatformCapabilities = () => {
             
             <span className="font-semibold">{t('capabilities.section')}</span>
           </div>
-          <h2 className="section-header-title animate-header-glow" dangerouslySetInnerHTML={{
-          __html: t('capabilities.title')
-        }}>
+          <h2 className="section-header-title animate-header-glow">
+            {(t('capabilities.title') as string).split('\n').map((line: string, index: number) => (
+              <span key={index}>
+                {line}
+                {index === 0 && <br />}
+              </span>
+            ))}
           </h2>
           <p className="section-header-subtitle">
             {t('capabilities.subtitle')}
@@ -113,12 +117,6 @@ const PlatformCapabilities = () => {
                 </div>)}
             </div>
           </div>
-        </div>
-
-        <div className="mt-20 text-center opacity-0 animate-slide-up" style={{
-        animationDelay: "0.6s"
-      }}>
-          
         </div>
       </div>
       

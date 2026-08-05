@@ -1,6 +1,25 @@
 import React, { useState, useRef, useEffect, forwardRef } from 'react';
 import { cn } from '@/lib/utils';
 
+// Detect image format support once, not on every render
+const supportsWebp = (() => {
+  try {
+    const canvas = document.createElement('canvas');
+    return canvas.toDataURL('image/webp').indexOf('webp') !== -1;
+  } catch {
+    return false;
+  }
+})();
+
+const supportsAvif = (() => {
+  try {
+    const canvas = document.createElement('canvas');
+    return canvas.toDataURL('image/avif').indexOf('avif') !== -1;
+  } catch {
+    return false;
+  }
+})();
+
 interface OptimizedImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;
   alt: string;
@@ -62,21 +81,9 @@ export const OptimizedImage = forwardRef<HTMLImageElement, OptimizedImageProps>(
   const getBestImageSrc = (): string => {
     if (hasError && fallbackSrc) return fallbackSrc;
     // Check for modern format support
-    if (avifSrc && supportsAvif()) return avifSrc;
-    if (webpSrc && supportsWebp()) return webpSrc;
+    if (avifSrc && supportsAvif) return avifSrc;
+    if (webpSrc && supportsWebp) return webpSrc;
     return src;
-  };
-
-  // Simple WebP support detection
-  const supportsWebp = (): boolean => {
-    const canvas = document.createElement('canvas');
-    return canvas.toDataURL('image/webp').indexOf('webp') !== -1;
-  };
-
-  // Simple AVIF support detection
-  const supportsAvif = (): boolean => {
-    const canvas = document.createElement('canvas');
-    return canvas.toDataURL('image/avif').indexOf('avif') !== -1;
   };
 
   const imageSrc = getBestImageSrc();

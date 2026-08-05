@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { ArrowUp } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const BackToTop = () => {
+  const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
 
@@ -48,7 +50,7 @@ const BackToTop = () => {
     <button
       onClick={scrollToTop}
       className={cn(
-        "fixed bottom-8 right-8 z-50 group",
+        "fixed bottom-8 right-8 rtl:left-8 rtl:right-auto z-50 group",
         "w-12 h-12 rounded-full",
         "bg-white/90 backdrop-blur-sm",
         "border border-gray-200/50",
@@ -59,7 +61,7 @@ const BackToTop = () => {
         "active:scale-95",
         isScrolling && "animate-pulse-glow"
       )}
-      aria-label="Back to top"
+      aria-label={t('common.back_to_top') as string}
     >
       <div className="flex items-center justify-center w-full h-full">
         <ArrowUp 

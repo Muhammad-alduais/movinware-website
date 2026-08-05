@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import { Mail, Phone, MapPin, MessageCircle, Calendar, Users, Send, CheckCircle, AlertCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from "lucide-react";
 import emailjs from '@emailjs/browser';
 import { toast } from "sonner";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -43,22 +43,6 @@ const Contact = () => {
     link: "#"
   }], [t]);
   
-  const quickActions = useMemo(() => [{
-    icon: Users,
-    title: t('contact.actions.expert') as string,
-    description: t('contact.actions.expert_desc') as string,
-    action: () => window.open("https://calendly.com/movinware", "_blank")
-  }, {
-    icon: Calendar,
-    title: t('contact.actions.consultation') as string,
-    description: t('contact.actions.consultation_desc') as string,
-    action: () => window.open("https://calendly.com/movinware/consultation", "_blank")
-  }, {
-    icon: MessageCircle,
-    title: t('contact.actions.whatsapp') as string,
-    description: t('contact.actions.whatsapp_desc') as string,
-    action: () => window.open("https://wa.me/971412345678", "_blank")
-  }], [t]);
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const {
       name,
@@ -71,19 +55,19 @@ const Contact = () => {
   };
   const validateForm = () => {
     if (!formData.fullName.trim()) {
-      toast.error("Please enter your full name");
+      toast.error(t('contact.form.error.name') as string);
       return false;
     }
     if (!formData.email.trim()) {
-      toast.error("Please enter your email address");
+      toast.error(t('contact.form.error.email') as string);
       return false;
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      toast.error("Please enter a valid email address");
+      toast.error(t('contact.form.error.email_invalid') as string);
       return false;
     }
     if (!formData.message.trim()) {
-      toast.error("Please enter your message");
+      toast.error(t('contact.form.error.message') as string);
       return false;
     }
     return true;
@@ -156,8 +140,8 @@ This message was sent via the MovinWare contact form on ${new Date().toLocaleDat
       }
       if (emailJSSuccess) {
         setSubmitStatus('success');
-        toast.success("Message sent successfully!", {
-          description: "We'll get back to you within 24 hours.",
+        toast.success(t('contact.form.toast_success') as string, {
+          description: t('contact.form.toast_success_desc') as string,
           duration: 5000
         });
 
@@ -174,15 +158,15 @@ This message was sent via the MovinWare contact form on ${new Date().toLocaleDat
         // Fallback to mailto (either EmailJS failed or not configured)
         sendEmailViaMailto();
         setSubmitStatus('success');
-        toast.success("Opening your email client...", {
-          description: isEmailJSConfigured ? "EmailJS failed, using your default email client instead." : "Please send the email from your email client to complete the process.",
+        toast.success(t('contact.form.toast_mailto') as string, {
+          description: isEmailJSConfigured ? t('contact.form.toast_mailto_desc_emailjs_fail') as string : t('contact.form.toast_mailto_desc_not_configured') as string,
           duration: 5000
         });
       }
     } catch (error) {
       setSubmitStatus('error');
-      toast.error("Failed to send message", {
-        description: "Please try again or contact us directly at info@movinware.com",
+      toast.error(t('contact.form.toast_error') as string, {
+        description: t('contact.form.toast_error_desc') as string,
         duration: 5000
       });
     } finally {
@@ -258,7 +242,7 @@ This message was sent via the MovinWare contact form on ${new Date().toLocaleDat
                     {t('contact.form.message_sent')}
                   </> : submitStatus === 'error' ? <>
                     <AlertCircle className="w-4 h-4 mr-2 rtl:ml-2 rtl:mr-0" />
-                    Try Again
+                    {t('contact.form.try_again')}
                   </> : <>
                     <Send className="w-4 h-4 mr-2 rtl:ml-2 rtl:mr-0" />
                     {t('contact.form.send')}
@@ -278,10 +262,10 @@ This message was sent via the MovinWare contact form on ${new Date().toLocaleDat
               {submitStatus === 'error' && <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
                   <div className="flex items-center">
                     <AlertCircle className="w-5 h-5 text-red-500 mr-2 rtl:ml-2 rtl:mr-0" />
-                    <p className="text-red-800 font-medium">Failed to send message</p>
+                    <p className="text-red-800 font-medium">{t('contact.form.error_title')}</p>
                   </div>
                   <p className="text-red-700 text-sm mt-1">
-                    Please try again or contact us directly at{" "}
+                    {t('contact.form.error_description')}{" "}
                     <a href="mailto:info@movinware.com" className="underline">
                       info@movinware.com
                     </a>
@@ -309,9 +293,6 @@ This message was sent via the MovinWare contact form on ${new Date().toLocaleDat
                   </a>)}
               </div>
             </div>
-
-            {/* Quick Actions */}
-            
           </div>
         </div>
       </div>

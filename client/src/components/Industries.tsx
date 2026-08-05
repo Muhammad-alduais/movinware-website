@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { GraduationCap, ShoppingCart, Factory, Truck, Users, Building, TrendingUp } from "lucide-react";
+import { GraduationCap, ShoppingCart, Factory, Truck } from "lucide-react";
 import DetailModal from "./DetailModal";
 import PreviewCard from "./PreviewCard";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -54,27 +54,8 @@ const Industries = () => {
     fullDescription: t('industries.logistics.fullDescription'),
     benefits: t('industries.logistics.benefits')
   }];
-  const companySizes = [{
-    icon: TrendingUp,
-    title: t('industries.startups.title'),
-    count: t('industries.startups.count'),
-    description: t('industries.startups.description'),
-    details: t('industries.startups.details')
-  }, {
-    icon: Users,
-    title: t('industries.smes.title'),
-    count: t('industries.smes.count'),
-    description: t('industries.smes.description'),
-    details: t('industries.smes.details')
-  }, {
-    icon: Building,
-    title: t('industries.enterprises.title'),
-    count: t('industries.enterprises.count'),
-    description: t('industries.enterprises.description'),
-    details: t('industries.enterprises.details')
-  }];
   const headerBg = {
-    backgroundImage: 'url("/Header-background.webp")',
+    backgroundImage: 'url("/new-Header-background.webp")',
     backgroundPosition: 'center 30%'
   };
   return <section className="bg-white" id="industries">
@@ -104,12 +85,6 @@ const Industries = () => {
       <div className="py-20 max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
           {industries.map((industry, index) => <PreviewCard key={index} icon={industry.icon} title={industry.title as string} description={industry.description as string} timeline={industry.timeline as string} onLearnMore={() => setSelectedIndustry(industry)} index={index} />)}
-        </div>
-
-        <div className="mt-20 text-center opacity-0 animate-slide-up" style={{
-        animationDelay: "0.6s"
-      }}>
-          
         </div>
       </div>
       

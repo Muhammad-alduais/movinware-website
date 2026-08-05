@@ -35,14 +35,14 @@ const PreviewCard = ({
       style={{ animationDelay: `${0.1 * index}s` }}
     >
       <div className="flex items-start mb-6">
-        <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mr-4 rtl:ml-4 rtl:mr-0 group-hover:bg-pulse-50 transition-all duration-500">
+        <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mr-4 rtl:ml-4 rtl:mr-0 group-hover:bg-pulse-100 transition-all duration-500">
           <Icon className="w-7 h-7 text-gray-600 group-hover:text-pulse-500 transition-all duration-500" />
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="text-xl font-medium text-gray-900 mb-2 pr-2">{title}</h3>
           {(timeline || metric) && (
             <div className="mb-3">
-              <span className="text-xs text-pulse-500 font-medium bg-pulse-50 px-3 py-1 rounded-full inline-block">
+              <span className="text-xs text-pulse-500 font-medium bg-pulse-100 px-3 py-1 rounded-full inline-block">
                 {timeline || metric}
               </span>
             </div>

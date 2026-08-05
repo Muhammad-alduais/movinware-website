@@ -1,6 +1,6 @@
 
 import React from "react";
-import { X, CheckCircle, ArrowRight, Users, Target } from "lucide-react";
+import { X, CheckCircle, ArrowRight, Target } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -31,11 +31,6 @@ interface DetailModalProps {
     originalPrice?: string;
     features: string[];
   };
-  ctaButtons?: Array<{
-    text: string;
-    variant: 'primary' | 'secondary';
-    action?: () => void;
-  }>;
 }
 
 const DetailModal = ({ 
@@ -50,16 +45,9 @@ const DetailModal = ({
   benefits,
   processSteps,
   pricing,
-  ctaButtons,
   icon: Icon 
 }: DetailModalProps) => {
   const { t, language } = useLanguage();
-  const defaultCTAButtons = [
-    { text: "Get Started", variant: "primary" as const, action: undefined },
-    { text: "Schedule Demo", variant: "secondary" as const, action: undefined }
-  ];
-
-  const finalCTAButtons = ctaButtons || defaultCTAButtons;
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>

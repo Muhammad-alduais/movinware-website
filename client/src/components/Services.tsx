@@ -69,8 +69,24 @@ const Services = () => {
     fullDescription: t('services.support.fullDescription') as string,
     benefits: Array.isArray(t('services.support.benefits')) ? t('services.support.benefits') as string[] : []
   }], [t]);
+  const methodology = useMemo(() => [{
+    title: t('services.methodology.steps.consultation') as string,
+    description: t('services.methodology.steps.consultation.desc') as string
+  }, {
+    title: t('services.methodology.steps.planning') as string,
+    description: t('services.methodology.steps.planning.desc') as string
+  }, {
+    title: t('services.methodology.steps.execution') as string,
+    description: t('services.methodology.steps.execution.desc') as string
+  }, {
+    title: t('services.methodology.steps.delivery') as string,
+    description: t('services.methodology.steps.delivery.desc') as string
+  }, {
+    title: t('services.methodology.steps.support') as string,
+    description: t('services.methodology.steps.support.desc') as string
+  }], [t]);
   const headerBg = {
-    backgroundImage: 'url("/Header-background.webp")',
+    backgroundImage: 'url("/new-Header-background.webp")',
     backgroundPosition: 'center 30%'
   };
   return <section className="bg-gray-50" id="services">
@@ -113,38 +129,36 @@ const Services = () => {
               </p>
             </div>
             
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-4 relative">
-              {[{
-              step: t('services.methodology.steps.consultation'),
-              description: t('services.methodology.steps.consultation.desc')
-            }, {
-              step: t('services.methodology.steps.planning'),
-              description: t('services.methodology.steps.planning.desc')
-            }, {
-              step: t('services.methodology.steps.execution'),
-              description: t('services.methodology.steps.execution.desc')
-            }, {
-              step: t('services.methodology.steps.delivery'),
-              description: t('services.methodology.steps.delivery.desc')
-            }, {
-              step: t('services.methodology.steps.support'),
-              description: t('services.methodology.steps.support.desc')
-            }].map((process, index) => <div key={index} className="flex flex-col items-center text-center relative flex-1">
-                  <div className="w-12 h-12 bg-pulse-500 rounded-full flex items-center justify-center text-white font-medium mb-4 text-sm relative z-10">
-                    {index + 1}
+            <div className="hidden md:block">
+              <div className="relative">
+                <div className="absolute left-[10%] right-[10%] top-6 h-0.5 bg-gradient-to-r from-pulse-200 via-pulse-400 to-pulse-200"></div>
+                <div className="flex justify-between">
+                  {methodology.map((process, index) => <div key={index} className="flex-1 flex flex-col items-center text-center">
+                      <div className="w-12 h-12 bg-pulse-500 rounded-full flex items-center justify-center text-white font-medium text-sm relative z-10 mb-3">
+                        {index + 1}
+                      </div>
+                      <h4 className="font-medium text-gray-900 mb-2">{process.title}</h4>
+                      <p className="text-sm text-gray-600 max-w-32">{process.description}</p>
+                    </div>)}
+                </div>
+              </div>
+            </div>
+
+            <div className="md:hidden flex flex-col">
+              {methodology.map((process, index) => <div key={index} className="flex gap-4">
+                  <div className="flex flex-col items-center">
+                    <div className="w-12 h-12 bg-pulse-500 rounded-full flex items-center justify-center text-white font-medium text-sm relative z-10 shrink-0">
+                      {index + 1}
+                    </div>
+                    {index < methodology.length - 1 && <div className="w-px flex-1 bg-gray-200 my-1"></div>}
                   </div>
-                  <h4 className="font-medium text-gray-900 mb-2">{process.step}</h4>
-                  <p className="text-sm text-gray-600 max-w-32">{process.description}</p>
-                  {index < 4 && <div className="hidden md:block absolute left-full top-6 w-full h-px bg-gray-200 transform -translate-y-1/2 z-0"></div>}
+                  <div className="pb-8 pt-1">
+                    <h4 className="font-medium text-gray-900 mb-1 text-start">{process.title}</h4>
+                    <p className="text-sm text-gray-600 text-start">{process.description}</p>
+                  </div>
                 </div>)}
             </div>
           </div>
-        </div>
-
-        <div className="mt-20 text-center opacity-0 animate-slide-up" style={{
-        animationDelay: "0.8s"
-      }}>
-          
         </div>
       </div>
       
